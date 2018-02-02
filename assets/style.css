@@ -1,24 +1,93 @@
 body {
+  float: left;
   width: 100%;
-  background-color: #0f0; }
+  background-color: #ccc5b9;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.band_header {
+  width: 100%;
+  float: left;
+  padding: 8px;
+  font-size: 30px;
+  color: #244f26;
+  text-transform: lowercase;
+  text-align: center; }
 
 .block-container {
-  width: 720px;
-  height: 720px;
-  box-sizing: border-box;
+  width: 100%;
   float: left;
-  background-color: #ff0;
-  margin: 0px calc(50vw - 360px); }
+  box-sizing: border-box;
+  background-color: #ccc5b9; }
   .block-container .block {
     float: left;
-    width: 180px;
-    height: 180px;
-    border: 1px solid #0ff;
+    width: 50vw;
+    height: 50vw;
+    border: 1px solid #fff;
+    font-size: 14px;
     box-sizing: border-box;
-    display: inline-block; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Roboto;
+    text-decoration: none;
+    text-align: center;
+    transition: all 1s ease; }
+    .block-container .block:nth-child(5n) {
+      background-color: #0d1f22; }
+      .block-container .block:nth-child(5n):hover {
+        background-color: #1b4147; }
+    .block-container .block:nth-child(5n+1) {
+      background-color: #ecce8e; }
+      .block-container .block:nth-child(5n+1):hover {
+        background-color: #f3e1ba; }
+    .block-container .block:nth-child(5n+2) {
+      background-color: #2e1760; }
+      .block-container .block:nth-child(5n+2):hover {
+        background-color: #422189; }
+    .block-container .block:nth-child(5n+3) {
+      background-color: #ccc5b9; }
+      .block-container .block:nth-child(5n+3):hover {
+        background-color: #e1ddd7; }
+    .block-container .block:nth-child(5n+4) {
+      background-color: #244f26; }
+      .block-container .block:nth-child(5n+4):hover {
+        background-color: #347237;
+        background: url("./gif2.gif");
+        background-size: cover; }
     .block-container .block:hover {
-      background: url("https://www.a38.hu/uploads/kep/galeria/63193.jpg");
-      width: 360px;
-      height: 360px; }
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      transition: all 1s ease;
+      background: url("./gif1.gif");
+      transform: rotate(10deg);
+      background-size: cover; }
+
+@media (min-width: 768px) {
+  .block-container {
+    width: 720px;
+    height: 720px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 calc(50vw - 360px); }
+    .block-container .block {
+      float: left;
+      width: 180px;
+      height: 180px; } }
+@media (min-width: 1024px) {
+  .block-container {
+    width: 960;
+    height: 960;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 calc(50vw - 480px); }
+    .block-container .block {
+      float: left;
+      width: 240px;
+      height: 240px; } }
 
 /*# sourceMappingURL=style.css.map */
