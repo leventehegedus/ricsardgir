@@ -14,8 +14,11 @@ body {
     width: 180px;
     height: 180px;
     border: 1px solid #0ff;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: inline-block; }
     .block-container .block:hover {
-      background: url("https://www.a38.hu/uploads/kep/galeria/63193.jpg"); }
+      background: url("https://www.a38.hu/uploads/kep/galeria/63193.jpg");
+      width: 360px;
+      height: 360px; }
 
 /*# sourceMappingURL=style.css.map */
