@@ -1,0 +1,21 @@
+body {
+  width: 100%;
+  background-color: #0f0; }
+
+.block-container {
+  width: 720px;
+  height: 720px;
+  box-sizing: border-box;
+  float: left;
+  background-color: #ff0;
+  margin: 0px calc(50vw - 360px); }
+  .block-container .block {
+    float: left;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #0ff;
+    box-sizing: border-box; }
+    .block-container .block:hover {
+      background: url("https://www.a38.hu/uploads/kep/galeria/63193.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
