@@ -64,7 +64,7 @@ body {
       font-size: 16px;
       transition: all 1s ease;
       background: url("./gif1.gif");
-      transform: rotate(10deg);
+      transform: rotate(3deg);
       background-size: cover; }
 
 @media (min-width: 768px) {
