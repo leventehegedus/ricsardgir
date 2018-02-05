@@ -23,7 +23,20 @@ body {
   text-transform: lowercase;
   text-align: center;
 }
-
+#header {
+  a {
+    width: 100%;
+    float: left;
+    height: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+}
 .block-container {
   width: 100%;
   float: left;

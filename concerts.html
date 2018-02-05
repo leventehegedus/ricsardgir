@@ -1,136 +1,191 @@
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ricsárdgír</title>
-    <meta name="description" content="Ricsárdgír honlapja">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="cache-control" content="max-age=0">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="pragma" content="no-cache">
-    <link rel="shortcut icon" href="./assets/images/minion.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    }).stop('true', 'true');
-                } // End if
-            });
-        });
-    </script>
-    <script>
-        $(this).on('touchmove', function(event) {
-            if (event.originalEvent.scale !== 1) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-        });
-    </script>
-    <link rel="shortcut icon" href="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:400|Rancho" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ricsárdgír</title>
+  <meta name="description" content="Ricsárdgír honlapja">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <link rel="shortcut icon" href="./assets/images/minion.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            window.location.hash = hash;
+          }).stop('true', 'true');
+        } // End if
+      });
+    });
+  </script>
+  <script>
+    $(this).on('touchmove', function(event) {
+      if (event.originalEvent.scale !== 1) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  </script>
+  <link rel="shortcut icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:400|Rancho" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-
-január 26 - a38
-
-február 17 szeged
-
-február 24 szentendre
+  <div w3-include-html="menu.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
 
 
 
+<div class="concert-container">
+
+<div class="concert-block-container">
+
+  2018
+<ul>
+  <li>
+    január 26 - a38
+
+  </li>
+  <li>
+
+    február 17 szeged
+
+  </li>
+  <li>
+
+    február 24 szentendre
+
+  </li>
+</ul>
 
 
-
-
-
-
-
-
-2 0 1 7
-<div class="block-container">
-150. Rómer ház, Győr, december 9
-
-150. Ricsárdgír karácsony, Gólya, titkos koncert, december 1
-
-149. PartyFészek, Zamárdi, augusztus 19
-
-148. GírFeszt, A38, Budapest, augusztus 17
-
-147. Forma Feszt, Párkány, Szlovénia, augusztus 11
-
-146. MKKP Tábor, Csillebérc, augusztus 3
-
-145. Művészetek völgye, Taliándörögd, július 22
-
-144. HelloWood, Tokaj, július 19
-
-143. Bánkitó Fesztivál, Bánk, július 15
-
-142. VéNégy Fesztivál, Vác, július 7
-
-141. UbikFarm, Vértesszőlős, július 6
-
-140. Kolorádó After, Gólya, Budapest, június 30
-
-139. Színkavalkád Fesztivál, Inárcs, június 24
-
-138. Fishing on Orfű, Borfalu, Orfű, június 21
-
-137. Fishing on Orfű, Viziszínpad, Orfű, június 21
-
-136. Kolorádó, Budapest, június 9
-
-135. Waldorfeszt, Zebegény, június 3
-
-134. Nem maradunk csendben!, Kossuth tér, május 21
-
-133. MaacraftParty, Gólya klub, április 27
-
-132. Titkos buli, Berzsenyi Gimi, Budapest, április 22
-
-131. Akvárium, Budapest, április 20
-
-130. Kuplung, Index dalverseny, Budapest, április 16
-
-129. Toldi, Friss hús, Budapest március 30
-
-128. Popup Cafe, Zalaegerszeg, március 11
-
-127. Toldi, Balcony Tv búcsúparti, Budapest, március 10
-
-126. Müszi, Keret szülinap, Budapest, március 4
-
-125. Kuplung, Ricsárdgír Farsang, Budapest, február 18
-
-124. Szenes Klub, Pécs, február 13
-
-123. Barlang, Back to Szentendre Party, Szentendre, február 10
-
-122. Trafó, Next Feszt, Budapest, január 14
 
 </div>
 
+
+
+
+
+
+
+<div class="concert-block-container">
+
+  2 0 1 7
+
+  <li> 150. Rómer ház, Győr, december 9 </li>
+  <li>
+
+    150. Ricsárdgír karácsony, Gólya, titkos koncert, december 1 </li>
+  <li>
+
+    149. PartyFészek, Zamárdi, augusztus 19 </li>
+  <li>
+
+    148. GírFeszt, A38, Budapest, augusztus 17 </li>
+  <li>
+
+    147. Forma Feszt, Párkány, Szlovénia, augusztus 11 </li>
+  <li>
+
+    146. MKKP Tábor, Csillebérc, augusztus 3 </li>
+  <li>
+
+    145. Művészetek völgye, Taliándörögd, július 22</li>
+  <li>
+
+    144. HelloWood, Tokaj, július 19</li>
+  <li>
+
+    143. Bánkitó Fesztivál, Bánk, július 15</li>
+  <li>
+
+    142. VéNégy Fesztivál, Vác, július 7</li>
+  <li>
+
+    141. UbikFarm, Vértesszőlős, július 6</li>
+  <li>
+
+    140. Kolorádó After, Gólya, Budapest, június 30</li>
+  <li>
+
+    139. Színkavalkád Fesztivál, Inárcs, június 24</li>
+  <li>
+
+    138. Fishing on Orfű, Borfalu, Orfű, június 21</li>
+  <li>
+
+    137. Fishing on Orfű, Viziszínpad, Orfű, június 21</li>
+  <li>
+
+    136. Kolorádó, Budapest, június 9</li>
+  <li>
+
+    135. Waldorfeszt, Zebegény, június 3</li>
+  <li>
+
+    134. Nem maradunk csendben!, Kossuth tér, május 21</li>
+  <li>
+
+    133. MaacraftParty, Gólya klub, április 27</li>
+  <li>
+
+    132. Titkos buli, Berzsenyi Gimi, Budapest, április 22</li>
+  <li>
+
+    131. Akvárium, Budapest, április 20</li>
+  <li>
+
+    130. Kuplung, Index dalverseny, Budapest, április 16</li>
+  <li>
+
+    129. Toldi, Friss hús, Budapest március 30</li>
+  <li>
+
+    128. Popup Cafe, Zalaegerszeg, március 11</li>
+  <li>
+
+    127. Toldi, Balcony Tv búcsúparti, Budapest, március 10</li>
+  <li>
+
+    126. Müszi, Keret szülinap, Budapest, március 4</li>
+  <li>
+
+    125. Kuplung, Ricsárdgír Farsang, Budapest, február 18</li>
+  <li>
+
+    124. Szenes Klub, Pécs, február 13</li>
+  <li>
+
+    123. Barlang, Back to Szentendre Party, Szentendre, február 10</li>
+  <li>
+
+    122. Trafó, Next Feszt, Budapest, január 14</li>
+
+</div>
+<div class="concert-block-container">
 
 
 2 0 1 6
@@ -167,8 +222,8 @@ február 24 szentendre
 107. Kuplung, Budapest, január 2
 
 
-
-
+</div>
+<div class="concert-block-container">
 
 2 0 1 5
 
@@ -213,7 +268,8 @@ február 24 szentendre
 88. TOLDI mozi, Budapest, január 19
 
 
-
+</div>
+<div class="concert-block-container">
 
 
 2 0 1 4
@@ -252,7 +308,8 @@ február 24 szentendre
 
 71. A38, PESTI LEMEZBEMUTATÓ, Budapest, február 15
 
-
+</div>
+<div class="concert-block-container">
 
 2 0 1 3
 
@@ -294,7 +351,8 @@ február 24 szentendre
 
 52. Fiatal Képzőművészek Stúdiója, Budapest, január 21.
 
-
+</div>
+<div class="concert-block-container">
 
 2 0 1 2
 
@@ -346,7 +404,8 @@ február 24 szentendre
 
 28. AZK, Sárvár, január 13 2012
 
-
+</div>
+<div class="concert-block-container">
 
 2 0 1 1
 
@@ -380,7 +439,8 @@ február 24 szentendre
 
 13. U26, Bp 2011 február
 
-
+</div>
+<div class="concert-block-container">
 
 2 0 1 0
 
@@ -398,7 +458,8 @@ február 24 szentendre
 
 6. Forrás Irodalmi Kávézó, Verőce 2010 július
 
-
+</div>
+<div class="concert-block-container">
 
 2 0 0 7 - 2 0 0 9
 
@@ -411,5 +472,7 @@ február 24 szentendre
 2. DzsDzsSummerFest, Izbég 2008
 
 1. DzsDzsSummerFest, Izbég vááhááhá2007
+</div>
+</div>
 </body>
 </html>

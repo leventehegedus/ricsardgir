@@ -1,105 +1,136 @@
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ricsárdgír</title>
-    <meta name="description" content="Ricsárdgír honlapja">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="cache-control" content="max-age=0">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="pragma" content="no-cache">
-    <link rel="shortcut icon" href="./assets/images/minion.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    }).stop('true', 'true');
-                } // End if
-            });
-        });
-    </script>
-    <script>
-        $(this).on('touchmove', function(event) {
-            if (event.originalEvent.scale !== 1) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-        });
-    </script>
-    <link rel="shortcut icon" href="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:400|Rancho" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ricsárdgír</title>
+  <meta name="description" content="Ricsárdgír honlapja">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <link rel="shortcut icon" href="./assets/images/minion.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            window.location.hash = hash;
+          }).stop('true', 'true');
+        } // End if
+      });
+    });
+  </script>
+  <script>
+    $(this).on('touchmove', function(event) {
+      if (event.originalEvent.scale !== 1) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  </script>
+  <link rel="shortcut icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:400|Rancho" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+
 <body>
+  <div w3-include-html="menu.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <audio id="audio1">
+    <source src="./assets/sound1.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio2">
+    <source src="./assets/sound2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio3">
+    <source src="./assets/sound3.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio4">
+    <source src="./assets/sound4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio5">
+    <source src="./assets/sound5.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio6">
+    <source src="./assets/sound6.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio7">
+    <source src="./assets/sound7.mp3" type="audio/mpeg">
+  </audio>
+
   <div class="band_header">Gírhonlap</div>
   <div class="block-container">
-    <a href="./contact.html" class="block" id="contact">
+    <a href="./contact.html" class="block" id="contact" onmouseenter="playAudio(audio5)" onmouseleave="pauseAudio(audio5)">
       <span>Üzenem Nórának a telefonba</span>
     </a>
-    <a href="./music.html" class="block">
+    <a href="./music.html" class="block" onmouseenter="playAudio(audio1)" onmouseleave="pauseAudio(audio1)">
       <span>Jó ez a pop</span>
     </a>
-    <a href="./videos.html" class="block">
+    <a href="./videos.html" class="block" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
       <span>Hogy lejátszon téged bármi</span>
     </a>
-    <a href="./forum.html" class="block">
+    <a href="./forum.html" class="block" onmouseenter="playAudio(audio2)" onmouseleave="pauseAudio(audio2)">
       <span>Böfögte nekünk a Ricsárdgír</span>
     </a>
-    <a href="concerts.html" class="block">
+    <a href="concerts.html" class="block" onmouseenter="playAudio(audio3)" onmouseleave="pauseAudio(audio3)">
       <span>Koncertek</span>
     </a>
-    <a href="./quiz.html" class="block">
+    <a href="./quiz.html" class="block" onmouseenter="playAudio(audio6)" onmouseleave="pauseAudio(audio6)">
       <span>Kenó</span>
     </a>
-    <a href="./social.html" class="block">
+    <a href="./social.html" class="block" onmouseenter="playAudio(audio4)" onmouseleave="pauseAudio(audio4)">
       <span>Cukkerberg és a srácok</span>
     </a>
-    <a class="block">
-      <span>Laci</span>
+    <a href="./contact.html" class="block" id="contact" onmouseenter="playAudio(audio5)" onmouseleave="pauseAudio(audio5)">
+      <span>Üzenem Nórának a telefonba</span>
     </a>
-    <a class="block">
-      <span>Bali</span>
+    <a href="./music.html" class="block" onmouseenter="playAudio(audio1)" onmouseleave="pauseAudio(audio1)">
+      <span>Jó ez a pop</span>
     </a>
-    <a class="block">
-      <span>Andris</span>
+    <a href="./videos.html" class="block" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
+      <span>Hogy lejátszon téged bármi</span>
     </a>
-    <a class="block">
-      <span>Laci</span>
+    <a href="./forum.html" class="block" onmouseenter="playAudio(audio2)" onmouseleave="pauseAudio(audio2)">
+      <span>Böfögte nekünk a Ricsárdgír</span>
     </a>
-    <a class="block">
-      <span>Andris</span>
+    <a href="concerts.html" class="block" onmouseenter="playAudio(audio3)" onmouseleave="pauseAudio(audio3)">
+      <span>Koncertek</span>
     </a>
-    <a class="block">
-      <span>Dani</span>
+    <a href="./quiz.html" class="block" onmouseenter="playAudio(audio6)" onmouseleave="pauseAudio(audio6)">
+      <span>Kenó</span>
     </a>
-    <a class="block">
-      <span>Laci</span>
+    <a href="./social.html" class="block" onmouseenter="playAudio(audio4)" onmouseleave="pauseAudio(audio4)">
+      <span>Cukkerberg és a srácok</span>
     </a>
-    <a class="block">
-      <span>Bali</span>
+    <a href="./music.html" class="block" onmouseenter="playAudio(audio1)" onmouseleave="pauseAudio(audio1)">
+      <span>Jó ez a pop</span>
     </a>
-    <a class="block">
-      <span>Andris</span>
+    <a href="./videos.html" class="block" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
+      <span>Hogy lejátszon téged bármi</span>
     </a>
   </div>
 </body>
+
 </html>
