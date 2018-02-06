@@ -52,7 +52,9 @@ body {
     .block-container .block:nth-child(5n) {
       background-color: #0d1f22; }
       .block-container .block:nth-child(5n):hover {
-        background-color: #1b4147; }
+        background-color: #1b4147;
+        background: url("./gif3.gif");
+        background-size: cover; }
     .block-container .block:nth-child(5n+1) {
       background-color: #ecce8e; }
       .block-container .block:nth-child(5n+1):hover {
@@ -60,11 +62,15 @@ body {
     .block-container .block:nth-child(5n+2) {
       background-color: #2e1760; }
       .block-container .block:nth-child(5n+2):hover {
-        background-color: #422189; }
+        background-color: #422189;
+        background: url("./gif4.gif");
+        background-size: cover; }
     .block-container .block:nth-child(5n+3) {
       background-color: #ccc5b9; }
       .block-container .block:nth-child(5n+3):hover {
-        background-color: #e1ddd7; }
+        background-color: #e1ddd7;
+        background: url("./gif1.gif");
+        background-size: cover; }
     .block-container .block:nth-child(5n+4) {
       background-color: #244f26; }
       .block-container .block:nth-child(5n+4):hover {
@@ -75,7 +81,7 @@ body {
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px;
       transition: all 1s ease;
-      background: url("./gif1.gif");
+      background: url("./gif5.gif");
       transform: rotate(3deg);
       background-size: cover; }
 
