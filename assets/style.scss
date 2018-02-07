@@ -1,13 +1,15 @@
-$rg-color-1: #0d1f22;
-$rg-color-2: #ecce8e;
-$rg-color-3: #2e1760;
-$rg-color-4: #ccc5b9;
-$rg-color-5: #244f26;
+$rg-color-1: #c9b52e;
+$rg-color-2: #ff002e;
+$rg-color-3: #00ba97;
+$rg-color-4: #008cc8;
+$rg-color-5: #50677a;
+$rg-font-light: #fff;
+$rg-font-dark: #000;
 
 body {
   float: left;
   width: 100%;
-  background-color: $rg-color-4;
+  background-color: $rg-color-1;
   margin: 0;
   font-family: Roboto, sans-serif;
   overflow-x: hidden;
@@ -24,18 +26,54 @@ body {
   text-align: center;
 }
 
-#header {
-  a {
+.header_container {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  #header {
+    height: 40px;
+    line-height: 40px;
     width: 100%;
     float: left;
-    height: 30px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
+    overflow: hidden;
     text-align: center;
-    line-height: 30px;
-    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    color: $rg-font-dark;
+    border-bottom: 1px solid $rg-font-dark;
+    background-color: rgba($rg-color-3, 0.9);
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .openbtn {
+      width: 100%;
+      float: left;
+      cursor: pointer;
+      border-bottom: 1px solid $rg-font-dark;
+      box-sizing: border-box;
+      height: 40px;
+    }
+
+    a {
+      width: 100%;
+      float: left;
+      height: 30px;
+      font-size: 12px;
+      text-decoration: none;
+      color: $rg-font-dark;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 30px;
+      box-sizing: border-box;
+
+      span {
+        float: left;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid $rg-font-dark;
+      }
+    }
   }
 }
 
@@ -43,32 +81,30 @@ body {
   width: 100%;
   float: left;
   box-sizing: border-box;
-  background-color: $rg-color-4;
+  margin-top: 40px;
 
   .block {
     float: left;
     width: 50vw;
     height: 50vw;
-    border: 1px solid #fff;
+    border: 1px solid $rg-font-dark;
     font-size: 14px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: #fff;
+    color: $rg-font-dark;
     font-family: Roboto;
     text-decoration: none;
     text-align: center;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 
     &:nth-child(5n) {
       background-color: $rg-color-1;
 
       &:hover {
         background-color: lighten($rg-color-1, 10%);
-        background: url("./gif3.gif");
-        background-size: cover;
       }
     }
 
@@ -85,8 +121,6 @@ body {
 
       &:hover {
         background-color: lighten($rg-color-3, 10%);
-        background: url("./gif4.gif");
-        background-size: cover;
       }
     }
 
@@ -95,8 +129,6 @@ body {
 
       &:hover {
         background-color: lighten($rg-color-4, 10%);
-        background: url("./gif1.gif");
-        background-size: cover;
       }
     }
 
@@ -105,18 +137,106 @@ body {
 
       &:hover {
         background-color: lighten($rg-color-5, 10%);
-        background: url("./gif2.gif");
-        background-size: cover;
       }
     }
 
     &:hover {
       color: rgba(255,255,255,0.5);
       font-size: 16px;
-      transition: all 1s ease;
-      background: url("./gif5.gif");
+      transition: all 0.5s ease;
       transform: rotate(3deg);
       background-size: cover;
+    }
+  }
+
+  .video-container {
+    width: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px calc(50% - 160px);
+
+    .video-intro {
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+      color: $rg-font-dark;
+      padding: 20px 0;
+
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .description {
+        font-style: italic;
+        padding: 0 10px;
+        text-align: justify;
+      }
+    }
+  }
+
+  .contact-container {
+    padding: 10px;
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+
+        .bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .fb-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .insta-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .music-container {
+    text-align: center;
+    margin: 20px 0;
+
+    .soundcloud-container {
+      width: 300px;
+      margin: 20px calc(50% - 150px);
+    }
+  }
+
+  .concert-container {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+
+    .concert-block-container {
+      ul {
+        padding: 0;
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: $rg-color-5;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+              color: $rg-color-4;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -126,12 +246,49 @@ body {
     height: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 0 calc(50vw - 360px);
+    margin: 100px calc(50vw - 360px);
 
     .block {
       float: left;
       width: 180px;
       height: 180px;
+
+      &:nth-child(5n) {
+        &:hover {
+          background: url("./gif3.gif");
+          background-size: cover;
+        }
+      }
+
+      &:nth-child(5n+2) {
+        &:hover {
+          background: url("./gif4.gif");
+          background-size: cover;
+        }
+      }
+
+      &:nth-child(5n+3) {
+        &:hover {
+          background: url("./gif1.gif");
+          background-size: cover;
+        }
+      }
+
+      &:nth-child(5n+4) {
+        &:hover {
+          background: url("./gif2.gif");
+          background-size: cover;
+        }
+      }
+
+      &:hover {
+        color: rgba(255,255,255,0.5);
+        font-size: 16px;
+        transition: all 0.5s ease;
+        background: url("./gif5.gif");
+        transform: rotate(3deg);
+        background-size: cover;
+      }
     }
   }
 }
