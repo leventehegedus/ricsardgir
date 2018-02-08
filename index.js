@@ -17,3 +17,12 @@ function toggleNav() {
       document.getElementById("header").style.transition = "all ease 0.5s";
     }
 }
+
+function toggleBoringDetails(clip) {
+  if(clip.style.display === "block") {
+    clip.style.display = "none"
+  }
+  else {
+    clip.style.display = "block"
+  }
+}

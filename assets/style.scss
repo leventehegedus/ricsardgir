@@ -40,7 +40,7 @@ body {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    color: $rg-color-5;
+    color: $rg-color-2;
     border-bottom: 1px solid $rg-color-2;
     background-color: rgba($rg-color-3, 0.9);
     overflow: hidden;
@@ -50,11 +50,11 @@ body {
       width: 100%;
       float: left;
       cursor: pointer;
-      border-bottom: 1px solid $rg-color-5;
+      border-bottom: 1px solid $rg-color-2;
       box-sizing: border-box;
       height: 40px;
       letter-spacing: 2px;
-      background-color: $rg-color-1;
+      background-color: $rg-color-5;
     }
 
     a {
@@ -94,7 +94,7 @@ body {
     font-size: 20px;
     height: 40px;
     line-height: 40px;
-    background-color: rgba($rg-color-2, 0.1);
+    background-color: rgba($rg-color-2, 0.2);
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
   }
@@ -166,10 +166,10 @@ body {
   }
 
   .video-container {
-    width: 320px;
-    padding: 10px;
+    width: 100%;
+    padding: 20px 10px;
     box-sizing: border-box;
-    margin: 20px calc(50% - 160px);
+    text-align: center;
 
     .video-intro {
       width: 100%;
@@ -188,7 +188,29 @@ body {
       .description {
         font-style: italic;
         padding: 0 10px;
-        text-align: justify;
+        text-align: center;
+      }
+    }
+    iframe {
+      width: calc(100vw - 20px);
+      height: calc(0.6 * (100vw - 20px));
+    }
+    .boring-details {
+      margin-top: 10px;
+      .title {
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          color: $rg-color-5;
+        }
+      }
+      .content {
+        span {
+          font-weight: 600;
+        }
+        &#boringDetails1, &#boringDetails2 {
+          display: none;
+        }
       }
     }
   }
@@ -314,7 +336,7 @@ body {
           position: absolute;
           bottom: 0;
           background-color: rgba($rg-font-dark, 0.6);
-          height: 40px;
+          height: 43px;
           width: 100%;
 
           h1 {
@@ -382,7 +404,7 @@ body {
     height: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 100px calc(50vw - 360px);
+    margin: 40px calc(50vw - 360px);
 
     .block {
       float: left;
@@ -398,7 +420,7 @@ body {
 
       &:nth-child(5n+2) {
         &:hover {
-          background: url("./gif4.gif");
+          background: url("./gif3.gif");
           background-size: cover;
         }
       }
@@ -421,7 +443,7 @@ body {
         color: rgba($rg-font-light, 0.5);
         font-size: 16px;
         transition: all 0.5s ease;
-        background: url("./gif5.gif");
+        background: url("./gif2.gif");
         transform: rotate(3deg);
         background-size: cover;
       }
@@ -439,6 +461,12 @@ body {
         -ms-flex: 25%;
         flex: 25%;
         max-width: 25%;
+      }
+    }
+    .video-container {
+      iframe {
+        width: 720px;
+        height: 432px;
       }
     }
   }
