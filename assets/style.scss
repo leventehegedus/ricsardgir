@@ -1,17 +1,18 @@
-$rg-color-1: #c9b52e;
-$rg-color-2: #ff002e;
-$rg-color-3: #00ba97;
-$rg-color-4: #008cc8;
-$rg-color-5: #50677a;
+$rg-color-1: #64a6bd;
+$rg-color-2: #8e94f2;
+$rg-color-3: #558b6e;
+$rg-color-4: #957fef;
+$rg-color-5: #55286f;
 $rg-font-light: #fff;
 $rg-font-dark: #000;
+
 
 body {
   float: left;
   width: 100%;
   background-color: $rg-color-1;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Dosis, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -39,8 +40,8 @@ body {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    color: $rg-font-dark;
-    border-bottom: 1px solid $rg-font-dark;
+    color: $rg-color-5;
+    border-bottom: 1px solid $rg-color-2;
     background-color: rgba($rg-color-3, 0.9);
     overflow: hidden;
     box-sizing: border-box;
@@ -49,9 +50,11 @@ body {
       width: 100%;
       float: left;
       cursor: pointer;
-      border-bottom: 1px solid $rg-font-dark;
+      border-bottom: 1px solid $rg-color-5;
       box-sizing: border-box;
       height: 40px;
+      letter-spacing: 2px;
+      background-color: $rg-color-1;
     }
 
     a {
@@ -60,7 +63,7 @@ body {
       height: 30px;
       font-size: 12px;
       text-decoration: none;
-      color: $rg-font-dark;
+      color: $rg-color-5;
       text-transform: uppercase;
       text-align: center;
       line-height: 30px;
@@ -71,7 +74,7 @@ body {
         width: calc(100% - 40px);
         margin: 0 20px;
         box-sizing: border-box;
-        border-bottom: 1px solid $rg-font-dark;
+        border-bottom: 1px solid $rg-color-1;
       }
     }
   }
@@ -87,18 +90,18 @@ body {
     float: left;
     width: 50vw;
     height: 50vw;
-    border: 1px solid $rg-font-dark;
     font-size: 14px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: $rg-font-dark;
-    font-family: Roboto;
+    color: $rg-font-light;
     text-decoration: none;
     text-align: center;
     transition: all 0.5s ease;
+    font-weight: 200;
+    letter-spacing: 2px;
 
     &:nth-child(5n) {
       background-color: $rg-color-1;

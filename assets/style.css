@@ -1,9 +1,9 @@
 body {
   float: left;
   width: 100%;
-  background-color: #c9b52e;
+  background-color: #64a6bd;
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Dosis, sans-serif;
   overflow-x: hidden;
   overflow-y: auto; }
 
@@ -12,7 +12,7 @@ body {
   float: left;
   padding: 8px;
   font-size: 30px;
-  color: #50677a;
+  color: #55286f;
   text-transform: lowercase;
   text-align: center; }
 
@@ -28,25 +28,27 @@ body {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    color: #000;
-    border-bottom: 1px solid #000;
-    background-color: rgba(0, 186, 151, 0.9);
+    color: #55286f;
+    border-bottom: 1px solid #8e94f2;
+    background-color: rgba(85, 139, 110, 0.9);
     overflow: hidden;
     box-sizing: border-box; }
     .header_container #header .openbtn {
       width: 100%;
       float: left;
       cursor: pointer;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #55286f;
       box-sizing: border-box;
-      height: 40px; }
+      height: 40px;
+      letter-spacing: 2px;
+      background-color: #64a6bd; }
     .header_container #header a {
       width: 100%;
       float: left;
       height: 30px;
       font-size: 12px;
       text-decoration: none;
-      color: #000;
+      color: #55286f;
       text-transform: uppercase;
       text-align: center;
       line-height: 30px;
@@ -56,7 +58,7 @@ body {
         width: calc(100% - 40px);
         margin: 0 20px;
         box-sizing: border-box;
-        border-bottom: 1px solid #000; }
+        border-bottom: 1px solid #64a6bd; }
 
 .block-container {
   width: 100%;
@@ -67,38 +69,38 @@ body {
     float: left;
     width: 50vw;
     height: 50vw;
-    border: 1px solid #000;
     font-size: 14px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: #000;
-    font-family: Roboto;
+    color: #fff;
     text-decoration: none;
     text-align: center;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    font-weight: 200;
+    letter-spacing: 2px; }
     .block-container .block:nth-child(5n) {
-      background-color: #c9b52e; }
+      background-color: #64a6bd; }
       .block-container .block:nth-child(5n):hover {
-        background-color: #d8c652; }
+        background-color: #88bbcc; }
     .block-container .block:nth-child(5n+1) {
-      background-color: #ff002e; }
+      background-color: #8e94f2; }
       .block-container .block:nth-child(5n+1):hover {
-        background-color: #ff3358; }
+        background-color: #bcbff7; }
     .block-container .block:nth-child(5n+2) {
-      background-color: #00ba97; }
+      background-color: #558b6e; }
       .block-container .block:nth-child(5n+2):hover {
-        background-color: #00edc0; }
+        background-color: #6da687; }
     .block-container .block:nth-child(5n+3) {
-      background-color: #008cc8; }
+      background-color: #957fef; }
       .block-container .block:nth-child(5n+3):hover {
-        background-color: #00b0fb; }
+        background-color: #bbacf5; }
     .block-container .block:nth-child(5n+4) {
-      background-color: #50677a; }
+      background-color: #55286f; }
       .block-container .block:nth-child(5n+4):hover {
-        background-color: #648199; }
+        background-color: #723694; }
     .block-container .block:hover {
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px;
@@ -108,7 +110,8 @@ body {
   .block-container .video-container {
     width: 320px;
     padding: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin: 20px calc(50% - 160px); }
     .block-container .video-container .video-intro {
       width: 100%;
       float: left;
@@ -154,11 +157,11 @@ body {
       .block-container .concert-container .concert-block-container ul li {
         list-style-type: none; }
         .block-container .concert-container .concert-block-container ul li a {
-          color: #50677a;
+          color: #55286f;
           text-decoration: none;
           cursor: pointer; }
           .block-container .concert-container .concert-block-container ul li a:hover {
-            color: #008cc8; }
+            color: #957fef; }
 
 @media (min-width: 768px) {
   .block-container {
