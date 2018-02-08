@@ -86,6 +86,19 @@ body {
   box-sizing: border-box;
   margin-top: 40px;
 
+  .header {
+    text-align: center;
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba($rg-color-2, 0.1);
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+  }
+
   .block {
     float: left;
     width: 50vw;
@@ -144,7 +157,7 @@ body {
     }
 
     &:hover {
-      color: rgba(255,255,255,0.5);
+      color: rgba($rg-font-light, 0.5);
       font-size: 16px;
       transition: all 0.5s ease;
       transform: rotate(3deg);
@@ -223,11 +236,30 @@ body {
     box-sizing: border-box;
 
     .concert-block-container {
+      .year-header {
+        text-align: center;
+        float: left;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-style: italic;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgba($rg-color-3, 0.1);
+      }
+
       ul {
         padding: 0;
 
         li {
           list-style-type: none;
+          line-height: 24px;
+          font-size: 12px;
+          letter-spacing: 1px;
+          border-bottom: 1px solid rgba($rg-color-4,0.05);
+          padding: 5px;
+          text-align: center;
 
           a {
             color: $rg-color-5;
@@ -238,7 +270,108 @@ body {
               color: $rg-color-4;
             }
           }
+
+          iframe {
+            margin: 0 calc(50% - 250px);
+            display: none;
+          }
         }
+      }
+    }
+  }
+
+  .image-container {
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      padding: 0 4px;
+      box-sizing: border-box;
+
+      .frame {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease;
+
+        img {
+          filter: grayscale(66%);
+          transition: all 0.5s ease;
+          width: 100%;
+        }
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          background-color: rgba($rg-font-dark, 0.6);
+          height: 40px;
+          width: 100%;
+
+          h1 {
+            font-size: 20px;
+            color: $rg-font-light;
+            text-align: center;
+            font-weight: 200;
+            text-transform: uppercase;
+            margin: 0;
+          }
+
+          p {
+            font-size: 14px;
+            color: $rg-font-light;
+            text-align: center;
+            font-weight: 200;
+            text-transform: lowercase;
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          img {
+            transition: all 0.5s ease;
+            filter: grayscale(0%);
+            width: 104%;
+            margin-left: -2%;
+          }
+
+          .content {
+            opacity: 0;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 540px) {
+  .block-container {
+    .concert-container {
+      .concert-block-container {
+        ul {
+          li {
+            iframe {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .image-container {
+      .column {
+        -ms-flex: 33.33%;
+        flex: 33.33%;
+        max-width: 33.33%;
       }
     }
   }
@@ -285,12 +418,27 @@ body {
       }
 
       &:hover {
-        color: rgba(255,255,255,0.5);
+        color: rgba($rg-font-light, 0.5);
         font-size: 16px;
         transition: all 0.5s ease;
         background: url("./gif5.gif");
         transform: rotate(3deg);
         background-size: cover;
+      }
+
+      &.concerts {
+        &:hover {
+          background: url("./gif6.gif");
+          background-size: cover;
+        }
+      }
+    }
+
+    .image-container {
+      .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
       }
     }
   }
@@ -301,7 +449,7 @@ body {
     height: 960;
     box-sizing: border-box;
     float: left;
-    margin: 0 calc(50vw - 480px);
+    margin: 100px calc(50vw - 480px);
 
     .block {
       float: left;
