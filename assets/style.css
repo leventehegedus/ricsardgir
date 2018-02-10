@@ -258,6 +258,9 @@ body {
       .block-container .image-container .column .frame:hover .content {
         opacity: 0;
         transition: all 0.5s ease; }
+  .block-container .merch-container .merch-image-container {
+    background: url("./grocery.jpg");
+    background-size: cover; }
 
 @media (min-width: 540px) {
   .block-container .concert-container .concert-block-container ul li iframe {
