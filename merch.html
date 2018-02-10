@@ -62,18 +62,30 @@
         Mörcs
       </div>
       <div class="merch-image-container">
-        <div class="merch cola">
-          <span>Vegyél kólát</span>
+        <div class="merch cola" onmouseenter="playAudio(audio9)" onmouseleave="pauseAudio(audio9)">
+          <div class="title">Vegyél kólát</div>
+          <div class="prize">Csak 399 Ft</div>
         </div>
-        <div class="merch fanta">
-          <span>Vegyél fantát</span>
+        <div class="merch fanta" onmouseenter="playAudio(audio8)" onmouseleave="pauseAudio(audio8)">
+          <div class="title">Vegyél fantát</div>
+          <div class="prize">Csak 399 Ft</div>
         </div>
-        <div class="merch palinka">
-          <span>Vegyél pálinka</span>
+        <div class="merch palinka" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
+          <div class="title">Vegyél pálinkát</div>
+          <div class="prize">Csak 399 Ft</div>
         </div>
       </div>
     </div>
   </div>
+  <audio id="audio7">
+    <source src="./assets/sound7.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio8">
+    <source src="./assets/sound8.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio9">
+    <source src="./assets/sound9.mp3" type="audio/mpeg">
+  </audio>
 </body>
 
 </html>
