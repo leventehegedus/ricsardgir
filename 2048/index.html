@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DOGE2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta property="og:title" content="Wow! Such Doge Game!" />
+  <meta property="og:url" content="http://doge2048.com/" />
+  <meta property="og:description" content="much tiles such fun" />
+  <meta property="og:image" content="http://doge2048.com/meta/doge-600.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <script src="../index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+</head>
+<body>
+  <div class="header_container" w3-include-html="../menu.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Ricsárdgír<span style="color:red">2</span><span style="color:#00FF00">0</span><span style="color:blue">4</span><span style="color:#00FFFF">8</span>
+      </h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="doge-says">
+        <p></p>
+      </div>
+      <div class="info">
+        <!-- <div class="hide-info"><a>HIDE</a></div> -->
+       <p> Modified and made accessible to you by <a href="https://github.com/MDJorge" target="_blank">Jorge MD.</a></p>
+       <p>Use your arrow keys or swipe to combine similar Doges and score points! </p>
+       <p>Unlock all 11 doges to win!</p>
+       <p> Doge-ified by   <a href="http://tinymammals.com" target="_blank">Tiny Mammals.</a> </P>
+       <p> 2048 Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a></p>
+       <p><a href="http://mdjorge.github.io/2048" target="_blank">Play Original?</a></p>
+       <p>Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a> </p>
+      </div>
+      <div class="key">
+        <!-- <div class="hide-key"><a>HIDE</a></div> -->
+       <h1>Key:</h1>
+       <p>2- <img src="http://mdjorge.github.io/doge2048/img/212/doge-wink-212.gif" alt="2" width="60" height="60"> 4- <img src="http://mdjorge.github.io/doge2048/img/212/doge-shake-space-212.gif" alt="4" width="60" height="60"> 8- <img src="http://mdjorge.github.io/doge2048/img/212/doge-peepers-212.gif" alt="8" width="60" height="60"> </p>
+       <p>16- <img src="http://mdjorge.github.io/doge2048/img/212/doge-prizza-212.gif" alt="16" width="60" height="60"> 32- <img src="http://mdjorge.github.io/doge2048/img/212/doge-hat-212.gif" alt="32" width="60" height="60"> 64- <img src="http://mdjorge.github.io/doge2048/img/212/doge-gradient-212.gif" alt="64" width="60" height="60"></p>
+       <p>128- <img src="http://mdjorge.github.io/doge2048/img/212/doge-fat-212.gif" alt="128" width="60" height="60"> 256- <img src="http://mdjorge.github.io/doge2048/img/212/doge-rainbow-212.gif" alt="128" width="60" height="60"> 512- <img src="http://mdjorge.github.io/doge2048/img/212/doge-sunglasses-212.gif" alt="512" width="60" height="60"> </p>
+       <p>1024- <img src="http://mdjorge.github.io/doge2048/img/212/doge-derp-212.gif" alt="1024" width="60" height="60"> 2048- <img src="http://mdjorge.github.io/doge2048/img/212/doge-shake-212.gif" alt="2048" width="60" height="60"> </p>
+      </div>
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <p class="game-explanation">Use your arrow keys or swipe to combine similar Doges and score points!</p>
+    <div class="info-container">
+      <a class="show-info">INFO</a>
+    </div>
+    <div class="key-container">
+      <a class="show-key">BLOCKS</a>
+    </div>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+
+</html>
