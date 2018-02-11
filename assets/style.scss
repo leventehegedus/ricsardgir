@@ -14,6 +14,7 @@ body {
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
+  min-height: 100vh;
 }
 
 .band_header {
@@ -41,7 +42,7 @@ body {
     text-transform: uppercase;
     color: $rg-color-2;
     border-bottom: 1px solid $rg-color-2;
-    background-color: rgba($rg-color-3, 0.9);
+    background-color: rgba($rg-color-3, 0.95);
     overflow: hidden;
     box-sizing: border-box;
 
@@ -59,14 +60,15 @@ body {
     a {
       width: 100%;
       float: left;
-      height: 30px;
-      font-size: 12px;
+      height: 25px;
+      font-size: 11px;
       text-decoration: none;
       color: $rg-color-5;
       text-transform: uppercase;
       text-align: center;
-      line-height: 30px;
+      line-height: 25px;
       box-sizing: border-box;
+      letter-spacing: 2px;
 
       span {
         float: left;
@@ -539,7 +541,7 @@ body {
     height: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 40px calc(50vw - 360px);
+    margin: 60px calc(50vw - 360px);
 
     .block {
       float: left;
@@ -593,6 +595,12 @@ body {
       &.aboutus {
         &:hover {
           background: url("./gif7.gif");
+          background-size: cover;
+        }
+      }
+      &.bd2049 {
+        &:hover {
+          background: url("./gif8.gif");
           background-size: cover;
         }
       }

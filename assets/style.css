@@ -5,7 +5,8 @@ body {
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  min-height: 100vh; }
 
 .band_header {
   width: 100%;
@@ -30,7 +31,7 @@ body {
     text-transform: uppercase;
     color: #8e94f2;
     border-bottom: 1px solid #8e94f2;
-    background-color: rgba(85, 139, 110, 0.9);
+    background-color: rgba(85, 139, 110, 0.95);
     overflow: hidden;
     box-sizing: border-box; }
     .header_container #header .openbtn {
@@ -45,14 +46,15 @@ body {
     .header_container #header a {
       width: 100%;
       float: left;
-      height: 30px;
-      font-size: 12px;
+      height: 25px;
+      font-size: 11px;
       text-decoration: none;
       color: #55286f;
       text-transform: uppercase;
       text-align: center;
-      line-height: 30px;
-      box-sizing: border-box; }
+      line-height: 25px;
+      box-sizing: border-box;
+      letter-spacing: 2px; }
       .header_container #header a span {
         float: left;
         width: calc(100% - 40px);
@@ -353,7 +355,7 @@ body {
     height: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 40px calc(50vw - 360px); }
+    margin: 60px calc(50vw - 360px); }
     .block-container .block {
       float: left;
       width: 180px;
@@ -382,6 +384,9 @@ body {
         background-size: cover; }
       .block-container .block.aboutus:hover {
         background: url("./gif7.gif");
+        background-size: cover; }
+      .block-container .block.bd2049:hover {
+        background: url("./gif8.gif");
         background-size: cover; }
     .block-container .image-container .column {
       -ms-flex: 25%;

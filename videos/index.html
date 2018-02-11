@@ -1,0 +1,154 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Videók</title>
+  <meta name="description" content="Ricsárdgír honlapja">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <link rel="shortcut icon" href="./assets/images/minion.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../index.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            window.location.hash = hash;
+          }).stop('true', 'true');
+        } // End if
+      });
+    });
+  </script>
+  <script>
+    $(this).on('touchmove', function(event) {
+      if (event.originalEvent.scale !== 1) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  </script>
+  <link rel="shortcut icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div class="header_container" w3-include-html="../menu.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <div class="block-container">
+    <div class="video-container">
+      <div class="header">
+        Videók
+      </div>
+      <div class="video-intro">
+        <div class="title">
+          Palvinbarbi (2015)
+        </div>
+        <div class="description">
+          Ez a Palvinbarbi című szám, amiben elég király disco rész van, lehet rá szeletelni, kenyeret vágni, salátát megmosni, lépkedni és pogózni is.
+        </div>
+      </div>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="boring-details">
+        <div class="title" onclick="toggleBoringDetails(boringDetails1)">
+          Unalmas részletek (ne kattints rá!)
+        </div>
+        <div class="content" id="boringDetails1">
+            <br /><span>szereplők:</span> Deák Edina, Papp Éva, Előd Eszter, Péter Anna Nada, Hó Márton, Paál Laci, Németh Balázs Kristóf, Zsirai Andris, Mártondani
+            <br /><span>meztelen modellek:</span> Nagy Zsófia, Takács Bence
+            <br /><span>modellek:</span> Kate Moss, Milla Jovovich, Dorian Leigh, Elle MacPherson, Twiggy, Eva Herzigova, Claudia Schiffer, Gisele Bündchen, Emily Ratajkowski, Tyra Banks, Naomi Campbell, Charles Darwin, Rocky
+            <br /><span>operatőr:</span> Paál Laci, Mártondani, Németh Bali
+            <br /><span>ruha:</span> Sipos Rozi
+            <br /><span>rendező, vágó:</span> Mártondani
+            <br /><span>büdzsé:</span> 2370 forint
+            <br />köszönet a gólyának és a rakétafesztnek a zene második feléért.
+            <br />köszönet rigó benyónak a zene első feléért.
+            <br />köszi mindenkinek aki segített
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
+      <div class="video-intro">
+
+        <div class="title">
+          Koala (nem 2015)
+        </div>
+        <div class="description">
+          Ez a Koala című szám, amiben nincs király disco rész, nem lehet rá szeletelni, se kenyeret vágni, se salátát megmosni, se lépkedni, de pogózni persze erre is lehet.
+        </div>
+      </div>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/Ec4lKbkn75s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="boring-details">
+        <div class="title" onclick="toggleBoringDetails(boringDetails2)">
+          Unalmas részletek (ne kattints rá!)
+        </div>
+        <div class="content" id="boringDetails2">
+          <br /><span>Rendezte:</span> Liter Zsófi
+          <br /><span>Szereplők:</span> Becskei Gábor, Csoma Sándor, El-Adly Adilla, Farkas Márk, Tóth Petronella, Rév Tamás, Ricsárdgír
+          <br /><span>Gyártás:</span> Szász Eszter, Tóth Petronella
+          <br /><span>Vágás:</span> Liter Zsófi
+          <br />mi pedig köszönjük Liter Zsófinak a rengeteg munkát amit másfél éve kezdett el, közben született egy gyönyörű fia is, mi pedig megöregedtünk. puszi
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
+      <div class="video-intro">
+
+        <div class="title">
+          Szörf (2013)
+        </div>
+        <div class="description">
+          Ez nagyon vicces, mert az elején láthatjuk a Reszkessetek betőrök egy bizonyos jelenetét.
+        </div>
+      </div>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/QRTSqAm-rV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <div class="video-intro">
+
+        <div class="title">
+          Éndalom (2014)
+        </div>
+        <div class="description">
+          Hahh, hát baromira nincsenek sorban a videók.
+        </div>
+      </div>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/v3i7rRhLCPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <div class="video-intro">
+
+        <div class="title">
+          Mindenki boldog (1979)
+        </div>
+        <div class="description">
+          Elhiszek bármit, amit mondtok, még azt is, hogy ez a klip 1978-ban készült, ja nem is, hanem 1979-ben. Na, mindegy is.
+        </div>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
