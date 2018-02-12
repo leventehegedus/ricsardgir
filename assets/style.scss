@@ -92,6 +92,7 @@ body {
   margin-top: 40px;
   color: $rg-font-light;
   background-color: rgba($rg-font-light, 0.05);
+  text-align: center;
 
   .header {
     text-align: center;
@@ -466,7 +467,7 @@ body {
       float: left;
       margin: 20px 0;
       padding: 0 10px;
-      color: $rg-font-light;
+      color: $rg-font-dark;
 
       a {
         text-decoration: none;
