@@ -18,37 +18,14 @@
   <link rel="shortcut icon" href="./assets/images/minion.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function() {
-            window.location.hash = hash;
-          }).stop('true', 'true');
-        } // End if
-      });
-    });
-  </script>
-  <script>
-    $(this).on('touchmove', function(event) {
-      if (event.originalEvent.scale !== 1) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-    });
-  </script>
   <link rel="shortcut icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/assets/slick/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="/slick/slick/slick-theme.css"/>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 </head>
 
 <body>
@@ -63,158 +40,154 @@
       Tinder
     </div>
     <div class="tinder-container">
-    <div class="slider">
-      <div>
-        <div class="tinder-card-container">
-          <div class="tinder-image-container">
-            <img src="https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg"/ />
-          </div>
-          <div class="tinder-description-container">
-            <div class="basic-info">
-              <div class="name">
-                Barbara, 24
+      <div id="container">
+          <div class="tinder-card-container palvinbarbi">
+            <div class="tinder-description-container">
+              <div class="basic-info">
+                <div class="name">
+                  Barbara, 24
+                </div>
+                <div class="job">
+                  <i class="fas fa-briefcase"></i><span>Modell</span>
+                </div>
+                <div class="location">
+                  <i class="fas fa-compass"></i><span>Budapest</span>
+                </div>
               </div>
-              <div class="job">
-                <i class="fas fa-briefcase"></i><span>Modell</span>
+              <div class="interest">
+                szeretek gobleinezni a No Roxa ájra
               </div>
-              <div class="location">
-                <i class="fas fa-compass"></i><span>Budapest</span>
-              </div>
-            </div>
-            <div class="interest">
-              szeretek gobleinezni a No Roxa ájra
-            </div>
-            <div class="decision">
-              <div class="decision-block left">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="decision-block middle">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="decision-block right">
-                <i class="fas fa-heart"></i>
+              <div class="decision">
+                <div class="decision-block left">
+                  <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="decision-block middle">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="decision-block right">
+                  <i class="fas fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="tinder-card-container">
-          <div class="tinder-image-container">
-            <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/13248699_246020595755138_2008798226_n.jpg?ig_cache_key=MTI1NDI4NTkwNjc4MjAwNzQxOQ%3D%3D.2"/ />
-          </div>
-          <div class="tinder-description-container">
-            <div class="basic-info">
-              <div class="name">
-                Dániel, 28
+          <div class="tinder-card-container martondani">
+            <div class="tinder-description-container">
+              <div class="basic-info">
+                <div class="name">
+                  Dániel, 28
+                </div>
+                <div class="job">
+                  <i class="fas fa-briefcase"></i><span>Filmvágószakos</span>
+                </div>
+                <div class="location">
+                  <i class="fas fa-compass"></i><span>Budapest</span>
+                </div>
               </div>
-              <div class="job">
-                <i class="fas fa-briefcase"></i><span>Filmvágószakos</span>
+              <div class="interest">
+                kiexportállak MPEG-ben
               </div>
-              <div class="location">
-                <i class="fas fa-compass"></i><span>Budapest</span>
-              </div>
-            </div>
-            <div class="interest">
-              kiexportállak MPEG-ben
-            </div>
-            <div class="decision">
-              <div class="decision-block left">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="decision-block middle">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="decision-block right">
-                <i class="fas fa-heart"></i>
+              <div class="decision">
+                <div class="decision-block left">
+                  <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="decision-block middle">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="decision-block right">
+                  <i class="fas fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="tinder-card-container">
-          <div class="tinder-image-container">
-            <img src="https://78.media.tumblr.com/3c955b82ebcda7a28b98addee54c567c/tumblr_p1l5o0BrWC1tn4spoo1_1280.jpg"/ />
-          </div>
-          <div class="tinder-description-container">
-            <div class="basic-info">
-              <div class="name">
-                Enikő, 30
+          <div class="tinder-card-container szintislaci">
+            <div class="tinder-description-container">
+              <div class="basic-info">
+                <div class="name">
+                  László, 29
+                </div>
+                <div class="job">
+                  <i class="fas fa-briefcase"></i><span>Szintis</span>
+                </div>
+                <div class="location">
+                  <i class="fas fa-compass"></i><span>Szentendre</span>
+                </div>
               </div>
-              <div class="job">
-                <i class="fas fa-briefcase"></i><span>Modell</span>
+              <div class="interest">
+                én vagyok a szintos laci
               </div>
-              <div class="location">
-                <i class="fas fa-compass"></i><span>New York</span>
-              </div>
-            </div>
-            <div class="interest">
-              nem szeretek gobleinezni a No Roxa ájra
-            </div>
-            <div class="decision">
-              <div class="decision-block left">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="decision-block middle">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="decision-block right">
-                <i class="fas fa-heart"></i>
+              <div class="decision">
+                <div class="decision-block left">
+                  <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="decision-block middle">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="decision-block right">
+                  <i class="fas fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="tinder-card-container">
-          <div class="tinder-image-container">
-            <img src="https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg"/ />
-          </div>
-          <div class="tinder-description-container">
-            <div class="basic-info">
-              <div class="name">
-                László, 29
+          <div class="tinder-card-container mihalikeniko">
+            <div class="tinder-description-container">
+              <div class="basic-info">
+                <div class="name">
+                  Enikő, 30
+                </div>
+                <div class="job">
+                  <i class="fas fa-briefcase"></i><span>Modell</span>
+                </div>
+                <div class="location">
+                  <i class="fas fa-compass"></i><span>Békéscsaba</span>
+                </div>
               </div>
-              <div class="job">
-                <i class="fas fa-briefcase"></i><span>Szintis</span>
+              <div class="interest">
+                nem szeretek gobleinezni a No Roxa ájra
               </div>
-              <div class="location">
-                <i class="fas fa-compass"></i><span>Szentendre</span>
-              </div>
-            </div>
-            <div class="interest">
-              én vagyok a szintis laci
-            </div>
-            <div class="decision">
-              <div class="decision-block left">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="decision-block middle">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="decision-block right">
-                <i class="fas fa-heart"></i>
+              <div class="decision">
+                <div class="decision-block left">
+                  <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="decision-block middle">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="decision-block right">
+                  <i class="fas fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
     </div>
   </div>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="/assets/slick/slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            arrows: true
+  <script>
+    $(document).ready(function(){
+      console.log('pina');
+
+        $(".tinder-card-container").on("swiperight",function(){
+          $(this).addClass('rotate-left').delay(700).fadeOut(1);
+          $('.tinder-card-container').find('.status').remove();
+
+          $(this).append('<div class="status like">Koala!</div>');
+          if ( $(this).is(':last-child') ) {
+            $('.tinder-card-container:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+           } else {
+              $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+           }
         });
+
+       $(".tinder-card-container").on("swipeleft",function(){
+        $(this).addClass('rotate-right').delay(700).fadeOut(1);
+        $('.tinder-card-container').find('.status').remove();
+        $(this).append('<div class="status dislike">Kád!</div>');
+
+        if ( $(this).is(':last-child') ) {
+         $('.tinder-card-container:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+         } else {
+            $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+        }
+      });
+
     });
   </script>
 </body>
