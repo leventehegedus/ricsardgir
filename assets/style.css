@@ -346,6 +346,15 @@ body {
       border-radius: 10px;
       margin: 0 calc(50% - 150px);
       box-shadow: 0 2px 10px 0 rgba(156, 156, 156, 0.77); }
+      .block-container .tinder-container .tinder-card-container #palvinbarbi {
+        display: none; }
+        .block-container .tinder-container .tinder-card-container #palvinbarbi .tinder-info {
+          height: 100%;
+          width: 100%;
+          float: left;
+          position: absolute;
+          top: 0;
+          left: 0; }
       .block-container .tinder-container .tinder-card-container .tinder-image-container {
         height: 300px;
         width: 300px;
@@ -417,17 +426,17 @@ body {
             .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.right {
               color: #04ec92; }
     .block-container .tinder-container .slick-slide {
-      padding: 0px 10px;
+      padding: 0 10px;
       width: 320px !important;
       box-sizing: border-box; }
     .block-container .tinder-container .slick-list {
       height: 520px;
       width: 320px;
-      margin: 0px calc(50% - 160px); }
+      margin: 0 calc(50% - 160px); }
     .block-container .tinder-container .slick-arrow {
       display: inline-block;
       position: absolute;
-      bottom: 0;
+      bottom: 20px;
       left: calc(50% - 150px);
       width: 100px;
       height: 70px;
@@ -441,13 +450,41 @@ body {
         right: calc(50% - 150px);
         left: unset; }
       .block-container .tinder-container .slick-arrow:focus {
-        outline-width: 0px; }
+        outline-width: 0; }
   .block-container .koala-container {
     float: left;
     width: 100%; }
     .block-container .koala-container #center #cont {
       float: left;
       margin: 20px 0; }
+
+.sidegifs {
+  display: none; }
+  .sidegifs div {
+    position: fixed; }
+    .sidegifs div img {
+      width: 80px; }
+    .sidegifs div.pikachu {
+      top: 40px;
+      right: 60px; }
+    .sidegifs div.micimacko {
+      top: 100px;
+      left: 20px; }
+    .sidegifs div.spongyabob {
+      top: 360px;
+      left: 10px; }
+    .sidegifs div.travolta {
+      top: 230px;
+      right: 10px; }
+    .sidegifs div.uma {
+      top: 230px;
+      left: 10px; }
+    .sidegifs div.shark {
+      top: 450px;
+      left: 10px; }
+    .sidegifs div.bb8 {
+      top: 490px;
+      right: 20px; }
 
 @media (min-width: 540px) {
   .block-container .concert-container .concert-block-container ul li iframe {
@@ -511,6 +548,10 @@ body {
       .block-container .block.bd2049:hover {
         background: url("./gif8.gif");
         background-size: cover; }
+      .block-container .block.contact:hover {
+        background: url("./sw.gif");
+        background-size: cover;
+        background-position: center; }
     .block-container .image-container .column {
       -ms-flex: 25%;
       flex: 25%;
@@ -529,7 +570,10 @@ body {
         .block-container .merch-container .merch-image-container .merch.fanta {
           top: 160px; }
         .block-container .merch-container .merch-image-container .merch.palinka {
-          top: 300px; } }
+          top: 300px; }
+
+  .sidegifs {
+    display: block; } }
 @media (min-width: 1024px) {
   .header_container #header a span {
     float: left;
@@ -540,7 +584,7 @@ body {
     width: 960px;
     box-sizing: border-box;
     float: left;
-    margin: 100px calc(50vw - 480px); }
+    margin: 60px calc(50vw - 480px); }
     .block-container .block {
       float: left;
       width: 240px;

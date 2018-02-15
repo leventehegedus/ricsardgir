@@ -287,7 +287,7 @@ var koala = {
         findAndSplit(prevMousePosition, mousePosition);
       }
       prevMousePosition = mousePosition;
-      d3.event.preventDefault();
+//      d3.event.preventDefault();
     }
 
     // Handle touch events
@@ -302,7 +302,7 @@ var koala = {
         }
         prevTouchPositions[touchPosition.identifier] = touchPosition;
       }
-      d3.event.preventDefault();
+  //    d3.event.preventDefault();
     }
 
     function onTouchEnd() {
@@ -311,7 +311,7 @@ var koala = {
         var touch = touches.item(touchIndex);
         prevTouchPositions[touch.identifier] = null;
       }
-      d3.event.preventDefault();
+    //  d3.event.preventDefault();
     }
 
     // Initialize interaction

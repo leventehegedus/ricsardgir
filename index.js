@@ -26,3 +26,12 @@ function toggleBoringDetails(clip) {
     clip.style.display = "block"
   }
 }
+
+function toggleTinder(param){
+  if(document.getElementById(param).style.display !== "block") {
+    document.getElementById(param).style.display = "block";
+  }
+  else {
+    document.getElementById(param).style.display = "none";
+  }
+}
