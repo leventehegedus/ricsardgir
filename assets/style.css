@@ -5,8 +5,7 @@ body {
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
-  overflow-y: auto;
-  min-height: 100vh; }
+  overflow-y: auto; }
 
 .band_header {
   width: 100%;
@@ -82,7 +81,8 @@ body {
     line-height: 40px;
     background-color: #9e4770;
     border-bottom: 1px solid #000;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    overflow: hidden; }
   .block-container .block {
     float: left;
     width: 50vw;
@@ -453,10 +453,18 @@ body {
         outline-width: 0; }
   .block-container .koala-container {
     float: left;
-    width: 100%; }
-    .block-container .koala-container #center #cont {
-      float: left;
-      margin: 20px 0; }
+    width: 100%;
+    height: 404px; }
+    .block-container .koala-container #center {
+      width: 384px; }
+      .block-container .koala-container #center #cont {
+        float: left;
+        margin: 0;
+        top: 0;
+        width: unset;
+        height: unset; }
+    .block-container .koala-container #footer {
+      display: none; }
 
 .sidegifs {
   display: none; }

@@ -4,19 +4,34 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE8">
-  <meta name="description" content="Koalas to the Max, a site made with love by Vadim Ogievetsky for Annie Albagli">
   <meta name="keywords" content="Koalas Max Vadim Ogievetsky Annie Albagli D3 Canvas SVG Koala Maximization">
-  <meta name="viewport" content="width=540, user-scalable=0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="viewport" content="width=384, user-scalable=0">
   <meta name="google" content="notranslate">
-  <title>Koalas to the Max dot Com</title>
+  <meta name="description" content="Ricsárdgír honlapja">
+  <meta name="HandheldFriendly" content="True">
+  <meta http-equiv="cache-control" content="max-age=0">
+
+
+  <title>Zsösziplő Koala</title>
   <script type="text/javascript">
     var version = '1.9.4';
   </script>
-  <script type="text/javascript" src="polyfill/polyfill.js?1.9.4"></script>
-  <script type="text/javascript" src="polyfill/Blob.js?1.9.4"></script>
-  <script type="text/javascript" src="polyfill/FileSaver.js?1.9.4"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../index.js"></script>
+  <script>
+    $(document.body).on('touchmove', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    });
+  </script>
+  <script>
+    $(this).on('touchmove', function(event) {
+      if (event.originalEvent.scale !== 1) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  </script>
   <!--[if gte IE 9]><!-->
   <script type="text/javascript" src="d3.min.js?1.9.4"></script>
   <script type="text/javascript" src="koala.js?1.9.4"></script>
@@ -26,7 +41,6 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script src="../index.js"></script>
 </head>
 
 <body>
@@ -40,7 +54,6 @@
       Koala
     </div>
     <div class="koala-container">
-
       <div id="center">
         <div id="cont">
           <noscript>

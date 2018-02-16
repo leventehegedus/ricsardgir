@@ -7,6 +7,7 @@ $rg-color-6: #D5B0AC;
 $rg-font-light: #fff;
 $rg-font-dark: #000;
 
+
 body {
   float: left;
   width: 100%;
@@ -15,7 +16,6 @@ body {
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
-  min-height: 100vh;
 }
 
 .band_header {
@@ -104,6 +104,7 @@ body {
     background-color: $rg-color-5;
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 
   .block {
@@ -664,12 +665,20 @@ body {
   .koala-container {
     float: left;
     width: 100%;
+    height: 404px;
 
     #center {
+      width: 384px;
       #cont {
         float: left;
-        margin: 20px 0;
+        margin: 0;
+        top: 0;
+        width: unset;
+        height: unset;
       }
+    }
+    #footer {
+      display: none;
     }
   }
 }
