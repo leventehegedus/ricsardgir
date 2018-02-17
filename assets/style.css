@@ -32,7 +32,11 @@ body {
     border-bottom: 1px solid #8b1e3f;
     background-color: rgba(204, 164, 59, 0.95);
     overflow: hidden;
-    box-sizing: border-box; }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    font-size: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
     .header_container #header .openbtn {
       width: 100%;
       float: left;
@@ -68,21 +72,25 @@ body {
   box-sizing: border-box;
   margin-top: 40px;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.05);
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s ease; }
   .block-container .header {
     text-align: center;
     float: left;
     width: 100%;
-    color: #fff;
+    color: #8b1e3f;
     text-transform: uppercase;
     font-size: 20px;
     height: 40px;
-    line-height: 40px;
+    line-height: 42px;
     background-color: #9e4770;
-    border-bottom: 1px solid #000;
     margin-bottom: 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+    font-weight: 200;
+    transition: all 0.5s ease; }
   .block-container .block {
     float: left;
     width: 50vw;
@@ -99,7 +107,8 @@ body {
     transition: all 0.5s ease;
     font-weight: 200;
     letter-spacing: 2px;
-    border: 3px solid #cca43b; }
+    border: 2px solid #cca43b;
+    border-radius: 5px; }
     .block-container .block:nth-child(5n) {
       background-color: #D5B0AC; }
       .block-container .block:nth-child(5n):hover {
@@ -149,7 +158,8 @@ body {
         text-align: center; }
     .block-container .video-container iframe {
       width: calc(100vw - 20px);
-      height: calc(0.6 * (100vw - 20px)); }
+      height: calc(0.6 * (100vw - 20px));
+      border-radius: 3px; }
     .block-container .video-container .boring-details {
       margin-top: 10px; }
       .block-container .video-container .boring-details .title {
@@ -235,11 +245,13 @@ body {
       overflow: hidden;
       position: relative;
       transition: all 0.5s ease;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 3px; }
       .block-container .image-container .column .frame img {
         filter: grayscale(77%);
         transition: all 0.5s ease;
-        width: 100%; }
+        width: 100%;
+        border-radius: 3px; }
       .block-container .image-container .column .frame .content {
         position: absolute;
         bottom: 0;
@@ -545,7 +557,7 @@ body {
         font-size: 16px;
         transition: all 0.5s ease;
         background: url("./gif2.gif");
-        transform: rotate(3deg);
+        transform: rotate(2deg);
         background-size: cover; }
       .block-container .block.concerts:hover {
         background: url("./gif6.gif");
