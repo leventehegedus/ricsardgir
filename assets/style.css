@@ -28,7 +28,7 @@ body {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    color: #8b1e3f;
+    color: #fff;
     border-bottom: 1px solid #8b1e3f;
     background-color: rgba(204, 164, 59, 0.95);
     overflow: hidden;
@@ -505,6 +505,32 @@ body {
     .sidegifs div.bb8 {
       top: 490px;
       right: 20px; }
+
+.glightbox-container .ginner-container.desc-bottom, .glightbox-container .ginner-container.desc-top {
+  width: 100%;
+  position: relative; }
+
+.glightbox-clean .gslide-description {
+  background: rgba(255, 255, 255, 0.5) !important;
+  padding: 10 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 960px;
+  box-sizing: border-box;
+  display: inline-block; }
+
+.glightbox-clean .gslide-title {
+  font-size: 20px !important;
+  line-height: 20px !important;
+  margin: 0;
+  font-family: Dosis !important; }
+
+.glightbox-clean .gslide-desc {
+  font-size: 16px !important;
+  margin-bottom: 0;
+  line-height: 16px !important;
+  font-family: Dosis !important; }
 
 @media (min-width: 540px) {
   .block-container .concert-container .concert-block-container ul li iframe {
