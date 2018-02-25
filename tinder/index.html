@@ -23,6 +23,8 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <link href="../assets/dist/css/glightbox.css" rel="stylesheet">
+  <script src="../assets/dist/js/glightbox.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
@@ -70,7 +72,18 @@
               </div>
             </div>
           </div>
-          <div class="tinder-card-container martondani">
+          <div class="tinder-card-container">
+            <div class="tinder-image-container">
+              <a href="http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg" class="glightbox-dani">
+                <img src="http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg" />
+              </a>
+                <a href="https://78.media.tumblr.com/007b96021aa01f9ef17f3f9dcf1b05ea/tumblr_nnihggG8Zr1smw1bto1_540.jpg" class="glightbox-dani">
+              </a>
+                <a href="https://78.media.tumblr.com/3d9d8ae002d77fa47cfacc0c46ae89b3/tumblr_nnih5xZ0U31smw1bto1_540.jpg" class="glightbox-dani">
+              </a>
+                <a href="https://hu.wikipedia.org/wiki/Concorde" class="glightbox-dani">
+              </a>
+            </div>
             <div class="tinder-description-container">
               <div class="basic-info">
                 <div class="name">
@@ -160,6 +173,13 @@
         </div>
     </div>
   </div>
+  <script src="../assets/dist/js/glightbox.min.js"></script>
+  <script>
+    var lightbox = GLightbox({
+      selector: 'glightbox-dani',
+      loopAtEnd: true
+    });
+  </script>
   <script>
     $(document).ready(function(){
       console.log('pina');

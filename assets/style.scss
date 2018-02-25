@@ -527,6 +527,14 @@ body {
       cursor: hand;
       box-shadow: 0 2px 10px 0 hsla(0,0%,61%,.77);
 
+      .tinder-image-container {
+        img {
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+
       .tinder-description-container {
         background-color: #fff;
         position: absolute;
@@ -613,26 +621,6 @@ body {
             }
           }
         }
-      }
-
-      &.palvinbarbi {
-        background-image: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg");
-        background-size: contain;
-      }
-
-      &.martondani {
-        background-image: url("https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c125.0.500.500/16908000_583063921897916_2557412884556546048_n.jpg?ig_cache_key=MTQ1NzA4OTczNDAxODMwODMyNw%3D%3D.2.c&se=7");
-        background-size: contain;
-      }
-
-      &.szintislaci {
-        background-image: url("https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg");
-        background-size: contain;
-      }
-
-      &.mihalikeniko {
-        background-image: url("https://78.media.tumblr.com/3c955b82ebcda7a28b98addee54c567c/tumblr_p1l5o0BrWC1tn4spoo1_1280.jpg");
-        background-size: contain;
       }
     }
 
@@ -775,10 +763,13 @@ body {
     }
   }
 }
-.glightbox-container .ginner-container.desc-bottom, .glightbox-container .ginner-container.desc-top {
+
+.glightbox-container .ginner-container.desc-bottom,
+.glightbox-container .ginner-container.desc-top {
   width: 100%;
   position: relative;
 }
+
 .glightbox-clean .gslide-description {
   background: rgba(255,255,255,0.5) !important;
   padding: 10 20px;
