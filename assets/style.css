@@ -1,7 +1,7 @@
 body {
   float: left;
   width: 100%;
-  background-color: #F1E6C9;
+  background-color: #cca43b;
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
@@ -73,7 +73,7 @@ body {
   text-align: center;
   float: left;
   width: 100%;
-  color: #8b1e3f;
+  color: #fff;
   text-transform: uppercase;
   font-size: 20px;
   height: 40px;
@@ -159,41 +159,6 @@ body {
     .block-container .music-container .soundcloud-container {
       width: 300px;
       margin: 20px calc(50% - 150px); }
-  .block-container .concert-container {
-    padding: 10px;
-    float: left;
-    width: 100%;
-    box-sizing: border-box; }
-    .block-container .concert-container .concert-block-container .year-header {
-      text-align: center;
-      float: left;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 16px;
-      margin-bottom: 20px;
-      font-style: italic;
-      height: 30px;
-      line-height: 30px;
-      background-color: rgba(204, 164, 59, 0.1); }
-    .block-container .concert-container .concert-block-container ul {
-      padding: 0; }
-      .block-container .concert-container .concert-block-container ul li {
-        list-style-type: none;
-        line-height: 24px;
-        font-size: 12px;
-        letter-spacing: 1px;
-        border-bottom: 1px solid rgba(99, 29, 118, 0.05);
-        padding: 5px;
-        text-align: center; }
-        .block-container .concert-container .concert-block-container ul li a {
-          color: #9e4770;
-          text-decoration: none;
-          cursor: pointer; }
-          .block-container .concert-container .concert-block-container ul li a:hover {
-            color: #631d76; }
-        .block-container .concert-container .concert-block-container ul li iframe {
-          margin: 0 calc(50% - 250px);
-          display: none; }
   .block-container .image-container .row {
     display: -ms-flexbox;
     display: flex;
@@ -532,23 +497,22 @@ body {
   font-family: Dosis !important; }
 
 @media (min-width: 540px) {
-  .block-container .concert-container .concert-block-container ul li iframe {
-    display: block; }
-  .block-container .image-container .column {
+  .image-container .column {
     -ms-flex: 33.33%;
     flex: 33.33%;
     max-width: 33.33%; }
-  .block-container .merch-container .merch-image-container {
+
+  .merch-container .merch-image-container {
     height: 480px;
     width: 480px;
     margin: 20px calc(50vw - 240px); }
-    .block-container .merch-container .merch-image-container .merch {
+    .merch-container .merch-image-container .merch {
       font-size: 12px; }
-      .block-container .merch-container .merch-image-container .merch.cola {
+      .merch-container .merch-image-container .merch.cola {
         top: 10px; }
-      .block-container .merch-container .merch-image-container .merch.fanta {
+      .merch-container .merch-image-container .merch.fanta {
         top: 160px; }
-      .block-container .merch-container .merch-image-container .merch.palinka {
+      .merch-container .merch-image-container .merch.palinka {
         top: 300px; } }
 @media (min-width: 768px) {
   .header_container #header a span {
@@ -560,7 +524,7 @@ body {
     width: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 0px calc(50vw - 360px); }
+    margin: 0 calc(50vw - 360px); }
     .block-container .block {
       float: left;
       width: 180px;
@@ -626,7 +590,7 @@ body {
     width: 960px;
     box-sizing: border-box;
     float: left;
-    margin: 0px calc(50vw - 480px); }
+    margin: 0 calc(50vw - 480px); }
     .block-container .block {
       float: left;
       width: 240px;

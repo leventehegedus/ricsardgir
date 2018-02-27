@@ -3,7 +3,7 @@
 body {
   float: left;
   width: 100%;
-  background-color: $rg-color-3-light;
+  background-color: $rg-color-3;
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
@@ -87,7 +87,7 @@ body {
   text-align: center;
   float: left;
   width: 100%;
-  color: $rg-color-2;
+  color: $rg-font-light;
   text-transform: uppercase;
   font-size: 20px;
   height: 40px;
@@ -108,7 +108,6 @@ body {
   color: $rg-font-light;
   text-align: center;
   transition: all 0.5s ease;
-
 
   .block {
     float: left;
@@ -213,57 +212,6 @@ body {
     .soundcloud-container {
       width: 300px;
       margin: 20px calc(50% - 150px);
-    }
-  }
-
-  .concert-container {
-    padding: 10px;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-
-    .concert-block-container {
-      .year-header {
-        text-align: center;
-        float: left;
-        width: 100%;
-        text-transform: uppercase;
-        font-size: 16px;
-        margin-bottom: 20px;
-        font-style: italic;
-        height: 30px;
-        line-height: 30px;
-        background-color: rgba($rg-color-3, 0.1);
-      }
-
-      ul {
-        padding: 0;
-
-        li {
-          list-style-type: none;
-          line-height: 24px;
-          font-size: 12px;
-          letter-spacing: 1px;
-          border-bottom: 1px solid rgba($rg-color-4,0.05);
-          padding: 5px;
-          text-align: center;
-
-          a {
-            color: $rg-color-5;
-            text-decoration: none;
-            cursor: pointer;
-
-            &:hover {
-              color: $rg-color-4;
-            }
-          }
-
-          iframe {
-            margin: 0 calc(50% - 250px);
-            display: none;
-          }
-        }
-      }
     }
   }
 
@@ -464,29 +412,36 @@ body {
 
       .tinder-image-container {
         height: 300px;
+
         &.barbi {
-          background: url('https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg');
+          background: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg");
           background-size: cover;
         }
+
         &.dani {
-          background: url('http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg');
+          background: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg");
           background-size: cover;
         }
+
         &.laci {
-          background: url('https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg');
+          background: url("https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg");
           background-size: cover;
         }
+
         &.andris {
-          background: url('http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg');
+          background: url("http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg");
           background-size: cover;
+
           .glightbox-andris {
             height: 300px;
             width: 300px;
           }
         }
+
         &.bali {
-          background: url('http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg');
+          background: url("http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg");
           background-size: cover;
+
           .glightbox-bali {
             height: 300px;
             width: 300px;
@@ -742,47 +697,33 @@ body {
   font-family: Dosis !important;
 }
 @media (min-width: 540px) {
-  .block-container {
-    .concert-container {
-      .concert-block-container {
-        ul {
-          li {
-            iframe {
-              display: block;
-            }
-          }
+  .image-container {
+    .column {
+      -ms-flex: 33.33%;
+      flex: 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  .merch-container {
+    .merch-image-container {
+      height: 480px;
+      width: 480px;
+      margin: 20px calc(50vw - 240px);
+
+      .merch {
+        font-size: 12px;
+
+        &.cola {
+          top: 10px;
         }
-      }
-    }
 
-    .image-container {
-      .column {
-        -ms-flex: 33.33%;
-        flex: 33.33%;
-        max-width: 33.33%;
-      }
-    }
+        &.fanta {
+          top: 160px;
+        }
 
-    .merch-container {
-      .merch-image-container {
-        height: 480px;
-        width: 480px;
-        margin: 20px calc(50vw - 240px);
-
-        .merch {
-          font-size: 12px;
-
-          &.cola {
-            top: 10px;
-          }
-
-          &.fanta {
-            top: 160px;
-          }
-
-          &.palinka {
-            top: 300px;
-          }
+        &.palinka {
+          top: 300px;
         }
       }
     }
@@ -805,7 +746,7 @@ body {
     width: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 0px calc(50vw - 360px);
+    margin: 0 calc(50vw - 360px);
 
     .block {
       float: left;
@@ -933,7 +874,7 @@ body {
     width: 960px;
     box-sizing: border-box;
     float: left;
-    margin: 0px calc(50vw - 480px);
+    margin: 0 calc(50vw - 480px);
 
     .block {
       float: left;
