@@ -528,10 +528,34 @@ body {
       box-shadow: 0 2px 10px 0 hsla(0,0%,61%,.77);
 
       .tinder-image-container {
-        img {
-          width: 100%;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
+        height: 300px;
+        &.barbi {
+          background: url('https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg');
+          background-size: cover;
+        }
+        &.dani {
+          background: url('http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg');
+          background-size: cover;
+        }
+        &.laci {
+          background: url('https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg');
+          background-size: cover;
+        }
+        &.andris {
+          background: url('http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg');
+          background-size: cover;
+          .glightbox-andris {
+            height: 300px;
+            width: 300px;
+          }
+        }
+        &.bali {
+          background: url('http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg');
+          background-size: cover;
+          .glightbox-bali {
+            height: 300px;
+            width: 300px;
+          }
         }
       }
 
@@ -635,18 +659,6 @@ body {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-    }
-
-    .buddy {
-      display: block;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      color: #fff;
-      top: 50px;
-      left: 50px;
-      position: absolute;
-      cursor: hand;
     }
 
     .rotate-left {

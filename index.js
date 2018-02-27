@@ -8,13 +8,13 @@ function pauseAudio(param) {
 }
 
 function toggleNav() {
-    if(document.getElementById("header").style.height === "366px") {
+    if(document.getElementById("header").style.height === "391px") {
       document.getElementById("header").style.height = "40px";
       document.getElementById("header").style.transition = "all ease 0.5s";
       document.getElementsByClassName('block-container')[0].style.opacity = 1;
     }
     else {
-      document.getElementById("header").style.height = "366px";
+      document.getElementById("header").style.height = "391px";
       document.getElementById("header").style.transition = "all ease 0.5s";
       document.getElementsByClassName('block-container')[0].style.opacity = 0.2;
     }
