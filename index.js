@@ -39,5 +39,5 @@ function toggleTinder(param){
 }
 
 $(document).ready(function() {
-  document.getElementsByClassName('header')[0].style.marginTop = '-4px'
+  document.getElementsByClassName('header')[0].style.marginTop = '36px'
 });
