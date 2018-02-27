@@ -18,33 +18,11 @@
   <link rel="shortcut icon" href="./assets/images/minion.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function() {
-            window.location.hash = hash;
-          }).stop('true', 'true');
-        } // End if
-      });
-    });
-  </script>
-  <script>
-    $(this).on('touchmove', function(event) {
-      if (event.originalEvent.scale !== 1) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-    });
-  </script>
   <link rel="shortcut icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <link rel="stylesheet" type="text/css" href="videos.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 

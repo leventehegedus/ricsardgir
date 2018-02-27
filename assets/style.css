@@ -140,40 +140,6 @@ body {
       background-size: cover;
       letter-spacing: 4px;
       font-weight: 600; }
-  .block-container .video-container {
-    width: 100%;
-    padding: 20px 10px;
-    box-sizing: border-box;
-    text-align: center; }
-    .block-container .video-container .video-intro {
-      width: 100%;
-      float: left;
-      box-sizing: border-box;
-      padding: 20px 0; }
-      .block-container .video-container .video-intro .title {
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center; }
-      .block-container .video-container .video-intro .description {
-        font-style: italic;
-        padding: 0 10px;
-        text-align: center; }
-    .block-container .video-container iframe {
-      width: calc(100vw - 20px);
-      height: calc(0.6 * (100vw - 20px));
-      border-radius: 3px; }
-    .block-container .video-container .boring-details {
-      margin-top: 10px; }
-      .block-container .video-container .boring-details .title {
-        cursor: pointer;
-        font-weight: 600; }
-        .block-container .video-container .boring-details .title:hover {
-          color: #9e4770; }
-      .block-container .video-container .boring-details .content span {
-        font-weight: 600; }
-      .block-container .video-container .boring-details .content#boringDetails1, .block-container .video-container .boring-details .content#boringDetails2 {
-        display: none; }
   .block-container .contact-container {
     padding: 10px; }
     .block-container .contact-container ul {
@@ -636,9 +602,6 @@ body {
       -ms-flex: 25%;
       flex: 25%;
       max-width: 25%; }
-    .block-container .video-container iframe {
-      width: 680px;
-      height: 432px; }
     .block-container .merch-container .merch-image-container {
       height: 480px;
       width: 720;

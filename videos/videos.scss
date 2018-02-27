@@ -1,0 +1,66 @@
+@import '../assets/colorpaletta';
+
+.video-container {
+  width: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  text-align: center;
+
+  .video-intro {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 0;
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .description {
+      font-style: italic;
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+
+  iframe {
+    width: calc(100vw - 20px);
+    height: calc(0.6 * (100vw - 20px));
+    border-radius: 3px;
+  }
+
+  .boring-details {
+    margin-top: 10px;
+
+    .title {
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        color: $rg-color-5;
+      }
+    }
+
+    .content {
+      span {
+        font-weight: 600;
+      }
+
+      &#boringDetails1,
+      &#boringDetails2 {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .video-container {
+    iframe {
+      width: 680px;
+      height: 432px;
+    }
+  }
+}
