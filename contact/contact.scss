@@ -1,0 +1,17 @@
+@import '../assets/colorpaletta';
+
+.contact-container {
+  padding: 10px;
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+
+      .bold {
+        font-weight: 700;
+      }
+    }
+  }
+}

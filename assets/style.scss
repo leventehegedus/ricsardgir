@@ -108,6 +108,9 @@ body {
   color: $rg-font-light;
   text-align: center;
   transition: all 0.5s ease;
+  &.home {
+    margin-top: 20px;
+  }
 
   .block {
     float: left;

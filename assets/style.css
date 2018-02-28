@@ -93,6 +93,8 @@ body {
   color: #fff;
   text-align: center;
   transition: all 0.5s ease; }
+  .block-container.home {
+    margin-top: 20px; }
   .block-container .block {
     float: left;
     width: 50vw;
