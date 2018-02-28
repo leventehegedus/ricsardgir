@@ -11,7 +11,7 @@
     width: 100%;
     float: left;
     box-sizing: border-box;
-    padding: 0px 0px 30px 0;
+    padding: 0 0 30px;
 
     .title {
       font-size: 18px;
@@ -47,6 +47,7 @@
 
     .content {
       font-weight: 300;
+
       span {
         font-weight: 500;
       }
@@ -60,9 +61,17 @@
 }
 @media (min-width: 768px) {
   .video-container {
+    width: 720px;
+
     iframe {
-      width: 680px;
-      height: 432px;
+      width: 720px;
+      height: 405px;
     }
+  }
+}
+@media (min-width: 1024px) {
+  .video-container {
+    width: 720px;
+    margin-left: 120px;
   }
 }
