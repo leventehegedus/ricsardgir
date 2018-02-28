@@ -6,9 +6,7 @@ html {
   align-items: center;
   position: relative;
   width: 100%;
-  background: #f5f4f4;
-  font-size: 13px;
-  font-family: 'Arvo', monospace; }
+  font-size: 13px; }
   @supports (display: grid) {
     body,
     html {
@@ -25,10 +23,7 @@ html {
 
 .section {
   display: none;
-  padding: 10px; }
-  @media screen and (min-width: 768px) {
-    .section {
-      padding: 4rem; } }
+  padding: 30px 10px; }
   @supports (display: grid) {
     .section {
       display: block; } }
@@ -105,4 +100,69 @@ h1 {
       padding-right: 0.5em;
       color: #444; }
 
-/*# sourceMappingURL=index.css.map */
+.image-container .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+.image-container .column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+  box-sizing: border-box; }
+  .image-container .column .frame {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px; }
+    .image-container .column .frame img {
+      filter: grayscale(77%);
+      transition: all 0.5s ease;
+      width: 100%;
+      border-radius: 3px; }
+    .image-container .column .frame .content {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 43px;
+      width: 100%; }
+      .image-container .column .frame .content h1 {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin: 0; }
+      .image-container .column .frame .content p {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        font-weight: 200;
+        text-transform: lowercase;
+        margin: 0; }
+    .image-container .column .frame:hover img {
+      transition: all 0.5s ease;
+      filter: grayscale(0%);
+      transform: scale(1.11); }
+    .image-container .column .frame:hover .content {
+      opacity: 0;
+      transition: all 0.5s ease; }
+
+@media (min-width: 540px) {
+  .image-container .column {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%; } }
+@media (min-width: 768px) {
+  .image-container .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%; } }
+
+/*# sourceMappingURL=images.css.map */
