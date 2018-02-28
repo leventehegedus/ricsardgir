@@ -1,0 +1,28 @@
+.about-us-container {
+  background-color: #fff;
+  float: left;
+  width: 100%;
+  margin-top: 20px; }
+  .about-us-container .article {
+    float: left;
+    margin: 20px 0;
+    padding: 0 10px;
+    color: #000; }
+    .about-us-container .article a {
+      text-decoration: none;
+      color: #000; }
+      .about-us-container .article a:hover {
+        text-decoration: underline; }
+    .about-us-container .article .title {
+      font-family: 'Slabo 13px';
+      font-size: 23px;
+      font-style: bold; }
+      .about-us-container .article .title span {
+        background-color: #faff69; }
+    .about-us-container .article img {
+      width: 100%;
+      margin: 20px 0; }
+    .about-us-container .article .description {
+      font-family: 'Noticia Text'; }
+
+/*# sourceMappingURL=aboutus.css.map */

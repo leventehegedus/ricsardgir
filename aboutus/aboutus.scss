@@ -1,0 +1,43 @@
+@import '../assets/colorpaletta';
+
+.about-us-container {
+  background-color: $rg-font-light;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+
+  .article {
+    float: left;
+    margin: 20px 0;
+    padding: 0 10px;
+    color: $rg-font-dark;
+
+    a {
+      text-decoration: none;
+      color: $rg-font-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .title {
+      font-family: 'Slabo 13px';
+      font-size: 23px;
+      font-style: bold;
+
+      span {
+        background-color: #faff69;
+      }
+    }
+
+    img {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .description {
+      font-family: 'Noticia Text';
+    }
+  }
+}
