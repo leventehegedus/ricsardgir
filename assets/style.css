@@ -1,7 +1,7 @@
 body {
   float: left;
   width: 100%;
-  background-color: #cca43b;
+  background-color: #ffa69e;
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
   float: left;
   padding: 8px;
   font-size: 30px;
-  color: #9e4770;
+  color: #f5cac3;
   text-transform: lowercase;
   text-align: center; }
 
@@ -32,8 +32,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: 1px solid #8b1e3f;
-    background-color: rgba(204, 164, 59, 0.95);
+    border-bottom: 1px solid #fac8cd;
+    background-color: rgba(255, 166, 158, 0.95);
     overflow: hidden;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -45,11 +45,11 @@ body {
       float: left;
       cursor: pointer;
       color: #fff;
-      border-bottom: 1px solid #8b1e3f;
+      border-bottom: 1px solid #fac8cd;
       box-sizing: border-box;
       height: 40px;
       letter-spacing: 2px;
-      background-color: #8b1e3f; }
+      background-color: #fac8cd; }
     .header_container #header a {
       width: 100%;
       float: left;
@@ -67,7 +67,7 @@ body {
         width: calc(100% - 40px);
         margin: 0 20px;
         box-sizing: border-box;
-        border-bottom: 1px solid #3d0814; }
+        border-bottom: 1px solid #7a306c; }
 
 .header {
   text-align: center;
@@ -78,7 +78,7 @@ body {
   font-size: 20px;
   height: 40px;
   line-height: 42px;
-  background-color: #9e4770;
+  background-color: #f5cac3;
   overflow: hidden;
   border-radius: 3px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -111,28 +111,28 @@ body {
     transition: all 0.5s ease;
     font-weight: 200;
     letter-spacing: 2px;
-    border: 2px solid #cca43b;
+    border: 2px solid #ffa69e;
     border-radius: 5px; }
     .block-container .block:nth-child(5n) {
       background-color: #D5B0AC; }
       .block-container .block:nth-child(5n):hover {
         background-color: #e6d0ce; }
     .block-container .block:nth-child(5n+1) {
-      background-color: #8b1e3f; }
+      background-color: #fac8cd; }
       .block-container .block:nth-child(5n+1):hover {
-        background-color: #b52752; }
+        background-color: #fef7f8; }
     .block-container .block:nth-child(5n+2) {
-      background-color: #3d0814; }
+      background-color: #7a306c; }
       .block-container .block:nth-child(5n+2):hover {
-        background-color: #6a0e23; }
+        background-color: #9f3e8c; }
     .block-container .block:nth-child(5n+3) {
-      background-color: #631d76; }
+      background-color: #dda3b2; }
       .block-container .block:nth-child(5n+3):hover {
-        background-color: #85279f; }
+        background-color: #ebc8d1; }
     .block-container .block:nth-child(5n+4) {
-      background-color: #9e4770; }
+      background-color: #f5cac3; }
       .block-container .block:nth-child(5n+4):hover {
-        background-color: #b86089; }
+        background-color: #fcf1ef; }
     .block-container .block:hover {
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px;
@@ -147,156 +147,6 @@ body {
   .block-container .insta-container {
     text-align: center;
     margin: 20px 0; }
-  .block-container .music-container {
-    text-align: center;
-    margin: 20px 0; }
-    .block-container .music-container .soundcloud-container {
-      width: 300px;
-      margin: 20px calc(50% - 150px); }
-  .block-container .tinder-container {
-    background-color: #f5f7fa; }
-    .block-container .tinder-container .tinder-card-container {
-      height: 500px;
-      width: 300px;
-      margin: 0 calc(50% - 150px);
-      display: block;
-      border-radius: 10px;
-      top: 50px;
-      position: absolute;
-      cursor: hand;
-      box-shadow: 0 2px 10px 0 rgba(156, 156, 156, 0.77); }
-      .block-container .tinder-container .tinder-card-container .tinder-image-container {
-        height: 300px; }
-        .block-container .tinder-container .tinder-card-container .tinder-image-container.barbi {
-          background: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg");
-          background-size: cover; }
-        .block-container .tinder-container .tinder-card-container .tinder-image-container.dani {
-          background: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg");
-          background-size: cover; }
-        .block-container .tinder-container .tinder-card-container .tinder-image-container.laci {
-          background: url("https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg");
-          background-size: cover; }
-        .block-container .tinder-container .tinder-card-container .tinder-image-container.andris {
-          background: url("http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg");
-          background-size: cover; }
-          .block-container .tinder-container .tinder-card-container .tinder-image-container.andris .glightbox-andris {
-            height: 300px;
-            width: 300px; }
-        .block-container .tinder-container .tinder-card-container .tinder-image-container.bali {
-          background: url("http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg");
-          background-size: cover; }
-          .block-container .tinder-container .tinder-card-container .tinder-image-container.bali .glightbox-bali {
-            height: 300px;
-            width: 300px; }
-      .block-container .tinder-container .tinder-card-container .tinder-description-container {
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 200px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        color: #000;
-        bottom: 0; }
-        .block-container .tinder-container .tinder-card-container .tinder-description-container .basic-info {
-          height: 70px;
-          padding: 10px 20px;
-          text-align: left;
-          box-sizing: border-box;
-          border-bottom: 1px solid #e8e8e8; }
-          .block-container .tinder-container .tinder-card-container .tinder-description-container .basic-info .name {
-            font-size: 16px;
-            text-align: left;
-            text-transform: uppercase; }
-          .block-container .tinder-container .tinder-card-container .tinder-description-container .basic-info .job {
-            color: #aaa;
-            text-align: left;
-            font-size: 12px; }
-          .block-container .tinder-container .tinder-card-container .tinder-description-container .basic-info .location {
-            color: #aaa;
-            text-align: left;
-            font-size: 12px; }
-          .block-container .tinder-container .tinder-card-container .tinder-description-container .basic-info svg {
-            padding-right: 5px; }
-        .block-container .tinder-container .tinder-card-container .tinder-description-container .interest {
-          float: left;
-          width: 100%;
-          height: 60px;
-          display: flex;
-          padding: 0 20px;
-          justify-content: left;
-          align-items: center;
-          text-align: left;
-          box-sizing: border-box;
-          border-bottom: 1px solid #e8e8e8; }
-        .block-container .tinder-container .tinder-card-container .tinder-description-container .decision {
-          position: absolute;
-          bottom: 0;
-          height: 70px;
-          width: 100%;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-          box-sizing: border-box; }
-          .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block {
-            width: 33.33%;
-            float: left;
-            height: 60px;
-            line-height: 60px;
-            font-size: 30px; }
-            .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block svg {
-              margin-top: 15px; }
-            .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.left {
-              color: #ff0970; }
-            .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.middle {
-              color: #1ca9ff; }
-            .block-container .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.right {
-              color: #04ec92; }
-    .block-container .tinder-container #container {
-      margin: auto !important;
-      display: block;
-      position: relative;
-      list-style-type: none;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none; }
-    .block-container .tinder-container .rotate-left {
-      transform: rotate(30deg) scale(0.8);
-      transition: 1s;
-      margin-left: 400px;
-      cursor: e-resize;
-      opacity: 0;
-      z-index: 10; }
-    .block-container .tinder-container .rotate-right {
-      transform: rotate(-30deg) scale(0.8);
-      transition: 1s;
-      opacity: 0;
-      margin-left: -400px;
-      cursor: w-resize;
-      z-index: 10; }
-    .block-container .tinder-container .like {
-      border-radius: 5px;
-      padding: 5px 10px;
-      border: 2px solid green;
-      color: green;
-      text-transform: uppercase;
-      font-size: 15px;
-      position: absolute;
-      top: 50px;
-      right: 40px;
-      text-shadow: none; }
-    .block-container .tinder-container .dislike {
-      border-radius: 5px;
-      padding: 5px 10px;
-      border: 2px solid red;
-      color: red;
-      text-transform: uppercase;
-      font-size: 15px;
-      position: absolute;
-      top: 50px;
-      left: 40px;
-      text-shadow: none; }
   .block-container .koala-container {
     float: left;
     width: 100%;
