@@ -3,20 +3,22 @@ function playAudio(param) {
     document.getElementById(param.id).play();
 }
 
+
+
 function pauseAudio(param) {
     document.getElementById(param.id).pause();
 }
 
 function toggleNav() {
-    if(document.getElementById("header").style.height === "391px") {
+    if(document.getElementById("header").style.height === "291px") {
       document.getElementById("header").style.height = "40px";
       document.getElementById("header").style.transition = "all ease 0.5s";
-      document.getElementsByClassName('block-container')[0].style.opacity = 1;
+//      document.getElementsByClassName('block-container')[0].style.opacity = 1;
     }
     else {
-      document.getElementById("header").style.height = "391px";
+      document.getElementById("header").style.height = "291px";
       document.getElementById("header").style.transition = "all ease 0.5s";
-      document.getElementsByClassName('block-container')[0].style.opacity = 0.2;
+//      document.getElementsByClassName('block-container')[0].style.opacity = 0.2;
     }
 }
 

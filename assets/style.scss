@@ -139,13 +139,13 @@ body {
   float: left;
   background-color: $rg-color-1;
   color: $rg-color-2;
-  height: 100px;
   text-align: center;
+  position: relative;
 
   a {
     color: $rg-color-2;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     @media (min-width: 768px) {
       font-size: 12px;
       letter-spacing: 1px;
@@ -171,17 +171,16 @@ body {
   .upper {
     width: 100%;
     float: left;
-    height: 65px;
-    line-height: 65px;
+    line-height: 30px;
   }
 
   .creator {
     width: 100%;
     float: left;
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
     background-color: #000;
-    font-size: 16px;
+    font-size: 12px;
     span {
       display: inline-block;
       font-size: 12px;
@@ -218,10 +217,8 @@ body {
   transition: all 0.5s ease;
 
   &.home {
-    margin-top: 20px;
+    margin-top: 76px;
     margin-bottom: 20px;
-    position: absolute;
-    top: 76px;
     opacity: 0.7;
   }
 

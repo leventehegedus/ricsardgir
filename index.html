@@ -39,9 +39,6 @@
   <script>
     w3.includeHTML();
   </script>
-  <div class="header">
-    Helló Mr. Tony Curtis!
-  </div>
   <div class="block-container home">
     <a href="/tinder" class="block tinder" onmouseenter="playAudio(audio4)" onmouseleave="pauseAudio(audio4)">
       <span>Gírtinder</span>
@@ -58,9 +55,6 @@
     <a href="/videos" class="block videos" onmouseenter="playAudio(audio2)" onmouseleave="pauseAudio(audio2)">
       <span>Videók</span>
     </a>
-    <a href="/contact" class="block contact" id="contact" onmouseenter="playAudio(audio3)" onmouseleave="pauseAudio(audio3)">
-      <span>Hívj fel</span>
-    </a>
     <a href="/2049" class="block bd2049" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
       <span>2049</span>
     </a>
@@ -74,6 +68,7 @@
       <span>Koala</span>
     </a>
   </div>
+  <div class="footer_container" w3-include-html="footer.html"></div>
 
   <audio id="audio1">
     <source src="./assets/sound1.mp3" type="audio/mpeg">
@@ -102,7 +97,7 @@
   <audio id="audio9">
     <source src="./assets/sound9.mp3" type="audio/mpeg">
   </audio>
-  <div class="footer_container" w3-include-html="footer.html"></div>
+
 </body>
 
 </html>
