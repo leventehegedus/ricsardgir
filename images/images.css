@@ -35,7 +35,7 @@ h1 {
 .grid {
   display: block;
   padding: 20px;
-  grid-gap: 20px;
+  grid-gap: 40px 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-auto-rows: 100px;
   grid-auto-flow: row dense; }
@@ -81,6 +81,8 @@ h1 {
   .item a {
     border: 5px solid #fff;
     box-sizing: border-box; }
+  .item p {
+    margin: 0px; }
   .item img {
     width: 100%;
     transition: transform 0.3s ease-in-out;
@@ -119,11 +121,21 @@ h1 {
   @media screen and (min-width: 540px) {
     .item--wide--left {
       grid-column: 1/-1;
+      transform: rotate(-1deg);
       grid-row-end: span 4; } }
   @media screen and (min-width: 540px) and (min-width: 768px) {
     .item--wide--left {
       grid-column: 1/-2; } }
 
+  .item--rect {
+    grid-column: 1/3;
+    grid-row-end: span 3; }
+    .item--rect--middle {
+      grid-column: 2/4;
+      grid-row-end: span 4; }
+    .item--rect--right {
+      grid-column: 3/5;
+      grid-row-end: span 4; }
   .item__details {
     position: absolute;
     padding: 0 15px;
@@ -144,5 +156,7 @@ h1 {
       color: #444; }
   .item iframe {
     width: 100% !important; }
+    .item iframe .svg {
+      border: 5px solid #fff; }
 
 /*# sourceMappingURL=images.css.map */
