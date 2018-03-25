@@ -129,16 +129,17 @@ HTMLActuator.prototype.updateScore = function (score) {
     var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)]
     var messageElement = document.createElement("p");
     messageElement.textContent = message
-    var left = 'left:' + Math.round(Math.random() * 80) + '%;'
-    var top = 'top:' + Math.round(Math.random() * 80) + '%;'
+    var left = 'left:' + Math.round(Math.random() * 40) + '%;'
+    var top = 'top:' + Math.round(Math.random() * 40) + '%;'
     var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
     var styleString = left + top + color
     messageElement.setAttribute('style', styleString);
     this.dogeSays.appendChild(messageElement);
-    if (difference > 4) {
+/*    if (difference > 4) {
+      console.log("ads", ads);
      this.adSpace.innerHTML = ads[Math.floor(Math.random() * ads.length)]
     }
-
+*/
   }
 };
 

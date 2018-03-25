@@ -1,3 +1,16 @@
+.block-container section {
+  padding-top: 76px;
+  float: left; }
+  .block-container section h1 {
+    font-weight: 100;
+    text-transform: uppercase; }
+    .block-container section h1 a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px; }
+      .block-container section h1 a.active, .block-container section h1 a:hover {
+        background-color: #fac8cd; }
+
 .video-container {
   width: 100%;
   padding: 30px 10px;
@@ -28,7 +41,7 @@
       cursor: pointer;
       font-weight: 500; }
       .video-container .boring-details .title:hover {
-        color: #9e4770; }
+        color: #f5cac3; }
     .video-container .boring-details .content {
       font-weight: 300; }
       .video-container .boring-details .content span {
@@ -37,14 +50,19 @@
         display: none; }
 
 @media (min-width: 768px) {
+  .block-container section {
+    padding-top: 40px; }
+
   .video-container {
-    width: 720px; }
+    width: 720px;
+    padding: 30px 0; }
     .video-container iframe {
       width: 720px;
       height: 405px; } }
 @media (min-width: 1024px) {
   .video-container {
     width: 720px;
-    margin-left: 120px; } }
+    margin-left: 120px;
+    margin-right: 120px; } }
 
 /*# sourceMappingURL=videos.css.map */

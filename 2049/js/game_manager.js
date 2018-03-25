@@ -4,15 +4,15 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 2;
+  this.startTiles   = 7;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
-  this.inputManager.on("showInfo", this.showInfo.bind(this));  
-  this.inputManager.on("hideInfo", this.hideInfo.bind(this));    
-  this.inputManager.on("showKey", this.showKey.bind(this));  
-  this.inputManager.on("hideKey", this.hideKey.bind(this));    
+  this.inputManager.on("showInfo", this.showInfo.bind(this));
+  this.inputManager.on("hideInfo", this.hideInfo.bind(this));
+  this.inputManager.on("showKey", this.showKey.bind(this));
+  this.inputManager.on("hideKey", this.hideKey.bind(this));
 
   this.setup();
 }
@@ -81,7 +81,13 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 2 : 4;
+    var value = Math.random() < 0.88 ? 2 : 4;
+    if(Math.random() < 0.01){
+      console.log('Legyél a feleségem Palvin Barbara!');
+    }
+    if(Math.random() > 0.99){
+      console.log('Legyél a sugardaddym Mártondani!');
+    }
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);

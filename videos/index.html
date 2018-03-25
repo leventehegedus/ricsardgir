@@ -24,6 +24,21 @@
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script>
+    $(document).ready(function() {
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                }).stop('true', 'true');
+            } // End if
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -36,21 +51,23 @@
     Videók
   </div>
   <div class="block-container">
-    <div class="video-container">
-      <div class="video-intro">
-        <div class="title">
-          Palvinbarbi - 2015
+    <section id="videoclip">
+      <h1><a href="#videoclip" class="active">Videóklipek</a> <a href="#video">Videók</a></h1>
+      <div class="video-container">
+        <div class="video-intro">
+          <div class="title">
+            Palvinbarbi - 2015
+          </div>
+          <div class="description">
+            Ez a Palvinbarbi című szám, amiben elég király disco rész van, lehet rá szeletelni, kenyeret vágni, salátát megmosni, lépkedni és pogózni is.
+          </div>
         </div>
-        <div class="description">
-          Ez a Palvinbarbi című szám, amiben elég király disco rész van, lehet rá szeletelni, kenyeret vágni, salátát megmosni, lépkedni és pogózni is.
-        </div>
-      </div>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="boring-details">
-        <div class="title" onclick="toggleBoringDetails(boringDetails1)">
-          Unalmas részletek, ne kattints rá!
-        </div>
-        <div class="content" id="boringDetails1">
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails1)">
+            Unalmas részletek, ne kattints rá!
+          </div>
+          <div class="content" id="boringDetails1">
             <span>szereplők:</span> Deák Edina, Papp Éva, Előd Eszter, Péter Anna Nada, Hó Márton, Paál Laci, Németh Balázs Kristóf, Zsirai Andris, Mártondani
             <br /><span>meztelen modellek:</span> Nagy Zsófia, Takács Bence
             <br /><span>modellek:</span> Kate Moss, Milla Jovovich, Dorian Leigh, Elle MacPherson, Twiggy, Eva Herzigova, Claudia Schiffer, Gisele Bündchen, Emily Ratajkowski, Tyra Banks, Naomi Campbell, Charles Darwin, Rocky
@@ -61,69 +78,97 @@
             <br />köszönet a gólyának és a rakétafesztnek a zene második feléért.
             <br />köszönet rigó benyónak a zene első feléért.
             <br />köszi mindenkinek aki segített
+          </div>
         </div>
       </div>
-    </div>
-    <div class="video-container">
-      <div class="video-intro">
+      <div class="video-container">
+        <div class="video-intro">
 
-        <div class="title">
-          Koala - nem 2015
+          <div class="title">
+            Koala - nem 2015
+          </div>
+          <div class="description">
+            Ez a Koala című szám, amiben nincs király disco rész, nem lehet rá szeletelni, se kenyeret vágni, se salátát megmosni, se lépkedni, de pogózni persze erre is lehet.
+          </div>
         </div>
-        <div class="description">
-          Ez a Koala című szám, amiben nincs király disco rész, nem lehet rá szeletelni, se kenyeret vágni, se salátát megmosni, se lépkedni, de pogózni persze erre is lehet.
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/Ec4lKbkn75s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails2)">
+            Unalmas részletek, ne kattints rá!
+          </div>
+          <div class="content" id="boringDetails2">
+            <span>Rendezte:</span> Liter Zsófi
+            <br /><span>Szereplők:</span> Becskei Gábor, Csoma Sándor, El-Adly Adilla, Farkas Márk, Tóth Petronella, Rév Tamás, Ricsárdgír
+            <br /><span>Gyártás:</span> Szász Eszter, Tóth Petronella
+            <br /><span>Vágás:</span> Liter Zsófi
+            <br />mi pedig köszönjük Liter Zsófinak a rengeteg munkát amit másfél éve kezdett el, közben született egy gyönyörű fia is, mi pedig megöregedtünk. puszi
+          </div>
         </div>
       </div>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/Ec4lKbkn75s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="boring-details">
-        <div class="title" onclick="toggleBoringDetails(boringDetails2)">
-          Unalmas részletek, ne kattints rá!
-        </div>
-        <div class="content" id="boringDetails2">
-          <span>Rendezte:</span> Liter Zsófi
-          <br /><span>Szereplők:</span> Becskei Gábor, Csoma Sándor, El-Adly Adilla, Farkas Márk, Tóth Petronella, Rév Tamás, Ricsárdgír
-          <br /><span>Gyártás:</span> Szász Eszter, Tóth Petronella
-          <br /><span>Vágás:</span> Liter Zsófi
-          <br />mi pedig köszönjük Liter Zsófinak a rengeteg munkát amit másfél éve kezdett el, közben született egy gyönyörű fia is, mi pedig megöregedtünk. puszi
-        </div>
-      </div>
-    </div>
-    <div class="video-container">
-      <div class="video-intro">
+      <div class="video-container">
+        <div class="video-intro">
 
-        <div class="title">
-          Szörf - 2013
+          <div class="title">
+            Szörf - 2013
+          </div>
+          <div class="description">
+            Ez nagyon vicces, mert az elején láthatjuk a Reszkessetek betőrök egy bizonyos jelenetét.
+          </div>
         </div>
-        <div class="description">
-          Ez nagyon vicces, mert az elején láthatjuk a Reszkessetek betőrök egy bizonyos jelenetét.
-        </div>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/QRTSqAm-rV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/QRTSqAm-rV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <div class="video-intro">
+      <div class="video-container">
+        <div class="video-intro">
 
-        <div class="title">
-          Éndalom - 2014
+          <div class="title">
+            Éndalom - 2014
+          </div>
+          <div class="description">
+            Hahh, hát baromira nincsenek sorban a videók.
+          </div>
         </div>
-        <div class="description">
-          Hahh, hát baromira nincsenek sorban a videók.
-        </div>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/v3i7rRhLCPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/v3i7rRhLCPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <div class="video-intro">
+      <div class="video-container">
+        <div class="video-intro">
 
-        <div class="title">
-          Mindenki boldog - 1979
+          <div class="title">
+            Mindenki boldog - 1979
+          </div>
+          <div class="description">
+            Elhiszek bármit, amit mondtok, még azt is, hogy ez a klip 1978-ban készült, ja nem is, hanem 1979-ben. Na, mindegy is.
+          </div>
         </div>
-        <div class="description">
-          Elhiszek bármit, amit mondtok, még azt is, hogy ez a klip 1978-ban készült, ja nem is, hanem 1979-ben. Na, mindegy is.
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+    </section>
+    <section id="video">
+      <h1><a href="#videoclip">Videóklipek</a> <a href="#video" class="active">Videók</a></h1>
+      <div class="video-container">
+        <div class="video-intro">
+
+          <div class="title">
+            Laci játszik
+          </div>
+          <div class="description">
+            Laci kipróbálja a legújabb FIFA 2029-es focis játékot és hülye fejeket vág.
+          </div>
+        </div>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/mrI8QCroTTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <div class="video-intro">
+
+          <div class="title">
+            Csodálatos werkvideó a Dark Side of The Moonhoz
+          </div>
+          <div class="description">
+            A zenekar tagjai interjút készítenek a Pink Floyd zenekarral és tanácsokat kérnek tőlük a sikerhez vezető útról. Azt mondták, építsenek autópályát, azon gyorsabban lehet hajtani.
+          </div>
+        </div>
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/a-_swpCE96w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
   </div>
   <div class="footer_container" w3-include-html="../footer.html"></div>
 </body>

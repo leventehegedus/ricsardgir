@@ -62,6 +62,34 @@
       }
     }
   }
+
+  .merch-items-container {
+    ul {
+      float: left;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+
+      li {
+        list-style-type: none;
+        float: left;
+        width: 100%;
+
+        span {
+          &.name {
+            float: left;
+          }
+
+          &.value {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+.typeform-widget {
+  float: left;
 }
 @media (min-width: 540px) {
   .merch-container {

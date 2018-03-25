@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,gBAAiB;EACf,UAAU,EAAE,IAAI;;AAGlB,mBAAoB;EAClB,gBAAgB,EAAE,IAAI",
+"sources": ["vote.scss"],
 "names": [],
 "file": "vote.css"
 }

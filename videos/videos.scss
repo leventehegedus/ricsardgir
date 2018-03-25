@@ -1,5 +1,28 @@
 @import '../assets/colorpaletta';
 
+.block-container {
+  section {
+    padding-top: 76px;
+    float: left;
+
+    h1 {
+      font-weight: 100;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $rg-font-light;
+        padding: 5px;
+
+        &.active,
+        &:hover {
+          background-color: $rg-color-2;
+        }
+      }
+    }
+  }
+}
+
 .video-container {
   width: 100%;
   padding: 30px 10px;
@@ -60,8 +83,15 @@
   }
 }
 @media (min-width: 768px) {
+  .block-container {
+    section {
+      padding-top: 40px;
+    }
+  }
+
   .video-container {
     width: 720px;
+    padding: 30px 0;
 
     iframe {
       width: 720px;
@@ -73,5 +103,6 @@
   .video-container {
     width: 720px;
     margin-left: 120px;
+    margin-right: 120px;
   }
 }

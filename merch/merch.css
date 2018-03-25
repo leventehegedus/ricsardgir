@@ -10,7 +10,7 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: #631d76;
+    background-color: #dda3b2;
     color: #fff;
     font-weight: 200;
     display: block;
@@ -42,6 +42,22 @@
       top: 10px; }
     .merch-container .merch-image-container .merch .prize {
       bottom: 10px; }
+.merch-container .merch-items-container ul {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box; }
+  .merch-container .merch-items-container ul li {
+    list-style-type: none;
+    float: left;
+    width: 100%; }
+    .merch-container .merch-items-container ul li span.name {
+      float: left; }
+    .merch-container .merch-items-container ul li span.value {
+      float: right; }
+
+.typeform-widget {
+  float: left; }
 
 @media (min-width: 540px) {
   .merch-container .merch-image-container {
