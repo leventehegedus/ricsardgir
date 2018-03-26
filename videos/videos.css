@@ -9,7 +9,7 @@
       color: #fff;
       padding: 5px; }
       .block-container section h1 a.active, .block-container section h1 a:hover {
-        background-color: #fac8cd; }
+        background-color: #3d5a80; }
 
 .video-container {
   width: 100%;
@@ -41,7 +41,7 @@
       cursor: pointer;
       font-weight: 500; }
       .video-container .boring-details .title:hover {
-        color: #f5cac3; }
+        color: #78cad2; }
     .video-container .boring-details .content {
       font-weight: 300; }
       .video-container .boring-details .content span {

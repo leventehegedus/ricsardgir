@@ -5,3 +5,9 @@
 .playbuzz, .pb_feed {
   background-color: #fff;
 }
+.item {
+  transform: none;
+  &.item--huge, &.item--medium, &.item--megagiga, &.item--small, &.item--large, &.item--giga  {
+    transform: none;
+  }
+}

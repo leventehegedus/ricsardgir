@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,gBAAiB;EACf,UAAU,EAAE,IAAI;;AAGlB,mBAAoB;EAClB,gBAAgB,EAAE,IAAI",
+"mappings": "AAAA,gBAAiB;EACf,UAAU,EAAE,IAAI;;AAGlB,mBAAoB;EAClB,gBAAgB,EAAE,IAAI;;AAExB,KAAM;EACJ,SAAS,EAAE,IAAI;EACf,kHAA4F;IAC1F,SAAS,EAAE,IAAI",
 "sources": ["vote.scss"],
 "names": [],
 "file": "vote.css"

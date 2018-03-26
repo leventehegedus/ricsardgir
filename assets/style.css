@@ -1,7 +1,7 @@
 body {
   float: left;
   width: 100%;
-  background-color: #ffa69e;
+  background-color: #a1cca5;
   margin: 0;
   font-family: Dosis, sans-serif;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ body {
   float: left;
   padding: 8px;
   font-size: 30px;
-  color: #f5cac3;
+  color: #78cad2;
   text-transform: lowercase;
   text-align: center; }
 
@@ -40,8 +40,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: 1px solid #fac8cd;
-    background-color: rgba(255, 166, 158, 0.95);
+    border-bottom: 1px solid #3d5a80;
+    background-color: rgba(161, 204, 165, 0.95);
     overflow: hidden;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -95,11 +95,11 @@ body {
       float: left;
       cursor: pointer;
       color: #fff;
-      border-bottom: 1px solid #fac8cd;
+      border-bottom: 1px solid #3d5a80;
       box-sizing: border-box;
       height: 40px;
       letter-spacing: 2px;
-      background-color: #fac8cd; }
+      background-color: #3d5a80; }
     .header_container #header a {
       width: 100%;
       float: left;
@@ -117,17 +117,17 @@ body {
         width: calc(100% - 40px);
         margin: 0 20px;
         box-sizing: border-box;
-        border-bottom: 1px solid #7a306c; }
+        border-bottom: 1px solid #0d1f2d; }
 
 .footer_container {
   width: 100%;
   float: left;
-  background-color: #7a306c;
-  color: #fac8cd;
+  background-color: #0d1f2d;
+  color: #3d5a80;
   text-align: center;
   position: relative; }
   .footer_container a {
-    color: #fac8cd;
+    color: #3d5a80;
     text-decoration: none;
     font-size: 18px; }
     @media (min-width: 768px) {
@@ -136,7 +136,7 @@ body {
         letter-spacing: 1px; } }
     .footer_container a:hover {
       text-decoration: none;
-      color: #fef7f8; }
+      color: #4d72a3; }
     .footer_container a svg {
       margin: 0 5px; }
     .footer_container a span {
@@ -170,7 +170,7 @@ body {
   font-size: 20px;
   height: 40px;
   line-height: 42px;
-  background-color: #f5cac3;
+  background-color: #78cad2;
   overflow: hidden;
   border-radius: 3px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -205,27 +205,27 @@ body {
     transition: all 0.5s ease;
     font-weight: 200;
     letter-spacing: 2px;
-    border: 2px solid #ffa69e; }
+    border: 2px solid #a1cca5; }
     .block-container .block:nth-child(5n) {
       background-color: #D5B0AC; }
       .block-container .block:nth-child(5n):hover {
         background-color: #e6d0ce; }
     .block-container .block:nth-child(5n+1) {
-      background-color: #fac8cd; }
+      background-color: #3d5a80; }
       .block-container .block:nth-child(5n+1):hover {
-        background-color: #fef7f8; }
+        background-color: #4d72a3; }
     .block-container .block:nth-child(5n+2) {
-      background-color: #7a306c; }
+      background-color: #0d1f2d; }
       .block-container .block:nth-child(5n+2):hover {
-        background-color: #9f3e8c; }
+        background-color: #183a55; }
     .block-container .block:nth-child(5n+3) {
-      background-color: #dda3b2; }
+      background-color: #cacfd6; }
       .block-container .block:nth-child(5n+3):hover {
-        background-color: #ebc8d1; }
+        background-color: #e7e9ec; }
     .block-container .block:nth-child(5n+4) {
-      background-color: #f5cac3; }
+      background-color: #78cad2; }
       .block-container .block:nth-child(5n+4):hover {
-        background-color: #fcf1ef; }
+        background-color: #9ed9df; }
     .block-container .block:hover {
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px;
