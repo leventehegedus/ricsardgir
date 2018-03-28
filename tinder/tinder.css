@@ -1,15 +1,45 @@
+.block-container {
+  height: 450px;
+  overflow: hidden;
+  margin-top: 106px;
+  margin-bottom: 40px; }
+
 .tinder-container {
-  background-color: #f5f7fa; }
+  float: left;
+  width: 100%;
+  position: relative; }
   .tinder-container .tinder-card-container {
-    height: 500px;
+    height: 450px;
     width: 300px;
     margin: 0 calc(50% - 150px);
     display: block;
     border-radius: 10px;
-    top: 50px;
     position: absolute;
     cursor: hand;
     box-shadow: 0 2px 10px 0 rgba(156, 156, 156, 0.77); }
+    .tinder-container .tinder-card-container .avatar {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      border: 5px solid #3d5a80;
+      border-radius: 10px;
+      position: relative;
+      box-sizing: border-box; }
+      .tinder-container .tinder-card-container .avatar.palvin {
+        background-image: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg"); }
+      .tinder-container .tinder-card-container .avatar.dani {
+        background-image: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg"); }
+      .tinder-container .tinder-card-container .avatar .heart {
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px; }
+      .tinder-container .tinder-card-container .avatar .stop {
+        width: 100px;
+        position: absolute;
+        left: 10px;
+        bottom: 10px; }
     .tinder-container .tinder-card-container .tinder-image-container {
       height: 300px; }
       .tinder-container .tinder-card-container .tinder-image-container.barbi {
@@ -126,7 +156,7 @@
     border: 2px solid green;
     color: green;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 100px;
     position: absolute;
     top: 50px;
     right: 40px;
@@ -137,7 +167,7 @@
     border: 2px solid red;
     color: red;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 100px;
     position: absolute;
     top: 50px;
     left: 40px;
