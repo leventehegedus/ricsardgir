@@ -30,16 +30,16 @@
         background-image: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg"); }
       .tinder-container .tinder-card-container .avatar.dani {
         background-image: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg"); }
-      .tinder-container .tinder-card-container .avatar .heart {
-        width: 100px;
-        position: absolute;
-        right: 10px;
-        bottom: 10px; }
-      .tinder-container .tinder-card-container .avatar .stop {
-        width: 100px;
-        position: absolute;
-        left: 10px;
-        bottom: 10px; }
+    .tinder-container .tinder-card-container .heart {
+      width: 100px;
+      position: absolute;
+      right: 10px;
+      bottom: 10px; }
+    .tinder-container .tinder-card-container .stop {
+      width: 100px;
+      position: absolute;
+      left: 10px;
+      bottom: 10px; }
     .tinder-container .tinder-card-container .tinder-image-container {
       height: 300px; }
       .tinder-container .tinder-card-container .tinder-image-container.barbi {

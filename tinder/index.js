@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $(".tinder-card-container").on("swiperight", swipeRight);
   $(".tinder-card-container").on("swipeleft", swipeLeft);
-  $('#heart').on("click", swipeRightHeart);
-  $('#heart2').on("click", swipeRightHeart);
-  $('#stop').on("click", swipeLeftStop);
-  $('#stop2').on("click", swipeLeftStop);
+//  $(".heart").on("click", swipeRight);
+//  $('#heart2').on("click", swipeRightHeart);
+//  $(".stop").on("click", swipeLeft);
+//  $('#stop2').on("click", swipeLeftStop);
 });
 
 function swipeLeft(){
@@ -14,8 +14,12 @@ function swipeLeft(){
 
   if ($(this).is(':last-child')) {
     $('.tinder-card-container:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(500);
+    $('.status.dislike').remove();
+
   } else {
     $(this).next().removeClass('rotate-left rotate-right').fadeIn(500);
+    $('.status.dislike').remove();
+
   }
 }
 
@@ -26,12 +30,14 @@ function swipeRight(){
   $(this).append('<div class="status like">Koala!</div>');
   if ($(this).is(':last-child')) {
     $('.tinder-card-container:nth-child(1)').removeClass('rotate-left rotate-right').fadeIn(500);
+    $('.status.like').remove();
   } else {
     $(this).next().removeClass('rotate-left rotate-right').fadeIn(500);
+    $('.status.like').remove();
   }
 }
 
-
+/*
 function swipeRightHeart(){
   let that = $('.tinder-card-container');
   $(that).addClass('rotate-left').delay(500).fadeOut(1);
@@ -61,3 +67,4 @@ function swipeLeftStop(){
     $('.status.dislike').remove();
   }
 }
+*/

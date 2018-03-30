@@ -1,11 +1,12 @@
 @import '../assets/colorpaletta';
 
 .block-container {
-    height: 450px;
-    overflow: hidden;
-    margin-top: 106px;
-    margin-bottom: 40px;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 106px;
+  margin-bottom: 40px;
 }
+
 .tinder-container {
   float: left;
   width: 100%;
@@ -38,20 +39,20 @@
       &.dani {
         background-image: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg");
       }
+    }
 
-      .heart {
-        width: 100px;
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-      }
+    .heart {
+      width: 100px;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
 
-      .stop {
-        width: 100px;
-        position: absolute;
-        left: 10px;
-        bottom: 10px;
-      }
+    .stop {
+      width: 100px;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
     }
 
     .tinder-image-container {
