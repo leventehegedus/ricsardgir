@@ -154,11 +154,15 @@ body {
     height: 30px;
     line-height: 30px;
     background-color: #000;
-    font-size: 12px; }
+    font-size: 12px;
+    white-space: nowrap; }
     .footer_container .creator span {
       display: inline-block;
       font-size: 12px;
       width: auto; }
+  .footer_container.koala {
+    position: fixed;
+    bottom: 0px; }
 
 .header {
   position: absolute;
@@ -254,6 +258,10 @@ body {
         height: unset; }
     .block-container .koala-container #footer {
       display: none; }
+  .block-container.koala {
+    margin-top: 106px; }
+  .block-container.k49 {
+    margin-top: 36px; }
 
 .sidegifs {
   display: none; }

@@ -157,7 +157,7 @@ Screen - Game
    background-image: url('../assets/sky.png');
    background-repeat: repeat-x;
    background-position: 0px 100%;
-   
+
    -webkit-animation: animSky 7s linear infinite;
    animation: animSky 7s linear infinite;
 }
@@ -236,7 +236,7 @@ Screen - Game
    background-image: url('../assets/scoreboard.png');
    background-repeat: no-repeat;
 
-   z-index: 1000;
+   z-index: 99;
 }
 
 #medal

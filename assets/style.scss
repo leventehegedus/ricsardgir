@@ -181,11 +181,16 @@ body {
     line-height: 30px;
     background-color: #000;
     font-size: 12px;
+    white-space: nowrap;
     span {
       display: inline-block;
       font-size: 12px;
       width: auto;
     }
+  }
+  &.koala {
+    position: fixed;
+    bottom: 0px;
   }
 }
 
@@ -321,6 +326,12 @@ body {
     #footer {
       display: none;
     }
+  }
+  &.koala {
+    margin-top: 106px;
+  }
+  &.k49 {
+    margin-top: 36px;
   }
 }
 
