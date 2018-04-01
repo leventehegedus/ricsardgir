@@ -57,11 +57,31 @@ body {
     border-bottom-right-radius: 3px;
     position: relative;
 
+    .logo {
+      position: absolute;
+      top: 2px;
+      left: 10px;
+
+      img {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        height: 36px;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
     .topbar {
       position: absolute;
       right: 0;
       height: 40px;
       line-height: 40px;
+      top: 0;
 
       .email,
       .fb,
@@ -151,7 +171,6 @@ body {
       letter-spacing: 1px;
     }
 
-
     &:hover {
       text-decoration: none;
       color: lighten($rg-color-2, 10%);
@@ -160,6 +179,7 @@ body {
     svg {
       margin: 0 5px;
     }
+
     span {
       display: none;
       @media (min-width: 768px) {
@@ -182,15 +202,17 @@ body {
     background-color: #000;
     font-size: 12px;
     white-space: nowrap;
+
     span {
       display: inline-block;
       font-size: 12px;
       width: auto;
     }
   }
+
   &.koala {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
   }
 }
 
@@ -327,16 +349,26 @@ body {
       display: none;
     }
   }
+
   &.koala {
     margin-top: 106px;
   }
+
   &.k49 {
     margin-top: 36px;
   }
+
   &.us {
     margin-top: 55px;
   }
+
   &.quiz {
+    margin-top: 76px;
+  }
+  &.personality {
+    margin-top: 106px;
+  }
+  &.merch {
     margin-top: 76px;
   }
 }

@@ -49,11 +49,25 @@ body {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     position: relative; }
+    .header_container #header .logo {
+      position: absolute;
+      top: 2px;
+      left: 10px; }
+      .header_container #header .logo img {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        height: 36px;
+        cursor: pointer;
+        transition: all 300ms ease; }
+        .header_container #header .logo img:hover {
+          transform: rotate(360deg); }
     .header_container #header .topbar {
       position: absolute;
       right: 0;
       height: 40px;
-      line-height: 40px; }
+      line-height: 40px;
+      top: 0; }
       .header_container #header .topbar .email,
       .header_container #header .topbar .fb,
       .header_container #header .topbar .insta {
@@ -162,7 +176,7 @@ body {
       width: auto; }
   .footer_container.koala {
     position: fixed;
-    bottom: 0px; }
+    bottom: 0; }
 
 .header {
   position: absolute;
@@ -265,6 +279,10 @@ body {
   .block-container.us {
     margin-top: 55px; }
   .block-container.quiz {
+    margin-top: 76px; }
+  .block-container.personality {
+    margin-top: 106px; }
+  .block-container.merch {
     margin-top: 76px; }
 
 .sidegifs {
