@@ -12,27 +12,12 @@
     box-shadow: 0 2px 10px 0 rgba(156, 156, 156, 0.77); }
     .tinder-container .tinder-card-container .tinder-image-container {
       height: 300px; }
-      .tinder-container .tinder-card-container .tinder-image-container.barbi {
-        background: url("https://78.media.tumblr.com/e7f0766eaaf439f7816fd5a0c74d8e10/tumblr_oizsl58ny91rxudgao1_1280.jpg");
-        background-size: cover; }
-      .tinder-container .tinder-card-container .tinder-image-container.dani {
-        background: url("http://78.media.tumblr.com/de4fb5df6cd2eb0308fc0cf9e2219e5e/tumblr_mvc6wfRc4z1smw1bto1_1280.jpg");
-        background-size: cover; }
-      .tinder-container .tinder-card-container .tinder-image-container.laci {
-        background: url("https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/13183275_239749029713918_234639484_n.jpg");
-        background-size: cover; }
       .tinder-container .tinder-card-container .tinder-image-container.andris {
         background: url("http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg");
         background-size: cover; }
-        .tinder-container .tinder-card-container .tinder-image-container.andris .glightbox-andris {
-          height: 300px;
-          width: 300px; }
       .tinder-container .tinder-card-container .tinder-image-container.bali {
         background: url("http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg");
         background-size: cover; }
-        .tinder-container .tinder-card-container .tinder-image-container.bali .glightbox-bali {
-          height: 300px;
-          width: 300px; }
     .tinder-container .tinder-card-container .tinder-description-container {
       background-color: #fff;
       position: absolute;
@@ -126,7 +111,7 @@
     border: 2px solid green;
     color: green;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 50px;
     position: absolute;
     top: 50px;
     right: 40px;
@@ -137,10 +122,10 @@
     border: 2px solid red;
     color: red;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 50px;
     position: absolute;
     top: 50px;
     left: 40px;
     text-shadow: none; }
 
-/*# sourceMappingURL=tinder.css.map */
+/*# sourceMappingURL=index.css.map */

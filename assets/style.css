@@ -204,7 +204,7 @@ body {
   text-align: center;
   transition: all 0.5s ease; }
   .block-container.home {
-    margin-top: 76px;
+    margin-top: 42px;
     margin-bottom: 20px;
     opacity: 0.7; }
   .block-container .block {
@@ -223,12 +223,13 @@ body {
     transition: all 0.5s ease;
     font-weight: 200;
     letter-spacing: 2px;
-    border: 2px solid #a1cca5; }
+    border: 1px solid #a1cca5; }
     .block-container .block:nth-child(5n) {
       background-color: #D5B0AC; }
       .block-container .block:nth-child(5n):hover {
         background-color: #e6d0ce; }
     .block-container .block:nth-child(5n+1) {
+      width: 100vw;
       background-color: #3d5a80; }
       .block-container .block:nth-child(5n+1):hover {
         background-color: #4d72a3; }
@@ -351,13 +352,20 @@ body {
     box-sizing: border-box;
     float: left;
     margin: 76px calc(50vw - 360px); }
+    .block-container.home {
+      width: 100%;
+      margin: 0;
+      margin-top: 40px; }
     .block-container .block {
       float: left;
-      width: 180px;
-      height: 180px; }
+      width: 25%;
+      height: 200px;
+      border: none; }
       .block-container .block:nth-child(5n):hover {
         background: url("./gif3.gif");
         background-size: cover; }
+      .block-container .block:nth-child(5n+1) {
+        width: 50%; }
       .block-container .block:nth-child(5n+2):hover {
         background: url("./gif3.gif");
         background-size: cover; }
@@ -380,13 +388,17 @@ body {
       .block-container .block.aboutus:hover {
         background: url("./gif7.gif");
         background-size: cover; }
-      .block-container .block.bd2049:hover {
-        background: url("./gif8.gif");
-        background-size: cover; }
+      .block-container .block.bd2049 {
+        width: 25%; }
+        .block-container .block.bd2049:hover {
+          background: url("./gif8.gif");
+          background-size: cover; }
       .block-container .block.contact:hover {
         background: url("./sw.gif");
         background-size: cover;
         background-position: center; }
+      .block-container .block.videos {
+        width: 75%; }
 
   .sidegifs {
     display: block; } }
@@ -403,7 +415,6 @@ body {
     margin: 76px calc(50vw - 480px); }
     .block-container .block {
       float: left;
-      width: 240px;
-      height: 240px; } }
+      height: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
