@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,UAAG;EACD,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,SAAS;EAEzB,YAAE;IACA,eAAe,EAAE,IAAI;IACrB,KAAK,ECJK,IAAI;IDKd,OAAO,EAAE,GAAG;IAEZ,uCACQ;MACN,gBAAgB,ECdX,OAAO;ADkBlB,gCAAqB;EACnB,UAAU,EAAE,IAAI;;AAIpB,mBAAoB;EAClB,gBAAgB,EAAE,IAAI",
+"sources": ["index.scss","../assets/colorpaletta.scss"],
+"names": [],
+"file": "index.css"
+}

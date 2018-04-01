@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>Szavazz</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Ricsárdgír honlapja">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <link rel="stylesheet" type="text/css" href="../concerts/index.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../index.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script>
+    $(document).ready(function() {
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                }).stop('true', 'true');
+            } // End if
+        });
+    });
+</script>
+</head>
+
+<body>
+  <div class="header_container" w3-include-html="../menu.html"></div>
+  <div class="header_container" w3-include-html="../sidegifs.html"></div>
+  <script>
+    w3.includeHTML();
+  </script>
+  <div class="header">
+    kvíz
+  </div>
+  <div class="block-container quiz">
+    <section id="quiz">
+
+      <h1><a href="#quiz" class="active">Ricsárdkvíz</a> <a href="#quizmozart">Mit tudsz Mozartról?</a></h1>
+      <div>
+        <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = '//embed.playbuzz.com/sdk.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'playbuzz-sdk'));
+        </script>
+        <div class="playbuzz" data-id="d6305547-422d-4fbe-aec4-ac9943201a6e"></div>
+      </div>
+    </section>
+    <section id="quizmozart">
+      <h1><a href="#quiz">Ricsárdkvíz</a> <a href="#quizmozart" class="active">Mit tudsz Mozartról?</a></h1>
+      <div>
+        <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = '//embed.playbuzz.com/sdk.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'playbuzz-sdk'));
+        </script>
+        <div class="playbuzz" data-id="5332be86-3314-4e3f-8e68-de667b9fd9e6"></div>
+      </div>
+
+    </section>
+
+  </div>
+  <div class="footer_container" w3-include-html="../footer.html"></div>
+</body>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = '//embed.playbuzz.com/sdk.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'playbuzz-sdk'));
+</script>
+
+</html>
