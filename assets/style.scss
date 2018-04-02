@@ -68,7 +68,7 @@ body {
         position: absolute;
         height: 36px;
         cursor: pointer;
-        transition: all 300ms ease;
+        transition: all 666ms ease;
 
         &:hover {
           transform: rotate(360deg);
@@ -151,7 +151,7 @@ body {
         border-bottom: 1px solid $rg-color-1;
       }
       &:hover {
-        color: $rg-color-2;
+        color: $rg-color-1;
       }
     }
   }
@@ -391,6 +391,11 @@ body {
 
     img {
       width: 80px;
+      transition: all 666ms ease;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
     }
 
     &.pikachu {

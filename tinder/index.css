@@ -82,8 +82,10 @@
             margin-top: 15px; }
           .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.left {
             color: #ff0970; }
-          .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.middle {
-            color: #1ca9ff; }
+          .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.middle img {
+            transition: all 666ms ease; }
+            .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.middle img:hover {
+              transform: rotate(360deg); }
           .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.right {
             color: #04ec92; }
   .tinder-container #container {
