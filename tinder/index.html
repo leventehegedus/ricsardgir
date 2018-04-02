@@ -175,9 +175,10 @@
         $(this).append('<div class="status like">Kiexportállak MPEG-ben!</div>');
         if ($(this).is(':last-child')) {
           $('.tinder-card-container:first-child').removeClass('rotate-left rotate-right').fadeIn(600);
-        }
+        };
+        document.getElementById("audio9").load();
+        document.getElementById("audio9").play();
       });
-
       $(".tinder-card-container").on("swipeleft", function() {
         $(this).addClass('rotate-right').delay(1400).fadeOut(1);
         $('.tinder-card-container').find('.status').remove();
@@ -186,9 +187,16 @@
         if ($(this).is(':last-child')) {
           $('.tinder-card-container:first-child').removeClass('rotate-left rotate-right').fadeIn(600);
         }
+        document.getElementById("audio4").load();
+        document.getElementById("audio4").play();
       });
-
     });
   </script>
+  <audio id="audio4">
+    <source src="/assets/sound4.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audio9">
+    <source src="/assets/sound9.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
