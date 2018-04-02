@@ -132,6 +132,8 @@ body {
         margin: 0 20px;
         box-sizing: border-box;
         border-bottom: 1px solid #0d1f2d; }
+      .header_container #header a:hover {
+        color: #3d5a80; }
 
 .footer_container {
   width: 100%;

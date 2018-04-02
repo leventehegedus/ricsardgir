@@ -149,7 +149,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "Sztár vagy szar? Te bizony sztár vagy!" : "Sztár vagy szar? Te bizony szar vagy!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
@@ -168,7 +168,7 @@ HTMLActuator.prototype.showInfo = function () {
     document.querySelector('.show-info').innerHTML = 'INFO';
   } else {
     this.info.setAttribute('style','display:block;')
-    document.querySelector('.show-info').innerHTML = 'CLOSE';
+    document.querySelector('.show-info').innerHTML = 'KOCC';
   }
 }
 
@@ -183,7 +183,7 @@ HTMLActuator.prototype.showKey = function () {
     document.querySelector('.show-key').innerHTML = 'BLOCKS';
   } else {
     this.key.setAttribute('style','display:block;')
-    document.querySelector('.show-key').innerHTML = 'CLOSE';
+    document.querySelector('.show-key').innerHTML = 'KOCC';
   }
 }
 

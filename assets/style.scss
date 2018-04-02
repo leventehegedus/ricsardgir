@@ -150,6 +150,9 @@ body {
         box-sizing: border-box;
         border-bottom: 1px solid $rg-color-1;
       }
+      &:hover {
+        color: $rg-color-2;
+      }
     }
   }
 }
