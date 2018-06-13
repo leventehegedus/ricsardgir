@@ -30,11 +30,16 @@
 </head>
 
 <body>
-  <video autoplay muted loop id="myVideo">
-  <source src="./rain.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-  <div class="header_container" w3-include-html="menu.html"></div>
+  <div class="header_container">
+    <span class="openbtn" onclick="toggleNav()" data-ajax="false">x</span>
+    <span>Ricsárdgír</span>
+    <div class="topbar">
+      <a href="https://youtube.com/user/RCHRDGR" target="_top" class="yt"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/ricsardgir" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/ricsardgir" target="_blank" class="fb"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+  <div w3-include-html="menu.html"></div>
   <script>
     w3.includeHTML();
   </script>
