@@ -43,3 +43,37 @@ function toggleTinder(param){
 $(document).ready(function() {
   document.getElementsByClassName('header')[0].style.marginTop = '36px'
 });
+
+function getLikeSound(user){
+  if(user.indexOf('martondani') > -1){
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'martondanilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  } else if (user.indexOf('laci') > -1) {
+    let number = Math.floor(Math.random() * 3 + 1);
+    let filename = 'lacilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+}
+function getDislikeSound(user){
+  if(user.indexOf('martondani') > -1){
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'martondanidislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  } else if (user.indexOf('laci') > -1) {
+    let number = Math.floor(Math.random() * 4 + 1);
+    let filename = 'lacidislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+}
+
+function getSuperLikeSoundLaci(){
+  let number = Math.floor(Math.random() * 5 + 1);
+  let filename = 'laci' + number;
+  document.getElementById(filename).load();
+  document.getElementById(filename).play();
+}

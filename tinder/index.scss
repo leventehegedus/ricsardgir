@@ -31,7 +31,12 @@
       }
 
       &.martondani {
-        background: url("./martondani/00md.jpg");
+        background: url("./martondani/profil/profil.jpg");
+        background-size: cover;
+      }
+
+      &.laci {
+        background: url("./laci/profil/profil.jpg");
         background-size: cover;
       }
 
