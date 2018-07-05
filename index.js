@@ -55,6 +55,11 @@ function getLikeSound(user){
     let filename = 'lacilike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
+  } else if (user.indexOf('eva') > -1) {
+    let number = Math.floor(Math.random() * 3 + 1);
+    let filename = 'evalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
   }
 }
 function getDislikeSound(user){
@@ -68,12 +73,24 @@ function getDislikeSound(user){
     let filename = 'lacidislike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
+  } else if (user.indexOf('eva') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'evadislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
   }
 }
 
 function getSuperLikeSoundLaci(){
   let number = Math.floor(Math.random() * 5 + 1);
   let filename = 'laci' + number;
+  document.getElementById(filename).load();
+  document.getElementById(filename).play();
+}
+
+function getSuperLikeSoundEva(){
+  let number = Math.floor(Math.random() * 4 + 1);
+  let filename = 'eva' + number;
   document.getElementById(filename).load();
   document.getElementById(filename).play();
 }
