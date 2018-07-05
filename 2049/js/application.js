@@ -5,17 +5,19 @@ window.requestAnimationFrame(function () {
 
 
     var imageList = [
-        "../2049/img/212/doge-derp-212.gif",
-        "../2049/img/212/doge-fat-212.gif",
-        "../2049/img/212/doge-gradient-212.gif",
-        "../2049/img/212/doge-hat-212.gif",
-        "../2049/img/212/doge-peepers-212.gif",
-        "../2049/img/212/doge-prizza-212.gif",
-        "../2049/img/212/doge-rainbow-212.gif",
-        "../2049/img/212/doge-shake-space-212.gif",
-        "../2049/img/212/doge-sunglasses-212.gif",
-        "../2049/img/212/doge-shake-212.gif",
-        "../2049/img/212/2.png"
+        "../2049/img/212/2.gif",
+        "../2049/img/212/4.gif",
+        "../2049/img/212/8.gif",
+        "../2049/img/212/16.gif",
+        "../2049/img/212/32.gif",
+        "../2049/img/212/64.gif",
+        "../2049/img/212/128.gif",
+        "../2049/img/212/256.gif",
+        "../2049/img/212/512.gif",
+        "../2049/img/212/1024.gif",
+        "../2049/img/212/2048.png",
+        "../2049/img/212/4096.png",
+        "../2049/img/212/8192.png"
     ];
     for(var i = 0; i < imageList.length; i++ )
     {
