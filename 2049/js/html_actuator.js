@@ -149,7 +149,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Sztár vagy szar? Te bizony sztár vagy!" : "Sztár vagy szar? Te bizony szar vagy!";
+  var message = won ? "Rossz vagy, mint a gitár, rossz vagy, mint a szinti!" : "Te vagy olyan menő, mint Harrison Ford!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
