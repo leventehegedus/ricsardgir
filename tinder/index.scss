@@ -21,27 +21,52 @@
       height: 300px;
 
       &.andris {
-        background: url("http://78.media.tumblr.com/56f0c9622e1697d546382b979ee5e91b/tumblr_njrl0uVM8c1smw1bto1_500.jpg");
+        background: url("./andris/profil/profil.jpg");
         background-size: cover;
       }
-
       &.bali {
-        background: url("http://78.media.tumblr.com/87220bb9548c3e82554d987274503132/tumblr_mvc6dcWoVA1smw1bto1_1280.jpg");
+        background: url("./bali/profil/profil.jpg");
         background-size: cover;
       }
-
+      &.barbi {
+        background: url("./barbi/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.boldi {
+        background: url("./boldi/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.edina {
+        background: url("./edina/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.eszter {
+        background: url("./eszter/profil/profil.jpg");
+        background-size: cover;
+      }
       &.eva {
         background: url("./eva/profil/profil.jpg");
         background-size: cover;
       }
-
+      &.ford {
+        background: url("./ford/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.fruzsi {
+        background: url("./fruzsi/profil/profil.jpg");
+        background-size: cover;
+      }
       &.laci {
         background: url("./laci/profil/profil.jpg");
         background-size: cover;
       }
-
       &.martondani {
         background: url("./martondani/profil/profil.jpg");
+        background-size: cover;
+      }
+
+      &.nora {
+        background: url("./nora/profil/profil.jpg");
         background-size: cover;
       }
     }

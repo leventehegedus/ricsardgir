@@ -45,52 +45,226 @@ $(document).ready(function() {
 });
 
 function getLikeSound(user){
-  if(user.indexOf('martondani') > -1){
+  if(user.indexOf('andris') > -1){
     let number = Math.floor(Math.random() * 1 + 1);
-    let filename = 'martondanilike' + number;
+    let filename = 'andrislike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
-  } else if (user.indexOf('laci') > -1) {
-    let number = Math.floor(Math.random() * 3 + 1);
-    let filename = 'lacilike' + number;
+  }
+  else if (user.indexOf('bali') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'balilike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
-  } else if (user.indexOf('eva') > -1) {
-    let number = Math.floor(Math.random() * 3 + 1);
+  }
+  else if (user.indexOf('barbi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'barbilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('boldi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'boldilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('edina') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'edinalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eszter') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'eszterlike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eva') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
     let filename = 'evalike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
   }
-}
-function getDislikeSound(user){
-  if(user.indexOf('martondani') > -1){
+  else if (user.indexOf('ford') > -1) {
     let number = Math.floor(Math.random() * 1 + 1);
-    let filename = 'martondanidislike' + number;
+    let filename = 'fordlike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
-  } else if (user.indexOf('laci') > -1) {
-    let number = Math.floor(Math.random() * 4 + 1);
-    let filename = 'lacidislike' + number;
+  }
+  else if (user.indexOf('fruzsi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'fruzsilike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
-  } else if (user.indexOf('eva') > -1) {
+  }
+  else if (user.indexOf('laci') > -1) {
     let number = Math.floor(Math.random() * 1 + 1);
-    let filename = 'evadislike' + number;
+    let filename = 'lacilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('martondani') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'martondanilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('nora') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'noralike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
   }
 }
 
-function getSuperLikeSoundLaci(){
-  let number = Math.floor(Math.random() * 5 + 1);
-  let filename = 'laci' + number;
-  document.getElementById(filename).load();
-  document.getElementById(filename).play();
+function getDislikeSound(user){
+  if(user.indexOf('andris') > -1){
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'andrislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('bali') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'balilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('barbi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'barbilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('boldi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'boldilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('edina') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'edinalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eszter') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'eszterlike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eva') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'evalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('ford') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'fordlike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('fruzsi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'fruzsilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('laci') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'lacilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('martondani') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'martondanilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('nora') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'noralike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
 }
 
-function getSuperLikeSoundEva(){
-  let number = Math.floor(Math.random() * 4 + 1);
-  let filename = 'eva' + number;
-  document.getElementById(filename).load();
-  document.getElementById(filename).play();
+function getSuperLikeSound(user){
+  if(user.indexOf('andris') > -1){
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'andrislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('bali') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'balilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('barbi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'barbilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('boldi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'boldilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('edina') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'edinalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eszter') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'eszterlike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('eva') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'evalike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('ford') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'fordlike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('fruzsi') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'fruzsilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('laci') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'lacilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('martondani') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'martondanilike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('nora') > -1) {
+    let number = Math.floor(Math.random() * 1 + 1);
+    let filename = 'noralike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
 }
