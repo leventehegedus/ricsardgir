@@ -123,6 +123,12 @@ function getLikeSound(user){
     document.getElementById(filename).load();
     document.getElementById(filename).play();
   }
+  else if (user.indexOf('mate') > -1) {
+    let number = Math.floor(Math.random() * 3 + 1);
+    let filename = 'matelike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
   else if (user.indexOf('nora') > -1) {
     let number = Math.floor(Math.random() * 1 + 1);
     let filename = 'noralike' + number;
@@ -210,6 +216,12 @@ function getDislikeSound(user){
     document.getElementById(filename).load();
     document.getElementById(filename).play();
   }
+  else if (user.indexOf('mate') > -1) {
+    let number = Math.floor(Math.random() * 3 + 1);
+    let filename = 'matedislike' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
   else if (user.indexOf('nora') > -1) {
     let number = Math.floor(Math.random() * 3 + 1);
     let filename = 'noradislike' + number;
@@ -294,6 +306,12 @@ function getSuperLikeSound(user){
   else if (user.indexOf('martondani') > -1) {
     let number = Math.floor(Math.random() * 1 + 1);
     let filename = 'martondani' + number;
+    document.getElementById(filename).load();
+    document.getElementById(filename).play();
+  }
+  else if (user.indexOf('mate') > -1) {
+    let number = Math.floor(Math.random() * 3 + 1);
+    let filename = 'mate' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
   }
