@@ -22,6 +22,10 @@
   background: url("./andris/profil/profil.jpg");
   background-size: cover;
 }
+.tinder-container .tinder-card-container .tinder-image-container.alma {
+  background: url("./alma/profil/profil.jpg");
+  background-size: cover;
+}
 .tinder-container .tinder-card-container .tinder-image-container.bali {
   background: url("./bali/profil/profil.jpg");
   background-size: cover;
