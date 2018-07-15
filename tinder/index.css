@@ -46,6 +46,14 @@
   background: url("./eszter/profil/profil.jpg");
   background-size: cover;
 }
+.tinder-container .tinder-card-container .tinder-image-container.flora {
+  background: url("./flora/profil/profil.jpg");
+  background-size: cover;
+}
+.tinder-container .tinder-card-container .tinder-image-container.mate {
+  background: url("./mate/profil/profil.jpg");
+  background-size: cover;
+}
 .tinder-container .tinder-card-container .tinder-image-container.eva {
   background: url("./eva/profil/profil.jpg");
   background-size: cover;

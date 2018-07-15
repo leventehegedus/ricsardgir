@@ -64,7 +64,7 @@ function getLikeSound(user){
     document.getElementById(filename).play();
   }
   else if (user.indexOf('barbi') > -1) {
-    let number = Math.floor(Math.random() * 1 + 1);
+    let number = Math.floor(Math.random() * 4 + 1);
     let filename = 'barbilike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
@@ -151,7 +151,7 @@ function getDislikeSound(user){
     document.getElementById(filename).play();
   }
   else if (user.indexOf('barbi') > -1) {
-    let number = Math.floor(Math.random() * 1 + 1);
+    let number = Math.floor(Math.random() * 4 + 1);
     let filename = 'barbidislike' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
@@ -238,7 +238,7 @@ function getSuperLikeSound(user){
     document.getElementById(filename).play();
   }
   else if (user.indexOf('barbi') > -1) {
-    let number = Math.floor(Math.random() * 1 + 1);
+    let number = Math.floor(Math.random() * 4 + 1);
     let filename = 'barbi' + number;
     document.getElementById(filename).load();
     document.getElementById(filename).play();
