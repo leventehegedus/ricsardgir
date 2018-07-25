@@ -1,68 +1,97 @@
 .block-container section {
   padding-top: 76px;
-  float: left; }
-  .block-container section h1 {
-    font-weight: 100;
-    text-transform: uppercase; }
-    .block-container section h1 a {
-      text-decoration: none;
-      color: #fff;
-      padding: 5px; }
-      .block-container section h1 a.active, .block-container section h1 a:hover {
-        background-color: #3d5a80; }
+  float: left;
+}
+.block-container section h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.block-container section h1 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+.block-container section h1 a.active, .block-container section h1 a:hover {
+  background-color: #3d5a80;
+}
 
 .video-container {
   width: 100%;
   padding: 30px 10px;
   box-sizing: border-box;
   text-align: center;
-  float: left; }
-  .video-container .video-intro {
-    width: 100%;
-    float: left;
-    box-sizing: border-box;
-    padding: 0 0 30px; }
-    .video-container .video-intro .title {
-      font-size: 18px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center; }
-    .video-container .video-intro .description {
-      font-weight: 300;
-      padding: 0;
-      text-align: center; }
-  .video-container iframe {
-    width: calc(100vw - 20px);
-    height: calc(0.6 * (100vw - 20px));
-    border-radius: 3px; }
-  .video-container .boring-details {
-    margin-top: 30px; }
-    .video-container .boring-details .title {
-      cursor: pointer;
-      font-weight: 500; }
-      .video-container .boring-details .title:hover {
-        color: #0d1f2d; }
-    .video-container .boring-details .content {
-      font-weight: 300; }
-      .video-container .boring-details .content span {
-        font-weight: 500; }
-      .video-container .boring-details .content#boringDetails1, .video-container .boring-details .content#boringDetails2 {
-        display: none; }
+  float: left;
+}
+.video-container .video-intro {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0 30px;
+}
+.video-container .video-intro .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.video-container .video-intro .description {
+  font-weight: 300;
+  padding: 0;
+  text-align: center;
+}
+.video-container iframe {
+  width: calc(100vw - 20px);
+  height: calc(0.6 * (100vw - 20px));
+  border-radius: 3px;
+}
+.video-container .boring-details {
+  margin-top: 30px;
+}
+.video-container .boring-details .title {
+  cursor: pointer;
+  font-weight: 500;
+}
+.video-container .boring-details .title:hover {
+  color: #0d1f2d;
+}
+.video-container .boring-details .content {
+  font-weight: 300;
+}
+.video-container .boring-details .content span {
+  font-weight: 500;
+}
+.video-container .boring-details .content#boringDetails1, .video-container .boring-details .content#boringDetails2 {
+  display: none;
+}
+.video-container .boring-details a {
+  color: #fff;
+  text-decoration: none;
+}
+.video-container .boring-details a:hover {
+  text-decoration: underline;
+  color: #000;
+}
 
 @media (min-width: 768px) {
   .block-container section {
-    padding-top: 40px; }
+    padding-top: 40px;
+  }
 
   .video-container {
     width: 720px;
-    padding: 30px 0; }
-    .video-container iframe {
-      width: 720px;
-      height: 405px; } }
+    padding: 30px 0;
+  }
+  .video-container iframe {
+    width: 720px;
+    height: 405px;
+  }
+}
 @media (min-width: 1024px) {
   .video-container {
     width: 720px;
     margin-left: 120px;
-    margin-right: 120px; } }
+    margin-right: 120px;
+  }
+}
 
 /*# sourceMappingURL=videos.css.map */
