@@ -60,7 +60,7 @@
 .video-container .boring-details .content span {
   font-weight: 500;
 }
-.video-container .boring-details .content#boringDetails1, .video-container .boring-details .content#boringDetails2 {
+.video-container .boring-details .content#boringDetails1, .video-container .boring-details .content#boringDetails2, .video-container .boring-details .content#boringDetails3, .video-container .boring-details .content#boringDetails4, .video-container .boring-details .content#boringDetails5 {
   display: none;
 }
 .video-container .boring-details a {
