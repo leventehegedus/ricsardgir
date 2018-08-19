@@ -249,7 +249,7 @@ body {
   &.home {
     margin-top: 42px;
     margin-bottom: 20px;
-    opacity: 0.7;
+    opacity: 0.85;
   }
 
   .block {
@@ -537,9 +537,15 @@ body {
       }
 
       &.concerts {
+        background: url("./bulikrumpli.jpg");
+        background-size: cover;
+        background-position: top center;
+        transition: all 0.5s ease;
         &:hover {
-          background: url("./gif6.gif");
+          background: url("./bulikrumpli.gif");
           background-size: cover;
+          background-position: top center;
+          transition: all 0.5s ease;
         }
       }
 
@@ -552,9 +558,15 @@ body {
 
       &.bd2049 {
         width: 25%;
+        background: url("./2049.jpg");
+        background-size: cover;
+        background-position: top center;
+        transition: all 0.5s ease;
         &:hover {
-          background: url("./gif8.gif");
+          background: url("./2049.gif");
           background-size: cover;
+          background-position: top center;
+          transition: all 0.5s ease;
         }
       }
 
@@ -567,6 +579,16 @@ body {
       }
       &.videos {
         width: 75%;
+        background: url("./videogif.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease;
+        &:hover {
+          background: url("./videogif.gif");
+          background-size: cover;
+          background-position: center;
+          transition: all 0.5s ease;
+        }
       }
     }
   }
