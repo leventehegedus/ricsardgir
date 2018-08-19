@@ -37,122 +37,96 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
+  height: 80px;
+  background-color: $rg-header-bg;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
 
-  #header {
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    float: left;
-    overflow: hidden;
-    text-align: center;
-    text-transform: uppercase;
-    color: $rg-font-light;
-    border-bottom: 1px solid $rg-color-2;
-    background-color: rgba($rg-color-3, 0.95);
-    overflow: hidden;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    font-size: 20px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    position: relative;
+  .topbar {
+    position: absolute;
+    right: 10;
+    top: 0;
+    height: 80px;
+    line-height: 80px;
 
-    .logo {
-      position: absolute;
-      top: 2px;
-      left: 10px;
-
-      img {
-        left: 0px;
-        top: 0px;
-        position: absolute;
-        height: 36px;
-        cursor: pointer;
-        transition: all 666ms ease;
-
-        &:hover {
-          transform: rotate(360deg);
-        }
+    .fb,
+    .insta,
+    .yt {
+      float: right;
+      width: auto;
+      margin: 0 3px;
+      @media (min-width: 768px) {
+        margin: 0 10px;
       }
-    }
-
-    .topbar {
-      position: absolute;
-      right: 0;
-      height: 40px;
-      line-height: 40px;
-      top: 0;
-
-      .email,
-      .fb,
-      .insta {
-        float: right;
-        width: auto;
-        margin: 0 5px;
-        @media (min-width: 768px) {
-          margin: 0 10px;
-        }
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        text-transform: lowercase;
-
-        span {
-          display: none;
-          float: right;
-          margin: 0;
-          width: auto;
-          border: none;
-          @media (min-width: 768px) {
-            display: block;
-          }
-        }
-
-        svg {
-          margin: 12px 5px;
-          font-size: 16px;
-          height: 16px;
-          line-height: 40px;
-          width: initial;
-        }
-      }
-    }
-
-    .openbtn {
-      width: 100%;
-      float: left;
-      cursor: pointer;
-      color: $rg-font-light;
-      border-bottom: 1px solid $rg-color-2;
-      box-sizing: border-box;
-      height: 40px;
-      letter-spacing: 2px;
-      background-color: $rg-color-2;
-    }
-
-    a {
-      width: 100%;
-      float: left;
-      height: 25px;
-      font-size: 11px;
-      text-decoration: none;
-      color: $rg-font-light;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 25px;
-      box-sizing: border-box;
-      letter-spacing: 2px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 20px;
+      text-transform: lowercase;
 
       span {
-        float: left;
-        width: calc(100% - 40px);
-        margin: 0 20px;
-        box-sizing: border-box;
-        border-bottom: 1px solid $rg-color-1;
+        display: none;
+        float: right;
+        margin: 0;
+        width: auto;
+        border: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
       }
-      &:hover {
-        color: $rg-color-1;
+
+      svg {
+        margin: 30px 0;
+        font-size: 20px;
+        height: 20px;
+        line-height: 80px;
+        width: initial;
+        color: $rg-header-icon;
       }
+    }
+  }
+}
+
+#menu {
+  height: auto;
+  width: 200px;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+
+  a {
+    width: 100%;
+    float: left;
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: $rg-menu-orange;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+
+    span {
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      color: lighten($rg-menu-orange, 10%);
+    }
+    &:first-child {
+      height: 80px;
+      line-height: 80px;
     }
   }
 }
@@ -247,7 +221,7 @@ body {
   transition: all 0.5s ease;
 
   &.home {
-    margin-top: 42px;
+    margin-top: 80px;
     margin-bottom: 20px;
     opacity: 0.85;
   }
@@ -271,10 +245,10 @@ body {
     border: 1px solid $rg-color-3;
 
     &:nth-child(5n) {
-      background-color: $rg-color-6;
+      background-color: rg-color-3;
 
       &:hover {
-        background-color: lighten($rg-color-6, 10%);
+        background-color: lighten($rg-color-3, 10%);
       }
     }
 
@@ -369,15 +343,19 @@ body {
   &.quiz {
     margin-top: 76px;
   }
+
   &.personality {
     margin-top: 106px;
   }
+
   &.merch {
     margin-top: 76px;
   }
+
   &.tinder {
     margin-top: 76px;
   }
+
   &.concerts {
     margin-top: 40px;
   }
@@ -466,27 +444,15 @@ body {
   font-family: Dosis !important;
 }
 @media (min-width: 768px) {
-  .header_container {
-    #header {
-      a {
-        span {
-          float: left;
-          width: 720px;
-          margin: 0 calc(50vw - 360px);
-        }
-      }
-    }
-  }
-
   .block-container {
     width: 720px;
     box-sizing: border-box;
     float: left;
-    margin: 76px calc(50vw - 360px);
+    margin: 80px calc(50vw - 360px);
+
     &.home {
       width: 100%;
-      margin: 0;
-      margin-top: 40px;
+      margin: 80px 0 0;
     }
 
     .block {
@@ -577,6 +543,7 @@ body {
           background-position: center;
         }
       }
+
       &.videos {
         width: 75%;
         background: url("./videogif.jpg");
@@ -598,23 +565,11 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  .header_container {
-    #header {
-      a {
-        span {
-          float: left;
-          width: 960px;
-          margin: 0 calc(50vw - 480px);
-        }
-      }
-    }
-  }
-
   .block-container {
     width: 960px;
     box-sizing: border-box;
     float: left;
-    margin: 76px calc(50vw - 480px);
+    margin: 80px calc(50vw - 480px);
 
     .block {
       float: left;
