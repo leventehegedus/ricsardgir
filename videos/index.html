@@ -15,8 +15,8 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   <meta http-equiv="pragma" content="no-cache">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="videos.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -42,14 +42,19 @@
 </head>
 
 <body>
-  <div class="header_container" w3-include-html="../menu.html"></div>
-  <div class="header_container" w3-include-html="../sidegifs.html"></div>
+  <div class="header_container">
+    <span class="openbtn" onclick="toggleNav()" data-ajax="false">menü</span>
+    <span>Ricsárdgír</span>
+    <div class="topbar">
+      <a href="https://youtube.com/user/RCHRDGR" target="_top" class="yt"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/ricsardgir" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/ricsardgir" target="_blank" class="fb"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+  <div w3-include-html="../menu.html"></div>
   <script>
     w3.includeHTML();
   </script>
-  <div class="header">
-    Videók
-  </div>
   <div class="block-container">
     <section id="videoclip">
       <h1><a href="#videoclip" class="active">Videóklipek</a> <a href="#video">Videók</a></h1>
@@ -58,21 +63,23 @@
           <div class="title">
             Mindenki boldog - 2017
           </div>
-          <div class="description">
-            <br/>Rendezte: Horváth Viktor
-            <br/>Index: “2017 legjobb magyar klipje”
-            <br/>“2017 6. Legjobb klipje - Kulter
-            <br/>Youtube 4. Legfelkapottabb magyar videoja Magyarországon egy hétig
-            <br/><a href="http://rtl.hu/rtlklub/hirek/magyarorszagon-mindenki-boldog-idoutazas-orban-viktorral-a-ricsardgir-uj-klipjeben" target="_blank">RTL Klub Híradóban külön blokk a klipről</a>
-          </div>
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails1)">
-            Cikkek a Mindenki boldoggal kapcsolatban, kattints rám!
+            <span class="boringDetails1">Katt</span>
           </div>
           <div class="content" id="boringDetails1">
-            <br/><a href="https://index.hu/kultur/zene/2017/12/28/2017_legjobb_magyar_videoklip_klip_zene/" target="_blank">2017 legjobb magyar klipjei - index.hu</a>
+            <div class="description">
+              <span class="bold">Rendezte:</span> Horváth Viktor
+              <br/><span class="bold">Index:</span> “2017 legjobb magyar klipje”
+              <br/><span class="bold">Kulter:</span> “2017 6. Legjobb klipje”
+              <br/>Youtube 4. Legfelkapottabb magyar videoja Magyarországon egy hétig
+              <br/><a href="http://rtl.hu/rtlklub/hirek/magyarorszagon-mindenki-boldog-idoutazas-orban-viktorral-a-ricsardgir-uj-klipjeben" target="_blank">RTL Klub Híradóban külön blokk a klipről</a>
+            </div>
+            <br/>
+            <div class="articles"><span>Cikkek:</span></div>
+            <a href="https://index.hu/kultur/zene/2017/12/28/2017_legjobb_magyar_videoklip_klip_zene/" target="_blank">2017 legjobb magyar klipjei - index.hu</a>
             <br/><a href="http://hvg.hu/kultura/20170816_Idoutazasra_viszi_majd_onmagaval_szembesiti_Orban_Viktort_uj_klipjeben_egy_magyar_zenekar" target="_blank">Időutazásra viszi, majd önmagával szembesíti Orbán Viktort új klipjében egy magyar zenekar - hvg.hu</a>
             <br/><a href="https://index.hu/kultur/zene/2017/08/16/allitolag_magyarorszagon_mindenki_boldog_ricsardgir_premier_orban_viktor/" target="_blank">Állítólag Magyarországon mindenki boldog - index.hu</a>
             <br/><a href="https://444.hu/2017/08/16/magyarorszagon-mindenki-boldog" target="_blank">Magyarországon mindenki boldog - 444.hu</a>
@@ -96,19 +103,21 @@
           <div class="title">
             Palvinbarbi - 2015
           </div>
-          <div class="description">
-            <br/>Rendezte: Mártondani
-            <br/>II. Magyar Klipszemlén a Legjobb Trash Klip díja
-            <br/>2016 legjobb magyar számai 8. Helyezett a HVG-n
-          </div>
         </div>
         <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails2)">
-            Cikkek a Palvinbarbival kapcsolatban, kattints rám!
+            <span class="boringDetails2">Katt</span>
           </div>
           <div class="content" id="boringDetails2">
-            <br/><a href="https://recorder.blog.hu/2015/09/13/18_klippremier_ricsardgir_palvinbarbi" target="_blank">18+ Klippremier! Ricsárdgír: Palvinbarbi - recorder.hu</a>
+            <div class="description">
+              <span class="bold">Rendezte:</span> Mártondani
+              <br/>II. Magyar Klipszemlén a Legjobb Trash Klip díja
+              <br/>2016 legjobb magyar számai 8. Helyezett a HVG-n
+            </div>
+            <br/>
+            <div class="articles"><span>Cikkek:</span></div>
+            <a href="https://recorder.blog.hu/2015/09/13/18_klippremier_ricsardgir_palvinbarbi" target="_blank">18+ Klippremier! Ricsárdgír: Palvinbarbi - recorder.hu</a>
             <br/><a href="https://444.hu/2015/09/13/zavarba-ejtoen-jo-palvinbarbis-klip-kerult-fel-ma-az-internetre" target="_blank">Zavarba ejtően jó palvinbarbis klip került fel ma az internetre - 444.hu</a>
             <br/><a href="https://velvet.hu/gumicukor/2017/01/15/szeretlek_palvin_barbi_-_hazai_celebekrol_szolo_dalok/" target="_blank">Szeretlek, Palvin Barbi! - Hazai celebekről szóló dalok - velvet.hu</a>
             <br/><a href="http://player.hu/kult/palvin-barbi-es-vagasi-feri-mint-muzsa/" target="_blank">Palvin Barbi és Vágási Feri is homlokon csókolt egy-egy magyar együttest - player.hu</a>
@@ -127,19 +136,21 @@
           <div class="title">
             Koala - 2015
           </div>
-          <div class="description">
-            <br/>Rendezte - Liter Zsófia
-            <br/>Az amerikai VideoStaticon cikk jelent meg róla
-            <br/>2015 legjobb videóklipjei között az Off médián
-          </div>
         </div>
         <iframe width="300" height="180" src="https://www.youtube.com/embed/Ec4lKbkn75s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails3)">
-            Cikkek a Koalával kapcsolatban, kattints rám!
+            <span class="boringDetails3">Katt</span>
           </div>
           <div class="content" id="boringDetails3">
-            <br/><a href="https://www.videostatic.com/watch-it/2015/01/27/weird-night-hungarian-gyro-shop-ricsardgir" target="_blank">A Weird Night at a Hungarian Gyro Shop with Ricsardgir - videostatic.com</a>
+            <div class="description">
+              <span class="bold">Rendezte:</span> Liter Zsófia
+              <br/>Az amerikai VideoStaticon cikk jelent meg róla
+              <br/>2015 legjobb videóklipjei között az Off médián
+            </div>
+            <br/>
+            <div class="articles"><span>Cikkek:</span></div>
+            <a href="https://www.videostatic.com/watch-it/2015/01/27/weird-night-hungarian-gyro-shop-ricsardgir" target="_blank">A Weird Night at a Hungarian Gyro Shop with Ricsardgir - videostatic.com</a>
             <br/><a href="https://phenomenon.hu/nagyon-friss-ricsardgir-koala/" target="_blank">Nagyon friss: Ricsárdgír – Koala - phenomenon.hu</a>
             <br/><a href="https://cink.hu/esszuk-esszuk-az-eukaliptuszt-es-nem-tartozunk-sehova-1679032054" target="_blank">Esszük, esszük az eukaliptuszt, és nem tartozunk sehová - cink.hu</a>
           </div>
@@ -151,22 +162,24 @@
           <div class="title">
             Éndalom - 2014
           </div>
-          <div class="description">
-            <br/>Rendezte: Mártondani
-            <br/>2014 7. Legjobb magyar videoklipje az Indexen
-            <br/>I. Magyar Klipszemle “Elmúlt 5 év” 50 legjobb videoklipjei között
-            <br/>I. Magyar Klipszemle “Elmúlt 5 év” 5 legjobb Low Budget klipjei között
-            <br/>VS.hu 2014 legjobb magyar számai között
-            <br/>Quarton 2014 legjobb 20 videoklipje között
-          </div>
         </div>
         <iframe width="300" height="180" src="https://www.youtube.com/embed/v3i7rRhLCPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails4)">
-            Cikkek az Én dalommal kapcsolatban, kattints rám!
+            <span class="boringDetails4">Katt</span>
           </div>
           <div class="content" id="boringDetails4">
-            <br/><a href="https://index.hu/kultur/zene/2014/12/12/legjobb_klipek_2014/" target="_blank">Minipetárdával a gyönyörű lányok ellen - index.hu</a>
+            <div class="description">
+              <span class="bold">Rendezte:</span> Mártondani
+              <br/>2014 7. Legjobb magyar videoklipje az Indexen
+              <br/>I. Magyar Klipszemle “Elmúlt 5 év” 50 legjobb videoklipjei között
+              <br/>I. Magyar Klipszemle “Elmúlt 5 év” 5 legjobb Low Budget klipjei között
+              <br/>VS.hu 2014 legjobb magyar számai között
+              <br/>Quarton 2014 legjobb 20 videoklipje között
+            </div>
+            <br/>
+            <div class="articles"><span>Cikkek:</span></div>
+            <a href="https://index.hu/kultur/zene/2014/12/12/legjobb_klipek_2014/" target="_blank">Minipetárdával a gyönyörű lányok ellen - index.hu</a>
             <br/><a href="https://vs.hu/magazin/osszes/szirenazd-a-kepembe-2014-legjobb-magyar-szamai-1231#!s0" target="_blank">SZIRÉNÁZD A KÉPEMBE! 2014 LEGJOBB MAGYAR SZÁMAI - vs.hu</a>
             <br/><a href="http://wemagazin.com/lifestyle/erdekesseg/lazulos-zene.html" target="_blank">5 lazulós zene a nyár végére - wemagazin.hu</a>
             <br/><a href="https://recorder.blog.hu/2014/06/29/klippremier_ricsardgir_endalom" target="_blank">KLIPPREMIER! RICSÁRDGÍR: ÉNDALOM - recorder.blog.hu</a>
@@ -180,19 +193,21 @@
           <div class="title">
             Szörf - 2013
           </div>
-          <div class="description">
-            <br/>Rendezte: Mártondani
-            <br/>Az amerikai MTV írt róla cikket
-            <br/>I. Magyar filmszemlén az “Elműlt 5 év” 100 legjobb klipje között
-          </div>
         </div>
         <iframe width="300" height="180" src="https://www.youtube.com/embed/QRTSqAm-rV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails5)">
-            Cikkek a Szörffel kapcsolatban, kattints rám!
+            <span class="boringDetails5">Katt</span>
           </div>
           <div class="content" id="boringDetails5">
-            <br/><a href="http://www.origo.hu/kultura/quart/20130110-zombie-girlfriend-csakazertis-ricsardgir-videoklip.html" target="_blank">Visszapofátlankodik a nu-metál és a kenó - origo.hu</a>
+            <div class="description">
+              <span class="bold">Rendezte:</span> Mártondani
+              <br/>Az amerikai MTV írt róla cikket
+              <br/>I. Magyar filmszemlén az “Elműlt 5 év” 100 legjobb klipje között
+            </div>
+            <br/>
+            <div class="articles"><span>Cikkek:</span></div>
+            <a href="http://www.origo.hu/kultura/quart/20130110-zombie-girlfriend-csakazertis-ricsardgir-videoklip.html" target="_blank">Visszapofátlankodik a nu-metál és a kenó - origo.hu</a>
           </div>
         </div>
       </div>
@@ -202,16 +217,23 @@
           <div class="title">
             Repülőgép - 2012
           </div>
-          <div class="description">
-            <br/>Az X-Faktor Klipversenyében bemutatják
-            <br/>Legjobb operatőr díja (Podányi Dániel, Németh Bali, Mártondani) SlowfilmFest
-            <br/>Különdíj Legjobb Videoklip - VanMásKép FilmFesztivál
-            <br/>Cinemaiubit FilmFest (RO) - vetítés
-            <br/>Olomouc Filmfest (CZ) - Vetítés
-            <br/>Kollár-Klemencz László feldolgozta az MR2 Akusztikban
-          </div>
         </div>
         <iframe width="300" height="180" src="https://www.youtube.com/embed/jvLzGkwQEUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails6)">
+            <span class="boringDetails6">Katt</span>
+          </div>
+          <div class="content" id="boringDetails6">
+            <div class="description">
+              Az X-Faktor Klipversenyében bemutatják
+              <br/>Legjobb operatőr díja (Podányi Dániel, Németh Bali, Mártondani) SlowfilmFest
+              <br/>Különdíj Legjobb Videoklip - VanMásKép FilmFesztivál
+              <br/>Cinemaiubit FilmFest (RO) - vetítés
+              <br/>Olomouc Filmfest (CZ) - Vetítés
+              <br/>Kollár-Klemencz László feldolgozta az MR2 Akusztikban
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="video">

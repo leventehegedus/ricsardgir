@@ -25,9 +25,11 @@ function toggleNav() {
 function toggleBoringDetails(clip) {
   if(clip.style.display === "block") {
     clip.style.display = "none"
+    document.getElementsByClassName(clip.id)[0].innerText = "katt"
   }
   else {
     clip.style.display = "block"
+    document.getElementsByClassName(clip.id)[0].innerText = "x"
   }
 }
 
@@ -39,10 +41,6 @@ function toggleTinder(param){
     document.getElementById(param).style.display = "none";
   }
 }
-
-$(document).ready(function() {
-  document.getElementsByClassName('header')[0].style.marginTop = '36px'
-});
 
 function getLikeSound(user){
   if(user.indexOf('andris') > -1){

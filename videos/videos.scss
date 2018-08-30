@@ -11,12 +11,14 @@
 
       a {
         text-decoration: none;
-        color: $rg-font-light;
+        color: #000;
         padding: 5px;
+        font-size: 40px;
+        font-weight: 800;
 
         &.active,
         &:hover {
-          background-color: $rg-color-2;
+          color: $rg-color-red;
         }
       }
     }
@@ -34,19 +36,18 @@
     width: 100%;
     float: left;
     box-sizing: border-box;
-    padding: 0 0 30px;
+    padding: 0 0 10px;
+    color: #000;
 
     .title {
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 800;
       text-transform: uppercase;
-      text-align: center;
-    }
-
-    .description {
-      font-weight: 300;
-      padding: 0;
-      text-align: center;
+      text-align: left;
+      background-color: #000;
+      letter-spacing: 0;
+      padding-left: 5px;
+      color: #fff;
     }
   }
 
@@ -57,38 +58,64 @@
   }
 
   .boring-details {
-    margin-top: 30px;
+    margin-top: 10px;
+    background-color: $rg-color-blue-boring-details;
 
     .title {
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: lowercase;
+      text-align: right;
+      background-color: #000;
+      letter-spacing: 0;
+      padding-right: 5px;
+      color: #fff;
       cursor: pointer;
-      font-weight: 500;
 
       &:hover {
-        color: $rg-color-1;
+        color: #ff0700;
       }
     }
 
     .content {
-      font-weight: 300;
+      padding: 10px;
+      display: block;
+      text-align: left;
+      font-weight: 200;
+      .description {
+        font-weight: 200;
+        padding: 0px;
+        text-align: left;
+      }
+      .articles {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
 
       span {
-        font-weight: 500;
+        font-weight: 600;
+        &.bold {
+          font-weight: 600;
+        }
       }
 
       &#boringDetails1,
       &#boringDetails2,
       &#boringDetails3,
       &#boringDetails4,
-      &#boringDetails5 {
+      &#boringDetails5,
+      &#boringDetails6 {
         display: none;
       }
     }
+
     a {
       color: #fff;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
-        color: #000;
+        color: #ff0700;
       }
     }
   }
@@ -96,7 +123,7 @@
 @media (min-width: 768px) {
   .block-container {
     section {
-      padding-top: 40px;
+      padding-top: 80px;
     }
   }
 
