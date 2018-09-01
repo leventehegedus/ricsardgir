@@ -2,27 +2,47 @@
   background-color: #fff;
   float: left;
   width: 100%;
-  margin-top: 20px; }
-  .about-us-container .article {
-    float: left;
-    margin: 20px 0;
-    padding: 0 10px;
-    color: #000; }
-    .about-us-container .article a {
-      text-decoration: none;
-      color: #000; }
-      .about-us-container .article a:hover {
-        text-decoration: underline; }
-    .about-us-container .article .title {
-      font-family: 'Slabo 13px';
-      font-size: 23px;
-      font-style: bold; }
-      .about-us-container .article .title span {
-        background-color: #faff69; }
-    .about-us-container .article img {
-      width: 100%;
-      margin: 20px 0; }
-    .about-us-container .article .description {
-      font-family: 'Noticia Text'; }
+  margin-top: 20px;
+}
+.about-us-container .article {
+  float: left;
+  margin: 20px 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+}
+.about-us-container .article a {
+  text-decoration: none;
+  color: #000;
+}
+.about-us-container .article a:hover {
+  text-decoration: underline;
+}
+.about-us-container .article .title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  box-sizing: border-box;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.about-us-container .article .title span {
+  background-color: #000;
+  padding: 0 5px;
+}
+.about-us-container .article img {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+.about-us-container .article .description {
+  font-family: "Open Sans", sans-serif;
+  background-color: #3117f4;
+  color: #fff;
+  padding: 5px;
+  text-align: left;
+}
 
 /*# sourceMappingURL=aboutus.css.map */

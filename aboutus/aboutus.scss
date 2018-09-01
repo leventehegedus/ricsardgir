@@ -9,8 +9,9 @@
   .article {
     float: left;
     margin: 20px 0;
-    padding: 0 10px;
+    padding: 0;
     color: $rg-font-dark;
+    box-sizing: border-box;
 
     a {
       text-decoration: none;
@@ -22,22 +23,33 @@
     }
 
     .title {
-      font-family: 'Slabo 13px';
-      font-size: 23px;
-      font-style: bold;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      box-sizing: border-box;
+      display: block;
+      text-align: left;
+      margin-bottom: 10px;
+      text-transform: uppercase;
 
       span {
-        background-color: #faff69;
+        background-color: #000;
+        padding: 0 5px;
       }
     }
 
     img {
       width: 100%;
-      margin: 20px 0;
+      margin: 0px 0px 10px 0px;
     }
 
     .description {
-      font-family: 'Noticia Text';
+      font-family: "Open Sans", sans-serif;
+      background-color: $rg-color-blue-boring-details;
+      color: #fff;
+      padding: 5px;
+      text-align: left;
     }
   }
 }
