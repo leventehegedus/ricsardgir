@@ -41,7 +41,12 @@ body {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 16px;
+}
+.header_container .rg_header {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header_container .topbar {
   position: absolute;
@@ -105,7 +110,7 @@ body {
 
 #menu {
   height: auto;
-  width: 25vw;
+  width: 50vw;
   float: left;
   overflow: hidden;
   text-align: center;
@@ -116,7 +121,7 @@ body {
   font-size: 20px;
   position: fixed;
   top: 80px;
-  left: -25vw;
+  left: -50vw;
   z-index: 100;
 }
 #menu a {
@@ -242,7 +247,7 @@ body {
 }
 .block-container.home {
   margin-top: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .block-container .block {
   float: left;
@@ -294,13 +299,12 @@ body {
   background-color: #00eee5;
 }
 .block-container .block:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.25);
   font-size: 16px;
   transition: all 0.5s ease;
-  transform: rotate(2deg);
   background-size: cover;
-  letter-spacing: 4px;
-  font-weight: 600;
+  letter-spacing: 5px;
+  font-weight: 900;
 }
 .block-container .fb-container {
   text-align: center;
@@ -520,6 +524,20 @@ body {
 
   .sidegifs {
     display: block;
+  }
+}
+@media (min-width: 768px) {
+  .header_container {
+    font-size: 24px;
+  }
+
+  #menu {
+    width: 25vw;
+    left: -25vw;
+  }
+
+  .block-container.home {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1024px) {
