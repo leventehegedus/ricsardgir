@@ -24,6 +24,8 @@
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="../assets/dist/css/glightbox.css" rel="stylesheet">
+  <script src="../assets/dist/js/glightbox.js"></script>
   <script>
     $(document).ready(function() {
         $("a").on('click', function(event) {
@@ -64,7 +66,11 @@
             Mindenki boldog - 2017
           </div>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <li class="box">
+          <a href="https://www.youtube.com/watch?v=IRA6XqVHefw" class="glightbox-videos">
+						<img src="https://m.blog.hu/re/recorder/image/rics%C3%A1rdg%C3%ADr%203.jpg" alt="image">
+					</a>
+        </li>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails1)">
             <span class="boringDetails1">Katt</span>
@@ -104,7 +110,11 @@
             Palvinbarbi - 2015
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <li class="box">
+          <a href="https://www.youtube.com/watch?v=4isdlwXv__A" class="glightbox-videos">
+            <img src="https://m.blog.hu/re/recorder/image/rics%C3%A1rdg%C3%ADr%203.jpg" alt="image">
+          </a>
+        </li>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails2)">
             <span class="boringDetails2">Katt</span>
@@ -280,6 +290,16 @@
       </div>
     </section>
   </div>
+  <script src="../assets/dist/js/glightbox.min.js"></script>
+  <script>
+  var lightboxVideo = GLightbox({
+    selector: 'glightbox-videos',
+    jwplayer: {
+      api: 'https://content.jwplatform.com/libraries/QzXs2BlW.js',
+      licenseKey: 'imB2/QF0crMqHks7/tAxcTRRjnqA9ZwxWQ2N1A=='
+    }
+  });
+  </script>
   <div class="footer_container" w3-include-html="../footer.html"></div>
 </body>
 
