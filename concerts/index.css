@@ -81,17 +81,6 @@ h1.item {
   overflow: hidden;
   transform: rotate(1deg);
   margin: 20px 0;
-  /*  &:hover {
-    img {
-      transform: scale(1.11);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    &:after {
-      opacity: 0;
-    }
-  }
-  */
 }
 @media screen and (min-width: 540px) {
   .item {
@@ -102,13 +91,28 @@ h1.item {
   border: 5px solid #3117f4;
   box-sizing: border-box;
 }
+.item:nth-child(5n + 1) a {
+  border: 5px solid #1f60d6;
+}
+.item:nth-child(5n + 2) a {
+  border: 5px solid #6cab69;
+}
+.item:nth-child(5n + 3) a {
+  border: 5px solid #cd9722;
+}
+.item:nth-child(5n + 4) a {
+  border: 5px solid #cf48db;
+}
+.item:nth-child(5n) a {
+  border: 5px solid #00bbb4;
+}
 .item p {
   background-color: #000;
   margin: 0;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 5px;
+  padding: 10px;
 }
 .item img {
   width: 100%;
@@ -119,7 +123,7 @@ h1.item {
 .item img:hover {
   transition: transform 0.3s ease-in-out;
   filter: grayscale(0%);
-  transform: scale(1.11);
+  transform: scale(1.05);
 }
 .item--small {
   grid-row-end: span 2;

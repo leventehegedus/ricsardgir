@@ -81,14 +81,39 @@ h1.item {
     border: 5px solid $rg-color-blue-boring-details;
     box-sizing: border-box;
   }
+  &:nth-child(5n + 1) {
+    a{
+      border: 5px solid #1f60d6;
+    }
+  }
+  &:nth-child(5n + 2) {
+    a {
+      border: 5px solid #6cab69;
+    }
+  }
+  &:nth-child(5n + 3) {
+    a {
+      border: 5px solid #cd9722;
+    }
+  }
+  &:nth-child(5n + 4) {
+    a {
+      border: 5px solid #cf48db;
+    }
+  }
+  &:nth-child(5n) {
+    a {
+      border: 5px solid #00bbb4;
+    }
+  }
 
   p {
     background-color: #000;
     margin: 0;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
-    padding: 5px;
+    padding: 10px;
   }
 
   img {
@@ -100,20 +125,10 @@ h1.item {
     &:hover {
       transition: transform 0.3s ease-in-out;
       filter: grayscale(0%);
-      transform: scale(1.11);
+      transform: scale(1.05);
     }
   }
-  /*  &:hover {
-    img {
-      transform: scale(1.11);
-      transition: transform 0.3s ease-in-out;
-    }
 
-    &:after {
-      opacity: 0;
-    }
-  }
-  */
   &--small {
     grid-row-end: span 2;
     transform: rotate(-1deg);

@@ -471,6 +471,7 @@ body {
     font-size: 16px;
     transition: all 0.5s ease;
     background: url("./gif2.gif");
+    transform: rotate(2deg);
     background-size: cover;
   }
   .block-container .block.concerts {
@@ -552,4 +553,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styls.css.map */
