@@ -20,12 +20,10 @@
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
+  <script src="./index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link href="../assets/dist/css/glightbox.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +39,7 @@
     <div class="tinder-container">
       <div id="container">
         <!-- andris !-->
-        <div class="tinder-card-container andris">
+        <div class="tinder-card-container andrisswipe">
           <div class="tinder-image-container andris">
           </div>
           <div class="tinder-description-container">
@@ -60,7 +58,7 @@
               I like formula one. I play bass guitar meni jérz ago. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('andrisswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -77,14 +75,14 @@
                   <a href="./andris/09.jpg" class="glightbox-andris" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('andrisswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- alma !-->
-        <div class="tinder-card-container alma">
+        <div class="tinder-card-container almaswipe">
           <div class="tinder-image-container alma">
           </div>
           <div class="tinder-description-container">
@@ -103,7 +101,7 @@
               Ez az én arcom, az én libám. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('almaswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -116,14 +114,14 @@
                   <a href="./alma/05.jpg" class="glightbox-alma" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('almaswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- bali !-->
-        <div class="tinder-card-container bali">
+        <div class="tinder-card-container baliswipe">
           <div class="tinder-image-container bali">
           </div>
           <div class="tinder-description-container">
@@ -142,7 +140,7 @@
               Nem hasonlítok Demjén Rózsira. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('baliswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -160,14 +158,14 @@
                   <a href="./bali/10.jpg" class="glightbox-bali" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('baliswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- barbi !-->
-        <div class="tinder-card-container barbi">
+        <div class="tinder-card-container barbiswipe">
           <div class="tinder-image-container barbi">
           </div>
           <div class="tinder-description-container">
@@ -186,7 +184,7 @@
               Overálban is fázom. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('barbiswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -320,14 +318,14 @@
                   <a href="./barbi/125.jpg" class="glightbox-barbi" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('barbiswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- boldi !-->
-        <div class="tinder-card-container boldi">
+        <div class="tinder-card-container boldiswipe">
           <div class="tinder-image-container boldi">
           </div>
           <div class="tinder-description-container">
@@ -346,7 +344,7 @@
               Nem a Ricsárdgírből fogok meggazdagodni. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('boldiswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -358,14 +356,14 @@
                   <a href="./boldi/04.jpg" class="glightbox-boldi" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('boldiswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- edina !-->
-        <div class="tinder-card-container edina">
+        <div class="tinder-card-container edinaswipe">
           <div class="tinder-image-container edina">
           </div>
           <div class="tinder-description-container">
@@ -384,7 +382,7 @@
               Hé ez nachos? Szerintem nem sima, hanem popcorn! :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('edinaswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -405,14 +403,14 @@
                   <a href="./edina/13.jpg" class="glightbox-edina" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('edinaswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- eszter !-->
-        <div class="tinder-card-container eszter">
+        <div class="tinder-card-container eszterswipe">
           <div class="tinder-image-container eszter">
           </div>
           <div class="tinder-description-container">
@@ -431,7 +429,7 @@
               Az első két Ricsárdgír koncert után sírtam, annyira rossz volt. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('eszterswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -441,7 +439,7 @@
                   <a href="./eszter/02.jpg" class="glightbox-eszter" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('eszterswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
@@ -449,7 +447,7 @@
         </div>
 
         <!-- flora !-->
-        <div class="tinder-card-container flora">
+        <div class="tinder-card-container floraswipe">
           <div class="tinder-image-container flora">
           </div>
           <div class="tinder-description-container">
@@ -468,7 +466,7 @@
               My horse is dead :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('floraswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -481,7 +479,7 @@
                   <a href="./flora/05.jpg" class="glightbox-flora" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('floraswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
@@ -489,7 +487,7 @@
         </div>
 
         <!-- mate !-->
-        <div class="tinder-card-container mate">
+        <div class="tinder-card-container mateswipe">
           <div class="tinder-image-container mate">
           </div>
           <div class="tinder-description-container">
@@ -508,7 +506,7 @@
               Nem szoktatok látni, de ott vagyok. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('mateswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -524,7 +522,7 @@
                   <a href="./mate/08.jpg" class="glightbox-mate" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('mateswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
@@ -532,7 +530,7 @@
         </div>
 
         <!-- ford !-->
-        <div class="tinder-card-container ford">
+        <div class="tinder-card-container fordswipe">
           <div class="tinder-image-container ford">
           </div>
           <div class="tinder-description-container">
@@ -551,7 +549,7 @@
               Vagyok olyan menő, mint én. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('fordswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -651,14 +649,14 @@
                   <a href="./ford/92.jpg" class="glightbox-ford" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('fordswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- fruzsi !-->
-        <div class="tinder-card-container fruzsi">
+        <div class="tinder-card-container fruzsiswipe">
           <div class="tinder-image-container fruzsi">
           </div>
           <div class="tinder-description-container">
@@ -677,7 +675,7 @@
               Fel is csíptem egy Gírest. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('fruzsiswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -691,14 +689,14 @@
                   <a href="./fruzsi/06.jpg" class="glightbox-fruzsi" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('fruzsiswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- nora !-->
-        <div class="tinder-card-container nora">
+        <div class="tinder-card-container noraswipe">
           <div class="tinder-image-container nora">
           </div>
           <div class="tinder-description-container">
@@ -717,7 +715,7 @@
               Szivárvány a rúzsom, és vanília ízű piskóta sütemény vagyok. :(
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('noraswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -773,14 +771,14 @@
                   <a href="./nora/48.jpg" class="glightbox-nora" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('noraswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- eva !-->
-        <div class="tinder-card-container eva">
+        <div class="tinder-card-container evaswipe">
           <div class="tinder-image-container eva">
           </div>
           <div class="tinder-description-container">
@@ -799,7 +797,7 @@
               Mindenre jó vagyok
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('evaswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -815,14 +813,14 @@
                   <a href="./eva/08.jpg" class="glightbox-eva" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('evaswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- laci !-->
-        <div class="tinder-card-container laci">
+        <div class="tinder-card-container laciswipe">
           <div class="tinder-image-container laci">
           </div>
           <div class="tinder-description-container">
@@ -841,7 +839,7 @@
               A barátaim kucilacinak, a barátnőim kopasz uraságnak hívnak.
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('laciswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -878,14 +876,14 @@
                   <a href="./laci/29.jpg" class="glightbox-laci" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('laciswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </div>
         <!-- martondani !-->
-        <div class="tinder-card-container martondani">
+        <div class="tinder-card-container martondaniswipe">
           <div class="tinder-image-container martondani">
           </div>
           <div class="tinder-description-container">
@@ -904,7 +902,7 @@
               Vágószakos vagyok te meg modell
             </div>
             <div class="decision">
-              <div class="decision-block left">
+              <div class="decision-block left" onclick="swipeleft('martondaniswipe')">
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="decision-block middle">
@@ -943,7 +941,7 @@
                   <a href="./martondani/31.jpg" class="glightbox-martondani" /></a>
                 </a>
               </div>
-              <div class="decision-block right">
+              <div class="decision-block right" onclick="swiperight('martondaniswipe')">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
@@ -1030,32 +1028,6 @@
     });
   </script>
 
-  <script>
-    $(document).ready(function() {
-      $(".tinder-card-container").on("swiperight", function() {
-        $(this).addClass('rotate-left').delay(1400).fadeOut(1);
-        $('.tinder-card-container').find('.status').remove();
-
-        $(this).append('<div class="status like">Kiexportállak MPEG-ben!</div>');
-        if ($(this).is(':last-child')) {
-          $('.tinder-card-container:first-child').removeClass('rotate-left rotate-right').fadeIn(600);
-        };
-        let soundParam = $(this).context.className;
-        getLikeSound(soundParam);
-      });
-      $(".tinder-card-container").on("swipeleft", function() {
-        $(this).addClass('rotate-right').delay(1400).fadeOut(1);
-        $('.tinder-card-container').find('.status').remove();
-
-        $(this).append('<div class="status dislike">Rossz, mint a gitár!</div>');
-        if ($(this).is(':last-child')) {
-          $('.tinder-card-container:first-child').removeClass('rotate-left rotate-right').fadeIn(600);
-        }
-        let soundParam = $(this).context.className;
-        getDislikeSound(soundParam);
-      });
-    });
-  </script>
   <audio id="audio7">
     <source src="/assets/sound7.mp3" type="audio/mpeg">
   </audio>

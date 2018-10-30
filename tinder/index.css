@@ -8,6 +8,7 @@
   display: block;
   border-radius: 10px;
   top: 50px;
+  left: 0px;
   position: absolute;
   cursor: hand;
   box-shadow: 0 2px 10px 0 rgba(156, 156, 156, 0.77);
@@ -18,12 +19,12 @@
   border-top-right-radius: 10px;
   height: 300px;
 }
-.tinder-container .tinder-card-container .tinder-image-container.andris {
-  background: url("./andris/profil/profil.jpg");
-  background-size: cover;
-}
 .tinder-container .tinder-card-container .tinder-image-container.alma {
   background: url("./alma/profil/profil.jpg");
+  background-size: cover;
+}
+.tinder-container .tinder-card-container .tinder-image-container.andris {
+  background: url("./andris/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.bali {
@@ -46,14 +47,6 @@
   background: url("./eszter/profil/profil.jpg");
   background-size: cover;
 }
-.tinder-container .tinder-card-container .tinder-image-container.flora {
-  background: url("./flora/profil/profil.jpg");
-  background-size: cover;
-}
-.tinder-container .tinder-card-container .tinder-image-container.mate {
-  background: url("./mate/profil/profil.jpg");
-  background-size: cover;
-}
 .tinder-container .tinder-card-container .tinder-image-container.eva {
   background: url("./eva/profil/profil.jpg");
   background-size: cover;
@@ -62,12 +55,20 @@
   background: url("./ford/profil/profil.jpg");
   background-size: cover;
 }
+.tinder-container .tinder-card-container .tinder-image-container.flora {
+  background: url("./flora/profil/profil.jpg");
+  background-size: cover;
+}
 .tinder-container .tinder-card-container .tinder-image-container.fruzsi {
   background: url("./fruzsi/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.laci {
   background: url("./laci/profil/profil.jpg");
+  background-size: cover;
+}
+.tinder-container .tinder-card-container .tinder-image-container.mate {
+  background: url("./mate/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.martondani {
@@ -155,6 +156,16 @@
 }
 .tinder-container .tinder-card-container .tinder-description-container .decision .decision-block.right {
   color: #04ec92;
+}
+.tinder-container .tinder-card-container.dislikedTinderCard {
+  left: -1000;
+  transform: rotate(90deg);
+  transition: all ease 1.5s;
+}
+.tinder-container .tinder-card-container.likedTinderCard {
+  left: 1000;
+  transform: rotate(-90deg);
+  transition: all ease 1.5s;
 }
 .tinder-container #container {
   margin: auto !important;

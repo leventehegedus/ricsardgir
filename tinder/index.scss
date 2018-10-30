@@ -10,6 +10,7 @@
     display: block;
     border-radius: 10px;
     top: 50px;
+    left: 0px;
     position: absolute;
     cursor: hand;
     box-shadow: 0 2px 10px 0 hsla(0,0%,61%,.77);
@@ -20,6 +21,10 @@
       border-top-right-radius: 10px;
       height: 300px;
 
+      &.alma {
+        background: url("./alma/profil/profil.jpg");
+        background-size: cover;
+      }
       &.andris {
         background: url("./andris/profil/profil.jpg");
         background-size: cover;
@@ -52,12 +57,20 @@
         background: url("./ford/profil/profil.jpg");
         background-size: cover;
       }
+      &.flora {
+        background: url("./flora/profil/profil.jpg");
+        background-size: cover;
+      }
       &.fruzsi {
         background: url("./fruzsi/profil/profil.jpg");
         background-size: cover;
       }
       &.laci {
         background: url("./laci/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.mate {
+        background: url("./mate/profil/profil.jpg");
         background-size: cover;
       }
       &.martondani {
@@ -162,6 +175,16 @@
           }
         }
       }
+    }
+    &.dislikedTinderCard {
+      left: -1000;
+      transform: rotate(90deg);
+      transition: all ease 1.5s;
+    }
+    &.likedTinderCard {
+      left: 1000;
+      transform: rotate(-90deg);
+      transition: all ease 1.5s;
     }
   }
 
