@@ -391,7 +391,9 @@ body {
   }
 
   &.tinder {
-    margin-top: 76px;
+    min-height: 544px;
+    overflow: auto;
+    margin: 70px 0px 100px 0px;
   }
 
   &.concerts {
