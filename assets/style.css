@@ -200,11 +200,12 @@ body {
 .footer_container .upper {
   width: 100%;
   float: left;
-  line-height: 40px;
+  line-height: 18px;
   height: 40px;
   display: flex;
   padding: 18px 0 4px;
   justify-content: space-evenly;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .footer_container .upper {
@@ -579,10 +580,6 @@ body {
     height: 50px;
     line-height: 50px;
     font-size: 16px;
-  }
-
-  .block-container.home {
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
