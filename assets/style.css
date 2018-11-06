@@ -372,6 +372,12 @@ body {
   min-height: 544px;
   overflow: auto;
   margin: 70px 0px 100px 0px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .block-container.tinder {
+    margin: 100px 0px;
+  }
 }
 .block-container.concerts {
   margin-top: 40px;
