@@ -6,6 +6,8 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
+  min-height: 100vh;
 }
 
 .ui-loader {
@@ -35,25 +37,29 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
-  height: 80px;
-  background-color: #2241ff;
-  line-height: 80px;
+  height: 50px;
+  background-color: #000;
+  line-height: 50px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 900;
 }
 .header_container .rg_header {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
+.header_container .rg_header:hover {
+  color: #ff0700;
+}
 .header_container .topbar {
   position: absolute;
-  right: 10px;
-  top: 0px;
-  height: 80px;
-  line-height: 80px;
+  right: 22px;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
 }
 .header_container .topbar .fb,
 .header_container .topbar .insta,
@@ -61,8 +67,8 @@ body {
   float: right;
   width: auto;
   margin: 0 3px;
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
+  line-height: 50px;
   font-size: 20px;
   text-transform: lowercase;
 }
@@ -92,25 +98,32 @@ body {
 .header_container .topbar .fb svg,
 .header_container .topbar .insta svg,
 .header_container .topbar .yt svg {
-  margin: 25px 0;
+  margin: 15px 0;
   font-size: 20px;
-  height: 30px;
-  line-height: 80px;
+  height: 20px;
+  line-height: 50px;
   width: initial;
   color: #fff;
+}
+.header_container .topbar .fb svg:hover,
+.header_container .topbar .insta svg:hover,
+.header_container .topbar .yt svg:hover {
+  color: #ff0700;
 }
 .header_container .openbtn {
   cursor: pointer;
   width: 25vw;
   text-align: center;
   position: absolute;
-  left: 0px;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.header_container .openbtn:hover {
+  color: #ff0700;
 }
 
 #menu {
-  height: auto;
-  width: 50vw;
+  width: 100vw;
   float: left;
   overflow: hidden;
   text-align: center;
@@ -118,58 +131,48 @@ body {
   background-color: #fff;
   overflow: hidden;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 14px;
+  letter-spacing: 3px;
   position: fixed;
-  top: 80px;
-  left: -50vw;
+  font-weight: 900;
+  top: 50px;
+  bottom: 0;
+  left: -100vw;
   z-index: 100;
+  overflow: auto;
 }
 #menu a {
   width: 100%;
   float: left;
-  height: 50px;
-  font-size: 16px;
+  height: 40px;
+  font-size: 14px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   box-sizing: border-box;
-  background-color: #1f60d6;
+  background-color: #fff;
 }
 #menu a span {
   box-sizing: border-box;
-  font-weight: 400;
+  font-weight: 900;
 }
 #menu a:hover {
-  color: #556dff;
-}
-#menu a:nth-child(5n + 1) {
-  background-color: #1f60d6;
-}
-#menu a:nth-child(5n + 2) {
-  background-color: #6cab69;
-}
-#menu a:nth-child(5n + 3) {
-  background-color: #cd9722;
-}
-#menu a:nth-child(5n + 4) {
-  background-color: #cf48db;
-}
-#menu a:nth-child(5n) {
-  background-color: #00bbb4;
+  color: #ff0700;
 }
 
 .footer_container {
   width: 100%;
   float: left;
-  background-color: #1f60d6;
-  color: #6cab69;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  position: relative;
+  position: absolute;
+  bottom: 0px;
 }
 .footer_container a {
-  color: #6cab69;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
 }
@@ -181,7 +184,7 @@ body {
 }
 .footer_container a:hover {
   text-decoration: none;
-  color: #8cbd8a;
+  color: #ff0700;
 }
 .footer_container a svg {
   margin: 0 5px;
@@ -197,20 +200,33 @@ body {
 .footer_container .upper {
   width: 100%;
   float: left;
-  line-height: 30px;
+  line-height: 40px;
+  display: flex;
+  padding: 18px 0 4px;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  .footer_container .upper {
+    display: block;
+    text-align: center;
+  }
 }
 .footer_container .creator {
   width: 100%;
   float: left;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   background-color: #000;
-  font-size: 12px;
+  font-size: 9px;
   white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .footer_container .creator {
+    font-size: 12px;
+  }
 }
 .footer_container .creator span {
   display: inline-block;
-  font-size: 12px;
   width: auto;
 }
 .footer_container.koala {
@@ -246,8 +262,8 @@ body {
   transition: all 0.5s ease;
 }
 .block-container.home {
-  margin-top: 80px;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 .block-container .block {
   float: left;
@@ -471,6 +487,7 @@ body {
     font-size: 16px;
     transition: all 0.5s ease;
     background: url("./gif2.gif");
+    transform: rotate(2deg);
     background-size: cover;
   }
   .block-container .block.concerts {
@@ -527,16 +544,44 @@ body {
 }
 @media (min-width: 768px) {
   .header_container {
+    height: 80px;
+    line-height: 80px;
     font-size: 24px;
+  }
+  .header_container .topbar {
+    right: 10px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .header_container .topbar .fb,
+.header_container .topbar .insta,
+.header_container .topbar .yt {
+    height: 80px;
+    line-height: 80px;
+  }
+  .header_container .topbar .fb svg,
+.header_container .topbar .insta svg,
+.header_container .topbar .yt svg {
+    margin: 25px 0;
+    font-size: 30px;
+    height: 30px;
+    line-height: 80px;
   }
 
   #menu {
-    width: 25vw;
-    left: -25vw;
+    width: 100vw;
+    left: -100vw;
+    top: 80px;
+    padding-top: calc(50vh - 340px);
+  }
+  #menu a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
   }
 
   .block-container.home {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1024px) {

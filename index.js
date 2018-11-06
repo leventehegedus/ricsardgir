@@ -10,31 +10,21 @@ function pauseAudio(param) {
 }
 
 function toggleNav() {
-    if(document.getElementById("menu").style.left === "0px") {
-      if(window.innerWidth < 768){
-        document.getElementById("menu").style.left = "-50vw";
-      } else {
-        document.getElementById("menu").style.left = "-25vw";
-      }
-
-      document.getElementById("menu").style.transition = "all ease 0.5s";
-//      document.getElementsByClassName('block-container')[0].style.opacity = 1;
-    }
-    else {
-      document.getElementById("menu").style.left = "0px";
-      document.getElementById("menu").style.transition = "all ease 0.5s";
-//      document.getElementsByClassName('block-container')[0].style.opacity = 0.2;
-    }
+  if (document.getElementById("menu").style.left === "0px") {
+    document.getElementById("menu").style.left = "-100vw";
+    document.getElementById("menu").style.transition = "all ease 0.5s";
+  } else {
+    document.getElementById("menu").style.left = "0px";
+    document.getElementById("menu").style.transition = "all ease 0.5s";
+  }
 }
 
 function toggleBoringDetails(clip) {
   if(clip.style.display === "block") {
     clip.style.display = "none"
-    document.getElementsByClassName(clip.id)[0].innerText = "katt"
   }
   else {
     clip.style.display = "block"
-    document.getElementsByClassName(clip.id)[0].innerText = "x"
   }
 }
 
