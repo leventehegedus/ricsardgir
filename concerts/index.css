@@ -79,7 +79,6 @@ h1.item {
   transition: transform 0.3s ease-in-out;
   counter-increment: item-counter;
   overflow: hidden;
-  transform: rotate(1deg);
   margin: 20px 0;
 }
 @media screen and (min-width: 540px) {
@@ -90,6 +89,27 @@ h1.item {
 .item a {
   border: 2px solid #000;
   box-sizing: border-box;
+  color: #000;
+}
+.item a.content {
+  color: #000;
+  text-align: justify;
+  padding: 10px;
+  transition: all ease 1s;
+}
+.item a.content img {
+  padding: 0px;
+}
+.item a.content img:hover {
+  transform: none;
+}
+.item a.content.image {
+  padding: 0px;
+}
+.item a.content:hover {
+  color: #fff;
+  background-color: #000;
+  transition: all ease 1s;
 }
 .item p {
   background-color: #000;
@@ -98,6 +118,13 @@ h1.item {
   font-size: 13px;
   font-weight: 600;
   padding: 10px;
+}
+.item p a {
+  color: #fff;
+  text-decoration: none;
+}
+.item p a:hover {
+  color: #ff0700;
 }
 .item img {
   width: 100%;
@@ -111,19 +138,15 @@ h1.item {
 }
 .item--small {
   grid-row-end: span 2;
-  transform: rotate(-1deg);
 }
 .item--medium {
   grid-row-end: span 3;
-  transform: rotate(2deg);
 }
 .item--large {
   grid-row-end: span 4;
-  transform: rotate(-3deg);
 }
 .item--huge {
   grid-row-end: span 5;
-  transform: rotate(2deg);
 }
 .item--giga {
   grid-row-end: span 6;
@@ -151,7 +174,6 @@ h1.item {
 @media screen and (min-width: 540px) {
   .item--wide--left {
     grid-column: 1/-1;
-    transform: rotate(-1deg);
     grid-row-end: span 4;
   }
 }

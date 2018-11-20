@@ -121,8 +121,8 @@ h1.title {
 }
 
 .scores-container {
-  float: right;
-  text-align: right;
+  float: left;
+  width: 100%;
 }
 
 .game-container .doge-says {
@@ -170,9 +170,9 @@ h1.title {
 .shout-out {
   height: 10px;
   line-height: 10px;
-  background: #3d5a80;
+  background: #000;
   padding: 10px 10px;
-  border-radius: 3px;
+  border-radius: 0px;
   display: inline-block;
 }
 
@@ -185,13 +185,13 @@ h1.title {
 }
 
 .info-container, .hide-info {
-  background: #3d5a80;
+  background: #000;
   padding: 10px 15px;
   height: 10px;
   line-height: 10px;
   font-size: 10px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 0px;
   color: white;
   margin-top: 8px;
   width: 36px;
@@ -232,13 +232,13 @@ h1.title {
 
 .key-container, .hide-key {
   display: none;
-  background: #3d5a80;
+  background: #000;
   padding: 10px 15px;
   height: 10px;
   line-height: 10px;
   font-size: 10px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 0px;
   color: white;
   width: 36px;
   text-align: center;
@@ -279,29 +279,27 @@ h1.title {
 
 .score-container, .best-container {
   position: relative;
-  display: inline-block;
-  background: #00bbb4;
-  padding: 15px 25px;
-  /*  font-size: 25px;*/
-  height: 25px;
-  line-height: 42px;
+  display: block;
+  background: #000;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
   font-weight: bold;
-  border-radius: 15px;
   color: white;
-  margin-top: 8px;
+  margin-top: 0px;
   text-align: center;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
 }
 
 .score-container:after, .best-container:after {
-  position: absolute;
   width: 100%;
-  top: 10px;
-  left: 0;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 17px;
   text-align: center;
-  color: #000;
+  color: #fff;
+  padding-left: 5px;
 }
 
 .score-container .score-addition, .best-container .score-addition {
@@ -320,7 +318,7 @@ h1.title {
 }
 
 .score-container:after {
-  content: "Pontok";
+  content: "Pont";
 }
 
 .best-container:after {
@@ -334,7 +332,7 @@ p {
 }
 
 a {
-  color: #3d5a80;
+  color: #000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
@@ -393,7 +391,7 @@ hr {
 }
 
 .game-container {
-  margin-top: 40px;
+  margin-top: 0px;
   position: relative;
   padding: 15px;
   cursor: default;
@@ -447,8 +445,8 @@ hr {
 
 .game-container .game-message a {
   display: inline-block;
-  background: #3d5a80;
-  border-radius: 3px;
+  background: #000;
+  border-radius: 0px;
   padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
@@ -498,8 +496,7 @@ hr {
   height: 106.25px;
   margin-right: 15px;
   float: left;
-  border-radius: 15px;
-  background: #00bbb4;
+  background: #000;
   /*  background: rgba(238, 228, 218, 0.35);*/
 }
 
@@ -627,7 +624,6 @@ hr {
 }
 
 .tile .tile-inner {
-  border-radius: 15px;
   background: #eee4da;
   text-align: center;
   font-weight: bold;
@@ -894,11 +890,11 @@ hr {
   .container {
     width: 280px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 0px;
   }
   .score-container, .best-container {
     margin-top: 0;
-    padding: 15px 10px;
+    padding: 0px;
     min-width: 40px;
   }
   .heading {
@@ -997,7 +993,6 @@ hr {
     height: 57.5px;
     margin-right: 10px;
     float: left;
-    border-radius: 15px;
   }
   .grid-cell:last-child {
     margin-right: 0;

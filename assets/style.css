@@ -144,13 +144,13 @@ body {
 #menu a {
   width: 100%;
   float: left;
-  height: 40px;
-  font-size: 14px;
+  height: 35px;
+  font-size: 13px;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
   box-sizing: border-box;
   background-color: #fff;
 }
@@ -324,7 +324,7 @@ body {
   margin-top: 106px;
 }
 .block-container.k49 {
-  margin-top: 80px;
+  margin-top: 65px;
 }
 .block-container.us {
   margin-top: 80px;
@@ -554,9 +554,9 @@ body {
     padding-top: calc(50vh - 340px);
   }
   #menu a {
-    height: 50px;
-    line-height: 50px;
-    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1024px) {
