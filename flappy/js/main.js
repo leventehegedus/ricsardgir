@@ -55,7 +55,6 @@ var loopGameloop;
 var loopPipeloop;
 
 $(document).ready(function() {
-  document.getElementsByClassName('header')[0].style.marginTop = '36px'
 
    if(window.location.search == "?debug")
       debugmode = true;

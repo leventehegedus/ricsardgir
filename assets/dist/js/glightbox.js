@@ -99,7 +99,7 @@
         openEffect: 'zoomIn', // fade, zoom
         closeEffect: 'zoomOut', // fade, zoom
         slideEffect: 'slide', // fade, slide, zoom,
-        moreText: 'See more',
+        moreText: 'Mutass többet',
         slideHtml: '',
         lightboxHtml: '',
         cssEfects: {
