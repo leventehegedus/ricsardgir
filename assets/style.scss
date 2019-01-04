@@ -426,27 +426,39 @@ body {
 .glightbox-container .ginner-container.desc-bottom,
 .glightbox-container .ginner-container.desc-top {
   width: 100%;
+  position: relative;
 }
 
 .glightbox-mobile .glightbox-container .gslide-description {
   position: absolute !important;
+  bottom: 0 !important;
+}
+.glightbox-mobile .glightbox-container .gslide-desc .desc-more {
+  color: #000 !important;
+  opacity: 1 !important;
 }
 
 .glightbox-mobile .glightbox-container .gslide-desc {
-  color: #fff !important;
+  color: #000 !important;
+}
+.glightbox-mobile .glightbox-container .gslide-title {
+  color: #000 !important;
 }
 
 .glightbox-clean .gslide-description {
-  background: rgba(255,255,255,0) !important;
-  @media (min-width: 768px){
-    background: rgba(255,255,255,0.5) !important;
-  }
-  padding: 10 20px;
+  background: rgba(255,255,255,0.5) !important;
+  color: #000 !important;
+  padding: 10px !important;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   box-sizing: border-box;
   display: inline-block;
+  h4 {
+    margin-bottom: 10px !important;
+    text-transform: uppercase;
+  }
 }
 
 .glightbox-clean .gslide-title {
@@ -465,8 +477,8 @@ body {
   margin-bottom: 0;
   line-height: 12px !important;
   @media (min-width: 768px){
-    font-size: 16px !important;
-    line-height: 16px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
   }
   font-family: "Open Sans" !important;
 }
