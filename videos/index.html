@@ -22,26 +22,12 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
+  <script src="./index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script>
-    $(document).ready(function() {
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                }).stop('true', 'true');
-            } // End if
-        });
-    });
-</script>
 </head>
 
-<body>
+<body onload="fetchBackground()">
   <div w3-include-html="../topbar.html"></div>
   <div w3-include-html="../menu.html"></div>
   <script>
@@ -51,7 +37,9 @@
     <section id="videoclip">
       <h1><a href="#videoclip" class="active">Videóklipek</a> <a href="#video">Videók</a></h1>
       <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IRA6XqVHefw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="IRA6XqVHefw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails1)">
             <span class="boringDetails1">Mindenki boldog - 2017</span>
@@ -87,7 +75,9 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/4isdlwXv__A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="4isdlwXv__A">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails2)">
             <span class="boringDetails2">Palvinbarbi - 2015</span>
@@ -115,7 +105,9 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/Ec4lKbkn75s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="Ec4lKbkn75s">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails3)">
             <span class="boringDetails3">Koala - 2015</span>
@@ -136,7 +128,9 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/v3i7rRhLCPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="v3i7rRhLCPk">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails4)">
             <span class="boringDetails4">Éndalom - 2014</span>
@@ -162,7 +156,9 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/QRTSqAm-rV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="QRTSqAm-rV4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails5)">
             <span class="boringDetails5">Szörf - 2013</span>
@@ -181,7 +177,9 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/jvLzGkwQEUw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="youtube" data-embed="jvLzGkwQEUw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="boring-details">
           <div class="title" onclick="toggleBoringDetails(boringDetails6)">
             <span class="boringDetails6">Repülőgép - 2012</span>
@@ -203,8 +201,20 @@
     <section id="video">
       <h1><a href="#videoclip">Videóklipek</a> <a href="#video" class="active">Videók</a></h1>
       <div class="video-container">
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1826394390718738%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-        <div class="boring-details">
+        <video class="uploaded-video" id="video1" controls preload="none" poster="../assets/fav.png">
+          <source src="./2018ricsardgir.mp4" type="video/mp4">
+        </video>
+        <div class="video-intro">
+          <div class="title">
+            Ez történt a Ricsárdgírrel 2018-ban!
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <video class="uploaded-video" id="video2" controls preload="none" poster="../assets/fav.png">
+          <source src="./a38koncert.mp4" type="video/mp4">
+        </video>
+        <div class="video-intro">
           <div class="title">
             <span>
               ILYEN VOLT A TELTHÁZAS A38-AS RICSÁRDGÍR KONCERT!
@@ -212,353 +222,414 @@
           </div>
         </div>
       </div>
-      <!--
-
       <div class="video-container">
+        <video class="uploaded-video" id="video3" controls preload="none" poster="../assets/fav.png">
+          <source src="./2017ricsardgir.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             Ez történt a Ricsárdgírrel 2017-ben!
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1789785821046262%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video4" controls preload="none" poster="../assets/fav.png">
+          <source src="./2016ricsardgir.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             EZ TÖRTÉNT A RICSÁRDGÍRREL 2016-BAN!
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1391623994195782%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video5" controls preload="none" poster="../assets/fav.png">
+          <source src="./rtlmindenkiboldog.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             RTL Klub híradó: Ricsárdgír
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1649892305035615%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video6" controls preload="none" poster="../assets/fav.png">
+          <source src="./ricsardgirgimi.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             THE FANTASTIC ADVENTURES OF RICSÁRDGÍR: KONCERT EGY OSZTÁLYÉRT FEAT CSAKNEKEDKISLÁNY
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1861484387209738%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="Ix-Pe78B7lw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             THE FANTASTIC ADVENTURES OF RICSÁRDGÍR: KÉSZÜLŐDÉS EGY TELTHÁZAS KONCERTRE
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/Ix-Pe78B7lw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video7" controls preload="none" poster="../assets/fav.png">
+          <source src="./a38interju.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             GÍRINTERJÚ: A38 2015
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1926776024013907%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video8" controls preload="none" poster="../assets/fav.png">
+          <source src="./petofiinterju.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             GÍRINTERJÚ: PETŐFI TÉVÉ ÁMOKFUTÁS
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1066769000014618%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="209vd2L2FIc">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GÍRINTERJÚ ÉS KONCERT: BALCONY TV LIGHTSABER
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/209vd2L2FIc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="ao81lTHtzzw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GÍRINTERJÚ: A38 2014
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/ao81lTHtzzw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="DC-xXcbSoxw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GÍRINTERJÚ: AZ ELSŐ INTERJÚ
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/DC-xXcbSoxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="DC-xXcbSoxw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GÍRWERK: ÍGY KÉSZÜLT A SZÖRF
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/iejdtC-pWKY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video1" controls preload="none" poster="../assets/fav.png">
+          <source src="./endalomkimaradt.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             GÍRWERK: ÉNDALOM - KIMARADT JELENETEK ÉS BAKIK
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F999643456727173%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <video class="uploaded-video" id="video1" controls preload="none" poster="../assets/fav.png">
+          <source src="./repulogepkimaradt.mp4" type="video/mp4">
+        </video>
         <div class="video-intro">
           <div class="title">
             GÍRWERK: REPÜLŐGÉP - KIMARADT JELENETEK
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F4289482602941%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="t8tCQGKxFWg">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: FISHING ON ORFŰ 2017
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/t8tCQGKxFWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="uT8tcOIqVtA">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: FISHING ON ORFŰ 2016
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/uT8tcOIqVtA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="vXLcEaW-cAw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: FISHING ON ORFŰ 2015
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/vXLcEaW-cAw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="87OXuQcsGO4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             AKUSZTIKUS KONCERT: FISHING ON ORFŰ 2015
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/87OXuQcsGO4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="FjnbqWA630w">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             THE FANTASTIC ADVENTURES OF LACI - GOMBA - TESZTVERZIÓ
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/FjnbqWA630w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="mrI8QCroTTw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GAMERLACI: BATTLEFRONT TESZT
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/mrI8QCroTTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="QaAlJdewJW4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             GAMERLACI: GTAV TESZT
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/QaAlJdewJW4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
+      </div> <!--
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F943260249032161%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             ILYEN EGY PRÓBA
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F943260249032161%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F972617972763055%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             ILYEN VOLT A SÁRVÁRI KONCERTÜNK 2015-ben
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F972617972763055%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1199179946773522%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             A LEGENDÁS SATZUKI PROMO VIDEÓJA
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1199179946773522%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1202651653093018%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             AKUSZTIKUS PRÓBA: LACI OTTHON FELEJTETTE A SZINTIJÉT
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1202651653093018%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-      </div>
+      </div> !-->
       <div class="video-container">
+        <div class="youtube" data-embed="rWXlO5ugBSI">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             ÉVA A KONCERTEN SZENTENDRÉN
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/rWXlO5ugBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="F0dqQj35lYk">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: A38 2015 - RIVERSIDE
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/F0dqQj35lYk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="ApRoe6_VQK4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             FÉLRÉSZEG AKUSZTIKUS KONCERT A BÁNKITÓ FESZTIVÁLON:
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/ApRoe6_VQK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
+      </div> <!--
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1795545567136954%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             MÁRTONDANI ELBALETTOZZA AZ E.T. CÍMŰ FILMET
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1795545567136954%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1559765060715007%2F&show_text=0&width=267" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             ÁTLAGOS LAZULÁS HÉTVÉGÉN
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1559765060715007%2F&show_text=0&width=267" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1503812216310292%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             ÍGY KÉSZÜLTÜNK AZ INDEX DALVERSENYÉRE
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1503812216310292%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1454183301273184%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             MÁRTONDANI GYAKOROL
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1454183301273184%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1290299754328207%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             PALVINBARBI AUDIÓKOMMENTÁR LACIVAL
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1290299754328207%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F997026910322161%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             BELGA FEAT THERICSARDGIRLS
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F997026910322161%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div>
       <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1968391833185659%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         <div class="video-intro">
           <div class="title">
             FISHING 2017 CSODÁLATOS KÖZÖNSÉG
           </div>
         </div>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fricsardgir%2Fvideos%2F1968391833185659%2F&show_text=0&width=560" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-      </div>
+      </div> !-->
       <div class="video-container">
+        <div class="youtube" data-embed="jnKUrvcvP1k">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             EREDETI HELLO I AM TONYCURTIS FEAT HOFFMANNTAMÁS BOLDI
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/jnKUrvcvP1k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="pOgXeh_rhZ4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             RICSÁRDGÍR AZ EFFOTTON 2012-BEN
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/pOgXeh_rhZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="rxEw6tRqLXM">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             RICSÁRDGÍR SZEGEDEN 2013-BAN
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/rxEw6tRqLXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="cQhP-Qjbne4">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             THE RICSARDGIR SHOWREEL 2013
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/cQhP-Qjbne4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="F7Bxf0XDybA">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KOLLÁR-KLEMENCZ MR2 AKUSZTIK - RICSÁRDGÍR - REPÜLŐGÉP
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/F7Bxf0XDybA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="uKo79VG7aoQ">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             MÁRTONDANI - SAY A LITTLE PRAY FOR YOU
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/uKo79VG7aoQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="DDk4u7geh_s">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: A38 NOIR 2014
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/DDk4u7geh_s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="5107jawwU3o">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             MÁRTONDANI NAGYMAMÁJA A STAR WARSRÓL
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/5107jawwU3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="video-container">
+        <div class="youtube" data-embed="rN6WFjYh0OY">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
         <div class="video-intro">
           <div class="title">
             KONCERT: MÜSZI 2017 FEAT KONSICZKY CSNK DÁVID
           </div>
         </div>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/rN6WFjYh0OY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      !-->
     </section>
   </div>
   <div class="footer_container" w3-include-html="../footer.html"></div>
