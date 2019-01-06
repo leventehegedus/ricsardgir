@@ -27,6 +27,7 @@
 .video-container .uploaded-video {
   width: 100%;
 }
+.video-container .fbvideo,
 .video-container .youtube {
   background-color: #000;
   position: relative;
@@ -34,12 +35,24 @@
   overflow: hidden;
   cursor: pointer;
 }
+.video-container .fbvideo img,
 .video-container .youtube img {
   width: 100%;
   top: -16.82%;
   left: 0;
   opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
 }
+.video-container .fbvideo iframe,
+.video-container .youtube iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.video-container .fbvideo .play-button,
 .video-container .youtube .play-button {
   width: 116px;
   height: 67px;
@@ -47,35 +60,27 @@
   z-index: 1;
   opacity: 0.8;
   border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background: url("../assets/fav.png");
 }
+.video-container .fbvideo .play-button:before,
 .video-container .youtube .play-button:before {
   content: "";
   border-style: solid;
   border-width: 15px 0 15px 26px;
   border-color: transparent transparent transparent #fff;
-}
-.video-container .youtube img,
-.video-container .youtube .play-button {
-  cursor: pointer;
-}
-.video-container .youtube img,
-.video-container .youtube iframe,
-.video-container .youtube .play-button,
-.video-container .youtube .play-button:before {
   position: absolute;
-}
-.video-container .youtube .play-button,
-.video-container .youtube .play-button:before {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  background: url(../assets/fav.png);
+  background: url("../assets/fav.png");
 }
-.video-container .youtube iframe {
-  height: 100%;
-  width: 100%;
+.video-container .fbvideo img {
   top: 0;
-  left: 0;
 }
 .video-container .video-intro {
   width: 100%;
@@ -112,7 +117,7 @@
   text-align: right;
   background-color: #000;
   letter-spacing: 0;
-  padding: 0px 10px;
+  padding: 0 10px;
   color: #fff;
   cursor: pointer;
   display: flex;
@@ -129,7 +134,7 @@
 }
 .video-container .boring-details .content .description {
   font-weight: 200;
-  padding: 0px;
+  padding: 0;
   text-align: left;
 }
 .video-container .boring-details .content .articles {
