@@ -354,6 +354,11 @@ body {
 .block-container.concerts {
   margin-top: 40px;
 }
+@media (min-width: 768px) {
+  .block-container.concerts {
+    margin-top: 80px;
+  }
+}
 
 .sidegifs {
   display: none;
@@ -410,8 +415,16 @@ body {
 }
 
 .glightbox-mobile .glightbox-container .gslide-description {
-  position: absolute !important;
+  position: static !important;
   bottom: 0 !important;
+  background-color: #fff !important;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .glightbox-mobile .glightbox-container .gslide-description {
+    background: rgba(255, 255, 255, 0.5) !important;
+    position: absolute !important;
+  }
 }
 
 .glightbox-mobile .glightbox-container .gslide-desc .desc-more {
@@ -539,6 +552,12 @@ body {
     background-size: cover;
     background-position: top center;
     transition: all 0.5s ease;
+  }
+  .block-container .block.merch {
+    width: 50%;
+  }
+  .block-container .block.personality {
+    width: 75%;
   }
   .block-container .block.contact:hover {
     background: url("./sw.gif");

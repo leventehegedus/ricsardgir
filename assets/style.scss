@@ -364,6 +364,9 @@ body {
 
   &.concerts {
     margin-top: 40px;
+    @media (min-width: 768px){
+      margin-top: 80px;
+    }
   }
 }
 
@@ -430,8 +433,14 @@ body {
 }
 
 .glightbox-mobile .glightbox-container .gslide-description {
-  position: absolute !important;
+  position: static !important;
   bottom: 0 !important;
+  background-color: #fff !important;
+  width: 100%;
+  @media (min-width: 768px){
+    background: rgba(255,255,255,0.5) !important;
+    position: absolute !important;
+  }
 }
 .glightbox-mobile .glightbox-container .gslide-desc .desc-more {
   color: #000 !important;
@@ -573,6 +582,13 @@ body {
           background-position: top center;
           transition: all 0.5s ease;
         }
+      }
+
+      &.merch {
+        width: 50%;
+      }
+      &.personality {
+        width: 75%;
       }
 
       &.contact {
