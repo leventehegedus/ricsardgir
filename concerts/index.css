@@ -94,9 +94,10 @@ h1.item {
 }
 .item a.content {
   color: #000;
-  text-align: justify;
-  padding: 10px;
+  text-align: left;
+  padding: 12px;
   transition: all ease 1s;
+  font-size: 14px;
 }
 .item a.content img {
   padding: 0px;
@@ -111,6 +112,16 @@ h1.item {
   color: #fff;
   background-color: #000;
   transition: all ease 1s;
+}
+.item a.content.highlight {
+  color: #ff0700;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.item a.content.highlight:hover {
+  color: #00f9ff;
 }
 .item p {
   background-color: #000;
@@ -183,17 +194,26 @@ h1.item {
     grid-column: 1/-2;
   }
 }
-.item--rect {
-  grid-column: 1/3;
-  grid-row-end: span 3;
-}
 .item--rect--middle {
   grid-column: 2/4;
   grid-row-end: span 4;
 }
+.item--rect--middle.higher {
+  grid-row-end: span 5;
+}
 .item--rect--right {
   grid-column: 3/5;
   grid-row-end: span 4;
+}
+.item--rect--right.higher {
+  grid-row-end: span 5;
+}
+.item--rect--left {
+  grid-column: 1/3;
+  grid-row-end: span 4;
+}
+.item--rect--left.higher {
+  grid-row-end: span 5;
 }
 .item__details {
   position: absolute;

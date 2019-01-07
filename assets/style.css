@@ -265,7 +265,7 @@ body {
 }
 .block-container.home {
   margin-top: 50px;
-  margin-bottom: 0;
+  margin-bottom: 80px;
 }
 .block-container .block {
   float: left;
