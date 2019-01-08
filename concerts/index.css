@@ -172,6 +172,18 @@ h1.item {
     grid-row-end: span 4;
   }
 }
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 5;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 7;
+  }
+}
 @media screen and (min-width: 540px) {
   .item--wide {
     grid-column: 1/-1;
