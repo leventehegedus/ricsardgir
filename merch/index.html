@@ -22,6 +22,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link href="../assets/dist/css/glightbox.css" rel="stylesheet">
+  <script src="../assets/dist/js/glightbox.js"></script>
 </head>
 
 <body>
@@ -29,80 +31,190 @@
   <div w3-include-html="../menu.html"></div>
   <script>
     w3.includeHTML();
+    window.onscroll = function() {scrollFunction()};
   </script>
-  <div class="header">
-    Mörcs
-  </div>
+  <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
   <div class="block-container merch">
     <section class="section">
       <div class="grid">
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Póló: 9999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">The Ricsards magazin: 3999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Kazetta: 2999Ft</a></p>
+        <div class="item item--large">
+          <a href="https://f4.bcbits.com/img/a0195992466_10.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
+            <img src="https://f4.bcbits.com/img/a0195992466_10.jpg">
+          </a>
+          <p>
+            Dark side of the moon CD: 4900Ft
+          </p>
         </div>
         <div class="item item--medium">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Műpénisz: 1999Ft</a></p>
+          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
+            <img src="./koalapolo.jpg">
+          </a>
+          <p>
+            Koalás póló: 6000Ft
+          </p>
         </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Guminő: 9999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Öklözőzsír: 3999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Vibrátor: 2999Ft</a></p>
-        </div>
-        <div class="item item--medium">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Műpénisz: 1999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Guminő: 9999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Öklözőzsír: 3999Ft</a></p>
-        </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Vibrátor: 2999Ft</a></p>
+        <div class="item item--large">
+          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
+            <img src="./kottafuzet.jpg">
+          </a>
+          <p>
+            Kottafüzet: 2000Ft
+          </p>
         </div>
         <div class="item item--medium">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Műpénisz: 1999Ft</a></p>
+          <a href="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
+            <img src="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1">
+          </a>
+          <p>
+            Koalás kitűző: 400Ft
+          </p>
         </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Guminő: 9999Ft</a></p>
+        <div class="item item--rect--left">
+          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
+            <img src="./lacizeneora.jpg">
+          </a>
+          <p>
+            Zeneelmélet óra Lacival: 20000Ft/óra
+          </p>
         </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Öklözőzsír: 3999Ft</a></p>
+        <div class="item item--rect--right higher">
+          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
+            <img src="./allatkert.jpg">
+          </a>
+          <p>
+            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
+          </p>
         </div>
-        <div class="item item--small">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Vibrátor: 2999Ft</a></p>
+        <div class="item item--huge">
+          <a href="./ricsards.jpg" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
+            <img src="./ricsards.jpg">
+          </a>
+          <p>
+            The Ricsards magazin: 1000Ft
+          </p>
+        </div>
+        <div class="item item--large">
+          <a href="https://f4.bcbits.com/img/a0195992466_10.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
+            <img src="https://f4.bcbits.com/img/a0195992466_10.jpg">
+          </a>
+          <p>
+            Dark side of the moon CD: 4900Ft
+          </p>
         </div>
         <div class="item item--medium">
-          <a class="content image"><img src="http://www.instyle.hu/data/cikk/233/233533-mihalik-eniko-mihalik-eniko-vlog.775x400.jpg" /></a>
-          <p><a href="http://vanenet.hu" target="_blank">Műpénisz: 1999Ft</a></p>
+          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
+            <img src="./koalapolo.jpg">
+          </a>
+          <p>
+            Koalás póló: 6000Ft
+          </p>
+        </div>
+        <div class="item item--large">
+          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
+            <img src="./kottafuzet.jpg">
+          </a>
+          <p>
+            Kottafüzet: 2000Ft
+          </p>
+        </div>
+        <div class="item item--medium">
+          <a href="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
+            <img src="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1">
+          </a>
+          <p>
+            Koalás kitűző: 400Ft
+          </p>
+        </div>
+        <div class="item item--rect--left">
+          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
+            <img src="./lacizeneora.jpg">
+          </a>
+          <p>
+            Zeneelmélet óra Lacival: 20000Ft/óra
+          </p>
+        </div>
+        <div class="item item--rect--right higher">
+          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
+            <img src="./allatkert.jpg">
+          </a>
+          <p>
+            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
+          </p>
+        </div>
+        <div class="item item--huge">
+          <a href="./ricsards.jpg" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
+            <img src="./ricsards.jpg">
+          </a>
+          <p>
+            The Ricsards magazin: 1000Ft
+          </p>
+        </div>
+        <div class="item item--large">
+          <a href="https://f4.bcbits.com/img/a0195992466_10.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
+            <img src="https://f4.bcbits.com/img/a0195992466_10.jpg">
+          </a>
+          <p>
+            Dark side of the moon CD: 4900Ft
+          </p>
+        </div>
+        <div class="item item--medium">
+          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
+            <img src="./koalapolo.jpg">
+          </a>
+          <p>
+            Koalás póló: 6000Ft
+          </p>
+        </div>
+        <div class="item item--large">
+          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
+            <img src="./kottafuzet.jpg">
+          </a>
+          <p>
+            Kottafüzet: 2000Ft
+          </p>
+        </div>
+        <div class="item item--medium">
+          <a href="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
+            <img src="https://rlv.zcache.co.uk/pudding_the_koala_6_cm_round_badge-rfd3a22a797614d16963bc2e97189caad_k94rf_307.jpg?rlvnet=1">
+          </a>
+          <p>
+            Koalás kitűző: 400Ft
+          </p>
+        </div>
+        <div class="item item--rect--left">
+          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
+            <img src="./lacizeneora.jpg">
+          </a>
+          <p>
+            Zeneelmélet óra Lacival: 20000Ft/óra
+          </p>
+        </div>
+        <div class="item item--rect--right higher">
+          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
+            <img src="./allatkert.jpg">
+          </a>
+          <p>
+            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
+          </p>
+        </div>
+        <div class="item item--huge">
+          <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27540021_1814765591881618_5416746654720497362_n.jpg?_nc_cat=106&_nc_ht=scontent-vie1-1.xx&oh=7783d6507d22d6ab0c3431e97e5b2c2a&oe=5C90B452" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
+            <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/27540021_1814765591881618_5416746654720497362_n.jpg?_nc_cat=106&_nc_ht=scontent-vie1-1.xx&oh=7783d6507d22d6ab0c3431e97e5b2c2a&oe=5C90B452">
+          </a>
+          <p>
+            The Ricsards magazin: 1000Ft
+          </p>
         </div>
       </div>
     </section>
   </div>
+  <script src="../assets/dist/js/glightbox.min.js"></script>
+  <script>
+    var lightbox = GLightbox({
+      selector: 'glightbox-demo',
+      loopAtEnd: true
+    });
+  </script>
   <div class="footer_container" w3-include-html="../footer.html"></div>
 </body>
 
