@@ -36,3 +36,17 @@ function toggleTinder(param){
     document.getElementById(param).style.display = "none";
   }
 }
+
+function topFunction() {
+  $('html,body').animate({ scrollTop: 0 }, 1666);
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("btnToTop").style.opacity = "1";
+    document.getElementById("btnToTop").style.visibility = "visible";
+  } else {
+    document.getElementById("btnToTop").style.opacity = "0";
+    document.getElementById("btnToTop").style.visibility = "hidden";
+  }
+}

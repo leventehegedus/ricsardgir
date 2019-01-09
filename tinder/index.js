@@ -1,13 +1,27 @@
 function swipeleft(param){
   getDislikeSound(param);
   document.getElementsByClassName(param)[0].className = document.getElementsByClassName(param)[0].className + ' dislikedTinderCard';
+  if(param === 'andrisswipe'){
+    setTimeout(function(){restartSwiping()},1666);
+  }
 }
 
 function swiperight(param) {
   getLikeSound(param);
   document.getElementsByClassName(param)[0].className = document.getElementsByClassName(param)[0].className + ' likedTinderCard';
+  if(param === 'andrisswipe'){
+    setTimeout(function(){restartSwiping()},1666);
+  }
 }
 
+function restartSwiping(){
+  var cards = document.getElementsByClassName('tinder-card-container')
+
+  Array.prototype.forEach.call(cards, function(card) {
+    card.classList.remove('dislikedTinderCard');
+    card.classList.remove('likedTinderCard');
+  });
+}
 
 function getLikeSound(user){
   if(user.indexOf('andris') > -1){
