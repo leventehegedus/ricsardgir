@@ -19,11 +19,37 @@
   <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Slabo+13px&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="../concerts/index.css">
-  <link rel="stylesheet" type="text/css" href="aboutus.css">
+  <link rel="stylesheet" type="text/css" href="shit.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1666, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+</script>
 </head>
 
 <body>
@@ -35,16 +61,109 @@
   </script>
   <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
   <div class="block-container">
-    <section class="section">
+    <section class="section" id="interview">
+      <h1><a href="#interview" class="active">Interjúk</a> <a href="#aboutus">Rólunk írták</a></h1>
       <div class="grid">
+        <div class="item item--large">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./hangman.jpg" />
+            “MA MÁR NEM AKARNAK FELAKASZTANI BENNÜNKET EGY KONCERT UTÁN“
+          </a>
+          <p><a href="https://divany.hu/vilagom/2016/10/19/ricsardgir/amp" target="_blank">divany.hu</a></p>
+        </div>
         <div class="item item--small">
           <a class="content">
-            “az egész ország felkapta a fejét, még az RTL Klub is foglalkozott velük főműsoridőben.”</a>
-          <p><a href="http://index.hu/kultur/zene/2017/10/01/het_lemeze_macklemore_gemini_kritika/" target="_blank">index.hu</a></p>
+            “Szentendrén már volt egy lemezbemutatónk, amelyre tizenötezer ember jött el.”
+          </a>
+          <p><a href="http://kulter.hu/2014/02/hobbipop-eletorom-ricsardgir/" target="_blank">kulter.hu</a></p>
+        </div>
+        <div class="item item--rect--left higher">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./letsdance.jpg" />
+            “Az EP-t azért csináltuk meg, mert féltünk, hogy nem jönnek el sokan az Akváriumba”
+          </a>
+          <p><a href="http://urbanplayer.hu/zene/ricsardgir-my-horse-interju/" target="_blank">urbanplayer.hu</a></p>
+        </div>
+        <div class="item item--large">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./finedining.jpg" />
+            “ilyen jót még sosem ettem az Akváriumban”
+          </a>
+          <p><a href="https://m.ebay.com/itm/Canned-Unicorn-Meat-5-5-Ounce-Funny-Novelty-Gag-Gift-Stocking-Stuffer-Christmas/263416273564?ul_ref=https%3A%2F%2Frover.ebay.com%2Frover%2F1%2F711-53200-19255-0%2F1%3Ficep_id%3D114%26ipn%3Dicep%26toolid%3D20004%26campid%3D5338181172%26mpre%3Dhttps%253A%252F%252Fwww.ebay.com%252Fitm%252FCanned-Unicorn-Meat-5-5-Ounce-Funny-Novelty-Gag-Gift-Stocking-Stuffer-Christmas%252F263416273564%26srcrot%3D711-53200-19255-0%26rvr_id%3D1812993336291%26rvr_ts%3D3275ac031680a8666640b7bbffbe3f9e&_mwBanner=1&_rdt=1&ul_noapp=true" target="_blank">blikk.hu</a></p>
+        </div>
+        <div class="item item--small">
+          <a class="content">
+            “visszatértünk a gyökerekhez. Mármint ott újra gyökerek lehettünk.”
+          </a>
+          <p><a href="https://www.szeretlekmagyarorszag.hu/sosem-lesz-mar-ugyanolyan-a-ricsardgir-itt-az-utolso-5-dal-az-eredeti-felallasban/" target="_blank">szeretlekmagyarorszag.hu</a></p>
+        </div>
+        <div class="item item--medium">
+          <a class="content highlight">
+            -Hogy ízlett a lángosburger?
+            - Nagyon szar volt.
+          </a>
+          <p><a href="https://f21.hu/portre/a-langosburgertol-palvin-barbiig-ricsardgir-interju-a-bankito-fesztivalon/" target="_blank">f21.hu</a></p>
+        </div>
+        <div class="item item--rect--right higher">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./bees.jpg" />
+            “Békásmegyeren lenyeltem egy darazsat a HorrorJungle Fesztiválon” - Mártondani
+          </a>
+          <p><a href="http://beesbeesbees.com" target="_blank">444.hu</a></p>
+        </div>
+        <div class="item item--small">
+          <a class="content">
+            “Remélem, megcsinálom a jogsimat, és akkor tudok krúzolni.”
+          </a>
+          <p><a href="https://contextus.hu/ricsardgir-maga-zoltanrol-es-ludacrisrol-is-dalt-fog-irni-a-zenekar/" target="_blank">divany.hu</a></p>
+        </div>
+        <div class="item item--huge">
+          <a class="content">
+            <img class="aritcle-bg" src="./homealone2.jpg" />
+            “Szerettem mindig a Reszkessetek Betörők 2 című filmet. Jó volt benne az az öreg nő, aki galambszart evett.”
+          </a>
+          <p><a href="https://blog.a38.hu/2013/10/31/a_csajt_neha_osszetevesztem_a_bokorral/" target="_blank">a38.hu</a></p>
+        </div>
+        <div class="item item--medium">
+          <a class="content">
+            “Csifó Dorinának is írtam pár számot.”
+          </a>
+          <p><a href="http://sweeturbanideal.blogspot.com/2011/11/mi-az-ottmi-az-ott-mi-az-ott-fent.html?m=1" target="_blank">sweeturbanideal.com</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="aboutus">
+      <h1><a href="#interview">Interjúk</a> <a href="#aboutus" class="active">Rólunk írták</a></h1>
+      <div class="grid">
+        <div class="item item--rect--middle higher">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./palvinklip.jpg" />
+            “Aztán mint a Lost Highwayben, itt is történik valami, és egy másik kollégista fiú - aki a Dunában lakik és a Corvinusra jár -, szintén elindul keresni a szerelmet, csak ő meg is találja.”
+          </a>
+          <p><a href="https://recorder.blog.hu/2015/09/13/18_klippremier_ricsardgir_palvinbarbi?layout=5" target="_blank">recorder.blog.hu</a></p>
+        </div>
+        <div class="item item--rect--left">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./palvinbarbi2.jpg" />
+            “Zavarba ejtően jó palvinbarbis klip került fel ma az internetre”
+          </a>
+          <p><a href="https://444.hu/2015/09/13/zavarba-ejtoen-jo-palvinbarbis-klip-kerult-fel-ma-az-internetre" target="_blank">444.hu</a></p>
+        </div>
+        <div class="item item--rect--left">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./omghomealone.png" />
+            “nem fogod elhinni mi történt tavaly a ricsárdgírrel”
+          </a>
+          <p><a href="https://444.hu/2017/09/06/egy-lany-az-elso-randin-elment-vecere-de-nem-tudta-lehuzni-a-szart-igy-kidobta-az-ablakon-de-az-beesett-a-ket-uveg-koze-erre-utanamaszott-es-beszorult" target="_blank">444.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“üdítő, szókimondó, jó hangzás világgal dolgozó műve méltán került a lista első helyére”</a>
           <p><a href="http://f21.hu/zene/aktualpolitikai-zeneszamok-51/" target="_blank">f21.hu</a></p>
+        </div>
+        <div class="item item--medium">
+          <a class="content highlight">
+            “az egész ország felkapta a fejét, még az RTL Klub is foglalkozott velük főműsoridőben.”</a>
+          <p><a href="http://index.hu/kultur/zene/2017/10/01/het_lemeze_macklemore_gemini_kritika/" target="_blank">index.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“lehengerlő királyság”</a>
@@ -53,6 +172,13 @@
         <div class="item item--small">
           <a class="content">“megtaláltuk ’A’ zenekart. Soha életemben nem találkoztam még ennyire szórakoztató bandával.”</a>
           <p><a href="http://zabaldazenet.blog.hu/2017/08/20/_rak_ment_a_hajamba_delfin_ment_a_szemembe" target="_blank">zabaldazenet.blog.hu</a></p>
+        </div>
+        <div class="item item--rect--middle higher">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./darksideofthemoon.jpg" />
+            “Szóval az év egyik legjobb, legfontosabb hazai kiadványa ez.”
+          </a>
+          <p><a href="https://recorder.blog.hu/2016/10/30/albumpremier_ricsardgir_the_dark_side_of_the_moon" target="_blank">recorder.blog.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“A vége különösen ütős.”</a>
@@ -73,6 +199,13 @@
           <a class="content">“gyöngyszem”</a>
           <p><a href="http://www.amiidonk.hu/antifasizmus/kormanyellenes-klippel-jelentkezett-a-ricsardgir-zenekar/" target="_blank">amiidonk.hu</a></p>
         </div>
+        <div class="item item--rect--right higher">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./fight.jpg" />
+            “Óriási verekedés tört ki a Hazudjanak után”
+          </a>
+          <p><a href="http://eelslap.com" target="_blank">24.hu</a></p>
+        </div>
         <div class="item item--small">
           <a class="content">“gyöngyszem”</a>
           <p><a href="http://index.hu/kultur/zene/2017/10/01/het_lemeze_macklemore_gemini_kritika/" target="_blank">index.hu</a></p>
@@ -80,6 +213,12 @@
         <div class="item item--small">
           <a class="content">“az egyik legjobb dolog, ami a magyar könnyűzenében az elmúlt években történhetett.” </a>
           <p><a href="http://www.nyugat.hu/tartalom/cikk/ricsardgir_fiatal_orban_viktor" target="_blank">nyugat.hu</a></p>
+        </div>
+        <div class="item item--rect--right">
+          <a class="content highlight">
+            “Az önmagában is ütős, szókimondó popdalhoz készült produkció egyfajta feminista himnuszként is értelmezhető, a hősnő az individuum fontosságára és a férfiközpontú világban való érvényesülésre tanít. “
+          </a>
+          <p><a href="https://nepszava.hu/1045842_igenyes-filmek-kis-penzbol" target="_blank">nepszava.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“Zseniális amit alkottak” </a>
@@ -89,6 +228,12 @@
           <a class="content highlight">“minden idők legjobb zenei videoklipje Orbán bandájáról – az agyad eldobod!”</a>
           <p><a href="http://pestibulvar.hu/2017/08/17/megjelent-minden-idok-legjobb-zenei-videoklipje-orban-bandajarol-az-agyad-eldobod/" target="_blank">pestibulvar.hu</a></p>
         </div>
+        <div class="item item--medium">
+          <a class="content highlight">
+            “7. Legjobb magyar klip - Ricsárdgír - Éndalom“
+          </a>
+          <p><a href="https://index.hu/kultur/zene/2014/12/12/legjobb_klipek_2014/" target="_blank">index.hu</a></p>
+        </div>
         <div class="item item--small">
           <a class="content">“az egész ország felkapta a fejét, még az RTL Klub is foglalkozott velük főműsoridőben.”</a>
           <p><a href="http://index.hu/kultur/zene/2017/10/01/het_lemeze_macklemore_gemini_kritika/" target="_blank">index.hu</a></p>
@@ -96,6 +241,18 @@
         <div class="item item--small">
           <a class="content">“Zseniális amit alkottak, végigugrálós megőrülés”</a>
           <p><a href="https://apokrifonline.wordpress.com/2017/08/13/volgy-az-idon-kivul/amp/" target="_blank">apokrifonline.hu</a></p>
+        </div>
+        <div class="item item--medium">
+          <a class="content highlight">
+            “szerintem már most a kortárs underground kultúra meghatározó darabja.”
+          </a>
+          <p><a href="http://keretblog.hu/ricsardgir-lemezkritika/" target="_blank">keretblog.hu</a></p>
+        </div>
+        <div class="item item--large">
+          <a class="content highlight">
+            “Ricsárdgír are irresistibly funny, dangerously catchy, unrepentantly absurd and thoroughly punk in attitude, though not always in music.“
+          </a>
+          <p><a href="https://www.europavox.com/bands/ricsardgir/" target="_blank">europavox.com</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“Játékos, de vérprofi”</a>
@@ -110,12 +267,25 @@
           <p><a href="https://hvg.hu/kultura/20170816_Idoutazasra_viszi_majd_onmagaval_szembesiti_Orban_Viktort_uj_klipjeben_egy_magyar_zenekar" target="_blank">hvg.hu</a></p>
         </div>
         <div class="item item--small">
+          <a class="content highlight">
+            “Hollandiában debütált a Nincsen Sárkány”
+          </a>
+          <p><a href="https://magyar.film.hu/filmhu/hir/hollandiaban-debutalt-a-nincsen-sarkany-bollok-csaba-reject-ricsardgir.html" target="_blank">magyar.film.hu</a></p>
+        </div>
+        <div class="item item--small">
           <a class="content">“a sokak által nagyra tartott Ricsárdgír zenekar”</a>
           <p><a href="https://444.hu/2017/08/16/magyarorszagon-mindenki-boldog " target="_blank">444.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“A Ricsárdgír megcsinálta a nyár slágerét, a tutit, a legjobbat”</a>
           <p><a href="http://drot.eu/article/magyarorszagon-mindenki-boldog-zenevideo" target="_blank">drot.eu</a></p>
+        </div>
+        <div class="item item--huge">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./karacsony.jpg" />
+            “A Ricsárdgír végig azon sajnálkozott a színházteremben, hogy mennyit híztak a húsvéti ünnep alatt.”
+          </a>
+          <p><a href="https://divany.hu/eletem/2016/05/23/megerkezett_a_kaloriacsokkento_tanyer/" target="_blank">divany.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“remekmű”</a>
@@ -154,12 +324,15 @@
           <p><a href="http://keretblog.hu/ev-vegi-toplista/" target="_blank">keretblog.hu</a></p>
         </div>
         <div class="item item--small">
-          <a class="content">“Ricsárdgír are irresistibly funny, dangerously catchy, unrepentantly absurd and thoroughly punk in attitude, though not always in music.”</a>
-          <p><a href="https://www.europavox.com/bands/ricsardgir/" target="_blank">europavox.com</a></p>
-        </div>
-        <div class="item item--small">
           <a class="content">“főleg meghökkentő és nem hétköznapi”</a>
           <p><a href="http://nava.hu/talalati-lista/" target="_blank">nava.hu</a></p>
+        </div>
+        <div class="item item--large">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./kultura.jpg" />
+            “Fontos, hogy a kultúrát ne csak átélje, de formálja is”
+            </a>
+          <p><a href="https://hvg.hu/plazs/20160405_A_nagy_vecepapirszemelyisegteszt" target="_blank">hvg.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“Ilyet még nem hal­lot­tál, de nem is lát­tál!”</a>
@@ -199,6 +372,13 @@
           <a class="content">Egyébként, miközben a kor plakátjaival emlékezhetünk a 80-as évek underground rockjára, úgy tűnik, hogy ez a hagyomány "el sem ment", sőt: amellett, hogy olyan fiatal hazai zenekarok, mint az Esti Kornél, vagy a Ricsárdgír is saját kontextusukba helyezik ezt a zenei örökséget</a>
           <p><a href="http://hvg.hu/kultura/20171010_Valahol_a_legalitas_es_az_illegalitas_kozott__kiallitas_nyilik_a_80as_evek_hazai_underground_zenei_plakatjaibol" target="_blank">hvg.hu</a></p>
         </div>
+        <div class="item item--rect--middle">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./botrany.jpg" />
+            “Óriási botrány lett a koncert végén, ha nem látom, nem hiszem el”
+          </a>
+          <p><a href="https://444.hu/2018/11/19/kitarto-kutatomunkaval-megfejtettek-mitol-kocka-alaku-a-wombatszar" target="_blank">bors.hu</a></p>
+        </div>
         <div class="item item--small">
           <a class="content">“hatalmas hangulatot csináltak a srácok.”</a>
           <p><a href="http://probablyme.hu/?p=8021" target="_blank">probablyme.hu</a></p>
@@ -234,6 +414,12 @@
         <div class="item item--small">
           <a class="content">“klasszikus”</a>
           <p><a href="https://www.koncert.hu/hirek/klippremier/palvin-barbi-most-tenyleg-bekerult-egy-zenei-klipbe" target="_blank">koncert.hu</a></p>
+        </div>
+        <div class="item item--large">
+          <a class="content highlight">
+            <img class="aritcle-bg" src="./anglia.jpg" />
+            “Angliában olyan dolog történt a Gírrel, amit nem fogsz elhinni”</a>
+          <p><a href="https://index.hu/urbanista/2015/03/10/nem_nevezik_at_a_segglyuk_kozt/" target="_blank">noklapja.hu</a></p>
         </div>
         <div class="item item--small">
           <a class="content">“10 dal, ami hangulatba hoz a szavazókörbe indulás előtt”</a>

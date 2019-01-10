@@ -1,3 +1,24 @@
+.block-container section {
+  padding-top: 76px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.block-container section h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.block-container section h1 a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.block-container section h1 a.active, .block-container section h1 a:hover {
+  color: #ff0700;
+}
+
 .about-us-container {
   background-color: #fff;
   float: left;
@@ -45,4 +66,4 @@
   text-align: left;
 }
 
-/*# sourceMappingURL=aboutus.css.map */
+/*# sourceMappingURL=shit.css.map */
