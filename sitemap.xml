@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://teszt.ricsardgir.com/</loc>
+  <lastmod>2019-01-10T23:36:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/tinder/</loc>
+  <lastmod>2018-11-06T20:53:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/concerts/</loc>
+  <lastmod>2019-01-09T00:41:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/music/</loc>
+  <lastmod>2019-01-08T08:01:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/flappy/</loc>
+  <lastmod>2019-01-08T22:00:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/videos/</loc>
+  <lastmod>2019-01-10T23:33:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/merch/</loc>
+  <lastmod>2019-01-09T08:18:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/shit/</loc>
+  <lastmod>2019-01-10T23:31:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/2049/</loc>
+  <lastmod>2018-10-18T16:52:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/koala/</loc>
+  <lastmod>2019-01-06T23:41:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://teszt.ricsardgir.com/quiz/</loc>
+  <lastmod>2019-01-06T12:09:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
