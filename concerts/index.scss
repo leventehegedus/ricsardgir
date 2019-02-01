@@ -25,8 +25,7 @@ html {
 
 .section {
   display: none;
-  padding: 30px 10px;
-  padding-bottom: 100px;
+  padding: 30px 10px 100px;
   @supports(display: grid) {
     display: block;
   }
@@ -40,15 +39,18 @@ h1 {
 .grid {
   display: block;
   padding: 20px;
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 768px) {
     display: grid;
     padding: 0;
   }
   grid-gap: 40px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 100px;
   @media screen and (min-width: 768px) {
     grid-auto-rows: 60px;
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
   }
   grid-auto-flow: row dense;
 }
@@ -57,9 +59,9 @@ h1.item {
   font-size: 40px;
   font-weight: 900;
   color: #ff0700;
-  margin: 20px 0px;
-  @media (min-width: 768px){
-    margin: 40px 0px;
+  margin: 20px 0;
+  @media (min-width: 768px) {
+    margin: 40px 0;
   }
 }
 
@@ -78,15 +80,15 @@ h1.item {
   counter-increment: item-counter;
   overflow: hidden;
   margin: 20px 0;
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
   }
-
 
   a {
     border: 2px solid #000;
     box-sizing: border-box;
     color: #000;
+
     &.content {
       color: #000;
       text-align: left;
@@ -95,47 +97,60 @@ h1.item {
       font-size: 12px;
       text-decoration: none;
       font-weight: 100;
+
       img {
-        padding: 0px;
+        padding: 0;
         margin-left: -12px;
         margin-top: -12px;
         margin-bottom: 12px;
         width: calc(100% + 24px);
+
         &:hover {
           transform: none;
         }
       }
+
       &.image {
-        padding: 0px;
+        padding: 0;
       }
+
       &:hover {
         color: #fff;
         background-color: #000;
         transition: all ease 1s;
       }
+
       &.highlight {
         color: #000;
         font-size: 16px;
         font-weight: 900;
         text-transform: uppercase;
+
         &:hover {
-          color: #fff
+          color: #fff;
         }
       }
     }
   }
 
-
   p {
     background-color: #000;
     margin: 0;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     padding: 10px;
+    @media (min-width: 768px) {
+      font-size: 10px;
+      @media (min-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+
     a {
       color: #fff;
       text-decoration: none;
+
       &:hover {
         color: #ff0700;
       }
@@ -217,6 +232,7 @@ h1.item {
     &--middle {
       grid-column: 2/4;
       grid-row-end: span 4;
+
       &.higher {
         grid-row-end: span 5;
       }
@@ -225,6 +241,7 @@ h1.item {
     &--right {
       grid-column: 3/5;
       grid-row-end: span 4;
+
       &.higher {
         grid-row-end: span 5;
       }
@@ -233,6 +250,7 @@ h1.item {
     &--left {
       grid-column: 1/3;
       grid-row-end: span 4;
+
       &.higher {
         grid-row-end: span 5;
       }

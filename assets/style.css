@@ -583,11 +583,29 @@ body {
     background-position: top center;
     transition: all 0.5s ease;
   }
+  .block-container .block.flappy {
+    width: 25%;
+    background: url("./flappy.jpg");
+    background-size: cover;
+    background-position: top center;
+    transition: all 0.5s ease;
+  }
+  .block-container .block.flappy:hover {
+    background: url("./flappy.gif");
+    background-size: cover;
+    background-position: top center;
+    transition: all 0.5s ease;
+  }
   .block-container .block.merch {
     width: 50%;
   }
   .block-container .block.personality {
     width: 75%;
+  }
+  .block-container .block.personality:hover {
+    background: url("./quiz.gif");
+    background-size: cover;
+    background-position: center;
   }
   .block-container .block.contact:hover {
     background: url("./sw.gif");

@@ -613,12 +613,31 @@ body {
           transition: all 0.5s ease;
         }
       }
+      &.flappy {
+        width: 25%;
+        background: url("./flappy.jpg");
+        background-size: cover;
+        background-position: top center;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background: url("./flappy.gif");
+          background-size: cover;
+          background-position: top center;
+          transition: all 0.5s ease;
+        }
+      }
 
       &.merch {
         width: 50%;
       }
       &.personality {
         width: 75%;
+        &:hover {
+          background: url("./quiz.gif");
+          background-size: cover;
+          background-position: center;
+        }
       }
 
       &.contact {

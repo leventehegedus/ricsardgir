@@ -28,8 +28,7 @@ html {
 
 .section {
   display: none;
-  padding: 30px 10px;
-  padding-bottom: 100px;
+  padding: 30px 10px 100px;
 }
 @supports (display: grid) {
   .section {
@@ -46,11 +45,11 @@ h1 {
   display: block;
   padding: 20px;
   grid-gap: 40px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 100px;
   grid-auto-flow: row dense;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
   .grid {
     display: grid;
     padding: 0;
@@ -61,16 +60,21 @@ h1 {
     grid-auto-rows: 60px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
 
 h1.item {
   font-size: 40px;
   font-weight: 900;
   color: #ff0700;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 @media (min-width: 768px) {
   h1.item {
-    margin: 40px 0px;
+    margin: 40px 0;
   }
 }
 
@@ -90,7 +94,7 @@ h1.item {
   overflow: hidden;
   margin: 20px 0;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
   .item {
     margin: 0;
   }
@@ -110,7 +114,7 @@ h1.item {
   font-weight: 100;
 }
 .item a.content img {
-  padding: 0px;
+  padding: 0;
   margin-left: -12px;
   margin-top: -12px;
   margin-bottom: 12px;
@@ -120,7 +124,7 @@ h1.item {
   transform: none;
 }
 .item a.content.image {
-  padding: 0px;
+  padding: 0;
 }
 .item a.content:hover {
   color: #fff;
@@ -140,9 +144,19 @@ h1.item {
   background-color: #000;
   margin: 0;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   padding: 10px;
+}
+@media (min-width: 768px) {
+  .item p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .item p {
+    font-size: 12px;
+  }
 }
 .item p a {
   color: #fff;
