@@ -1,0 +1,5 @@
+ErrorDocument 404 http://ricsargir.com/404.html
+AuthType Basic
+AuthName "kerem a jelszot"
+AuthUserFile /httpd/html/ftplogin/data/.htpasswd
+Require valid-user

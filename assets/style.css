@@ -218,6 +218,7 @@ body {
 }
 .footer_container a span {
   display: none;
+  font-weight: 100;
 }
 @media (min-width: 768px) {
   .footer_container a span {
