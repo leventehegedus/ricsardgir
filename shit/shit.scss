@@ -3,7 +3,6 @@
 .block-container {
   section {
     padding-top: 76px;
-    float: left;
     width: 100%;
     box-sizing: border-box;
 
@@ -26,14 +25,13 @@
     }
   }
 }
+
 .about-us-container {
   background-color: $rg-font-light;
-  float: left;
   width: 100%;
   margin-top: 20px;
 
   .article {
-    float: left;
     margin: 20px 0;
     padding: 0;
     color: $rg-font-dark;
@@ -67,7 +65,7 @@
 
     img {
       width: 100%;
-      margin: 0px 0px 10px 0px;
+      margin: 0 0 10px;
     }
 
     .description {

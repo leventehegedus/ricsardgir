@@ -8,8 +8,8 @@
     width: 300px;
     margin: 0 calc(50% - 150px);
     display: block;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     position: absolute;
     cursor: hand;
     border: 2px solid #000;
@@ -21,54 +21,67 @@
         background: url("./alma/profil/profil.jpg");
         background-size: cover;
       }
+
       &.andris {
         background: url("./andris/profil/profil.jpg");
         background-size: cover;
       }
+
       &.bali {
         background: url("./bali/profil/profil.jpg");
         background-size: cover;
       }
+
       &.barbi {
         background: url("./barbi/profil/profil.jpg");
         background-size: cover;
       }
+
       &.boldi {
         background: url("./boldi/profil/profil.jpg");
         background-size: cover;
       }
+
       &.edina {
         background: url("./edina/profil/profil.jpg");
         background-size: cover;
       }
+
       &.eszter {
         background: url("./eszter/profil/profil.jpg");
         background-size: cover;
       }
+
       &.eva {
         background: url("./eva/profil/profil.jpg");
         background-size: cover;
       }
+
       &.ford {
         background: url("./ford/profil/profil.jpg");
         background-size: cover;
       }
+
       &.flora {
         background: url("./flora/profil/profil.jpg");
         background-size: cover;
       }
+
       &.fruzsi {
         background: url("./fruzsi/profil/profil.jpg");
         background-size: cover;
       }
+
       &.laci {
         background: url("./laci/profil/profil.jpg");
         background-size: cover;
       }
+
       &.mate {
         background: url("./mate/profil/profil.jpg");
         background-size: cover;
       }
+
       &.martondani {
         background: url("./martondani/profil/profil.jpg");
         background-size: cover;
@@ -116,7 +129,6 @@
       }
 
       .interest {
-        float: left;
         width: 100%;
         height: 60px;
         display: flex;
@@ -136,12 +148,13 @@
         height: 60px;
         width: 100%;
         box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .decision-block {
           width: 33.33%;
-          float: left;
           height: 60px;
-          line-height: 60px;
           font-size: 30px;
           padding: 10px;
           box-sizing: border-box;
@@ -151,6 +164,7 @@
               height: 40px;
               transition: all 666ms ease;
               transform: rotate(0deg);
+
               &:hover {
                 transform: rotate(360deg);
               }
@@ -161,6 +175,7 @@
             img {
               transition: all 666ms ease;
               height: 40px;
+
               &:hover {
                 transform: rotate(360deg);
               }
@@ -172,6 +187,7 @@
               height: 40px;
               transition: all 666ms ease;
               transform: rotate(0deg);
+
               &:hover {
                 transform: rotate(360deg);
               }
@@ -180,11 +196,13 @@
         }
       }
     }
+
     &.dislikedTinderCard {
       left: -10000;
       transform: rotate(90deg);
       transition: all ease 3s;
     }
+
     &.likedTinderCard {
       left: 10000;
       transform: rotate(-90deg);

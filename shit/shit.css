@@ -1,6 +1,5 @@
 .block-container section {
   padding-top: 76px;
-  float: left;
   width: 100%;
   box-sizing: border-box;
 }
@@ -21,12 +20,10 @@
 
 .about-us-container {
   background-color: #fff;
-  float: left;
   width: 100%;
   margin-top: 20px;
 }
 .about-us-container .article {
-  float: left;
   margin: 20px 0;
   padding: 0;
   color: #000;
@@ -56,7 +53,7 @@
 }
 .about-us-container .article img {
   width: 100%;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px;
 }
 .about-us-container .article .description {
   font-family: "Open Sans", sans-serif;

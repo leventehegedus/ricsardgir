@@ -4,7 +4,6 @@
   .merch-image-container {
     background: url("./grocery.jpg");
     background-size: cover;
-    float: left;
     height: 700px;
     position: relative;
     width: 320px;
@@ -48,7 +47,6 @@
       .prize,
       .title {
         width: 100%;
-        float: left;
         text-align: center;
         position: absolute;
       }
@@ -65,20 +63,16 @@
 
   .merch-items-container {
     ul {
-      float: left;
       width: 100%;
       padding: 0 10px;
       box-sizing: border-box;
 
       li {
         list-style-type: none;
-        float: left;
         width: 100%;
 
         span {
-          &.name {
-            float: left;
-          }
+          &.name {}
 
           &.value {
             float: right;
@@ -88,9 +82,8 @@
     }
   }
 }
-.typeform-widget {
-  float: left;
-}
+
+.typeform-widget {}
 @media (min-width: 540px) {
   .merch-container {
     .merch-image-container {

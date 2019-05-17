@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title>Videók</title>
   <meta charset="utf-8">
@@ -15,8 +14,8 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   <meta http-equiv="pragma" content="no-cache">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-<link rel="shortcut icon" href="../assets/fav.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/fav.png">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="videos.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -24,30 +23,18 @@
   <script src="../index.js"></script>
   <script src="./index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script>
     $(document).ready(function(){
-      // Add smooth scrolling to all links
       $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
           event.preventDefault();
-
-          // Store hash
           var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 1666, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } // End if
+        }
       });
     });
 </script>

@@ -1,102 +1,123 @@
 .merch-container .merch-image-container {
   background: url("./grocery.jpg");
   background-size: cover;
-  float: left;
   height: 700px;
   position: relative;
   width: 320px;
-  margin: 20px calc(50vw - 160px); }
-  .merch-container .merch-image-container .merch {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #dda3b2;
-    color: #fff;
-    font-weight: 200;
-    display: block;
-    opacity: 0.3;
-    transition: all 0.5s ease;
-    text-transform: uppercase;
-    font-size: 12px; }
-    .merch-container .merch-image-container .merch.cola {
-      bottom: 10px;
-      left: 10px; }
-    .merch-container .merch-image-container .merch.fanta {
-      top: 160px;
-      right: 20px; }
-    .merch-container .merch-image-container .merch.palinka {
-      top: 300px;
-      left: 40px; }
-    .merch-container .merch-image-container .merch:hover {
-      opacity: 0.9;
-      transition: all 0.5s ease;
-      width: 120px;
-      height: 120px; }
-    .merch-container .merch-image-container .merch .prize,
-    .merch-container .merch-image-container .merch .title {
-      width: 100%;
-      float: left;
-      text-align: center;
-      position: absolute; }
-    .merch-container .merch-image-container .merch .title {
-      top: 10px; }
-    .merch-container .merch-image-container .merch .prize {
-      bottom: 10px; }
+  margin: 20px calc(50vw - 160px);
+}
+.merch-container .merch-image-container .merch {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #cf48db;
+  color: #fff;
+  font-weight: 200;
+  display: block;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.merch-container .merch-image-container .merch.cola {
+  bottom: 10px;
+  left: 10px;
+}
+.merch-container .merch-image-container .merch.fanta {
+  top: 160px;
+  right: 20px;
+}
+.merch-container .merch-image-container .merch.palinka {
+  top: 300px;
+  left: 40px;
+}
+.merch-container .merch-image-container .merch:hover {
+  opacity: 0.9;
+  transition: all 0.5s ease;
+  width: 120px;
+  height: 120px;
+}
+.merch-container .merch-image-container .merch .prize,
+.merch-container .merch-image-container .merch .title {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+.merch-container .merch-image-container .merch .title {
+  top: 10px;
+}
+.merch-container .merch-image-container .merch .prize {
+  bottom: 10px;
+}
 .merch-container .merch-items-container ul {
-  float: left;
   width: 100%;
   padding: 0 10px;
-  box-sizing: border-box; }
-  .merch-container .merch-items-container ul li {
-    list-style-type: none;
-    float: left;
-    width: 100%; }
-    .merch-container .merch-items-container ul li span.name {
-      float: left; }
-    .merch-container .merch-items-container ul li span.value {
-      float: right; }
-
-.typeform-widget {
-  float: left; }
+  box-sizing: border-box;
+}
+.merch-container .merch-items-container ul li {
+  list-style-type: none;
+  width: 100%;
+}
+.merch-container .merch-items-container ul li span.value {
+  float: right;
+}
 
 @media (min-width: 540px) {
   .merch-container .merch-image-container {
     height: 480px;
     width: 480px;
-    margin: 20px calc(50vw - 240px); }
-    .merch-container .merch-image-container .merch {
-      font-size: 12px; }
-      .merch-container .merch-image-container .merch.cola {
-        top: 10px; }
-      .merch-container .merch-image-container .merch.fanta {
-        top: 160px; }
-      .merch-container .merch-image-container .merch.palinka {
-        top: 300px; } }
+    margin: 20px calc(50vw - 240px);
+  }
+  .merch-container .merch-image-container .merch {
+    font-size: 12px;
+  }
+  .merch-container .merch-image-container .merch.cola {
+    top: 10px;
+  }
+  .merch-container .merch-image-container .merch.fanta {
+    top: 160px;
+  }
+  .merch-container .merch-image-container .merch.palinka {
+    top: 300px;
+  }
+}
 @media (min-width: 768px) {
   .merch-container .merch-image-container {
     height: 480px;
     width: 720;
-    margin: 20px 0; }
-    .merch-container .merch-image-container .merch {
-      font-size: 12px; }
-      .merch-container .merch-image-container .merch.cola {
-        top: 10px; }
-      .merch-container .merch-image-container .merch.fanta {
-        top: 160px; }
-      .merch-container .merch-image-container .merch.palinka {
-        top: 300px; } }
+    margin: 20px 0;
+  }
+  .merch-container .merch-image-container .merch {
+    font-size: 12px;
+  }
+  .merch-container .merch-image-container .merch.cola {
+    top: 10px;
+  }
+  .merch-container .merch-image-container .merch.fanta {
+    top: 160px;
+  }
+  .merch-container .merch-image-container .merch.palinka {
+    top: 300px;
+  }
+}
 @media (min-width: 768px) {
   .merch-container .merch-image-container {
     height: 600px;
     width: 960px;
-    margin: 20px 0; }
-    .merch-container .merch-image-container .merch {
-      font-size: 12px; }
-      .merch-container .merch-image-container .merch.cola {
-        top: 10px; }
-      .merch-container .merch-image-container .merch.fanta {
-        top: 160px; }
-      .merch-container .merch-image-container .merch.palinka {
-        top: 300px; } }
+    margin: 20px 0;
+  }
+  .merch-container .merch-image-container .merch {
+    font-size: 12px;
+  }
+  .merch-container .merch-image-container .merch.cola {
+    top: 10px;
+  }
+  .merch-container .merch-image-container .merch.fanta {
+    top: 160px;
+  }
+  .merch-container .merch-image-container .merch.palinka {
+    top: 300px;
+  }
+}
 
 /*# sourceMappingURL=merch.css.map */
