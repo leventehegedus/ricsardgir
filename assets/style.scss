@@ -152,6 +152,7 @@ body {
   position: fixed;
   font-weight: 900;
   top: 50px;
+  padding-top: calc(50vh - 225px);
   bottom: 0;
   left: -100vw;
   z-index: 1000;
@@ -470,8 +471,8 @@ body {
   }
 
   &.k49 {
-    margin-top: 65px;
-    min-height: 470px;
+    margin-top: 80px;
+    min-height: calc(100vh - 65px);
   }
 
   &.us {

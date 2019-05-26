@@ -18,6 +18,7 @@
 <link rel="shortcut icon" href="../assets/fav.png">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="../concerts/index.css">
+  <link rel="stylesheet" type="text/css" href="../videos/videos.css">
   <link rel="stylesheet" type="text/css" href="merch.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -35,175 +36,95 @@
     window.onscroll = function() {scrollFunction()};
   </script>
   <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
+  <div class="block-container videos">
+    <section>
+      <div class="video-container">
+        <div>
+          <img src="./dsotm.jpg">
+        </div>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails1)">
+            <span class="boringDetails1">Ricsárdgír - The Dark Side of The Moon (2016) - CD: 1400 Ft</span>
+            <span class="info">info</span>
+          </div>
+          <div class="content" id="boringDetails1">
+            <div class="description">
+              <span class="bold">Ricsárdgír - The Dark Side of The Moon (2016) - CD</span>
+              <br/><span>A zenekar második lemeze</span>
+              <br/><span class="bold">Dalok: </span><span>Test fala, Burn, Palvinbarbi, Sztár vagy szar, Éva otthon, Mi nem tudjuk, Ördögnóra, Jó ez a Pest, Ennyit érek, We are Troli, Mindenki boldog, Juhász</span>
+              <br/><span class="bold">Vendégek:</span> Zsemberi Orsolya, Deák Edina, Borszukovszky Flóra, Előd Eszter, Papp Éva
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img src="./dsotm.jpg">
+        </div>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails2)">
+            <span class="boringDetails2">Ricsárdgír - Nincsen Sárkány (2013) - CD: 1300 Ft</span>
+            <span class="info">info</span>
+          </div>
+          <div class="content" id="boringDetails1">
+            <div class="description">
+              <span class="bold">Ricsárdgír - Nincsen Sárkány (2013) - CD</span>
+              <br/><span>A zenekar első lemeze</span>
+              <br/><span class="bold">Dalok: </span><span>Éndalom, Repülőgép, Hazudjanak, Lightsaber, Nincsen sárkány, Hello I am Harrisonford, Tangó, Koala, Szörf, Kád, Isztambul, Szülj meg, Sohasem, Noir, Ez volt a Ricsárdgír</span>
+              <br/><span class="bold">Vendégek:</span>Pájer Alma Virág, Deák Edina, Rigó Benjamin, Tóth Levente, Kis Janó, Szurcsik Erika, Papp Éva, Borszukovszky Flóra
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img src="./dsotm.jpg">
+        </div>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails3)">
+            <span class="boringDetails1">Ricsárdgír - My Horse is going to die :( (2018) - EP: 1200 Ft</span>
+            <span class="info">info</span>
+          </div>
+          <div class="content" id="boringDetails3">
+            <div class="description">
+              <span class="bold">Ricsárdgír - My Horse is going to die :( (2018) - EP</span>
+              <br/><span>Kislemez</span>
+              <br/><span class="bold">Dalok: </span><span>Let’s Dance, Temetés, Shut up!, Szabad világ, My horse</span>
+              <br/><span class="bold">Vendégek:</span>Borszukovszky Flóra, Szabó Gyula
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div>
+          <img src="./dsotm.jpg">
+        </div>
+        <div class="boring-details">
+          <div class="title" onclick="toggleBoringDetails(boringDetails1)">
+            <span class="boringDetails1">Ricsárdgír - Belém bújt az Ördögnóra (2016) - EP: 1000 Ft</span>
+            <span class="info">info</span>
+          </div>
+          <div class="content" id="boringDetails1">
+            <div class="description">
+              <span class="bold">Ricsárdgír - My Horse is going to die :( (2018) - EP</span>
+              <br/><span>Kislemez</span>
+              <br/><span class="bold">Dalok: </span><span>Éva otthon, A Test fala, Jó ez a Pest, Ördögnóra, Where is my Doggy?, Where’s my designerdrugs Fuckface?</span>
+              <br/><span class="bold">Vendégek:</span>Borszukovszky Flóra, Előd Eszter, Papp Éva
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="block-container merch">
     <section class="section">
       <div class="grid">
         <div class="item item--large">
-          <a href="./dsotm.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
+          <a href="./dsotm.jpg" class="glightbox-demo" data-glightbox="title:<b>Ricsárdgír - The Dark Side of The Moon (2016) - CD</b>; description:<b>Ricsárdgír - The Dark Side of The Moon (2016) - CD </b><br/>A zenekar második lemeze.<br/><b>Dalok - </b> Test fala, Burn, Palvinbarbi, Sztár vagy szar, Éva otthon, Mi nem tudjuk, Ördögnóra, Jó ez a Pest, Ennyit érek, We are Troli, Mindenki boldog, Juhász.<br/><b>Vendégek - </b> Zsemberi Orsolya, Deák Edina, Borszukovszky Flóra, Előd Eszter, Papp Éva<br/><b>1400 Ft</b>">
             <img src="./dsotm.jpg">
           </a>
           <p>
-            Dark side of the moon CD: 4900Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
-            <img src="./koalapolo.jpg">
-          </a>
-          <p>
-            Koalás póló: 6000Ft
-          </p>
-        </div>
-        <div class="item item--large">
-          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
-            <img src="./kottafuzet.jpg">
-          </a>
-          <p>
-            Kottafüzet: 2000Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalabadge.jpg" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
-            <img src="./koalabadge.jpg">
-          </a>
-          <p>
-            Koalás kitűző: 400Ft
-          </p>
-        </div>
-        <div class="item item--rect--left">
-          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
-            <img src="./lacizeneora.jpg">
-          </a>
-          <p>
-            Zeneelmélet óra Lacival: 20000Ft/óra
-          </p>
-        </div>
-        <div class="item item--rect--right higher">
-          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
-            <img src="./allatkert.jpg">
-          </a>
-          <p>
-            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
-          </p>
-        </div>
-        <div class="item item--huge">
-          <a href="./ricsards.jpg" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
-            <img src="./ricsards.jpg">
-          </a>
-          <p>
-            The Ricsards magazin: 1000Ft
-          </p>
-        </div>
-        <div class="item item--large">
-          <a href="./dsotm.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
-            <img src="./dsotm.jpg">
-          </a>
-          <p>
-            Dark side of the moon CD: 4900Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
-            <img src="./koalapolo.jpg">
-          </a>
-          <p>
-            Koalás póló: 6000Ft
-          </p>
-        </div>
-        <div class="item item--large">
-          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
-            <img src="./kottafuzet.jpg">
-          </a>
-          <p>
-            Kottafüzet: 2000Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalabadge.jpg" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
-            <img src="./koalabadge.jpg">
-          </a>
-          <p>
-            Koalás kitűző: 400Ft
-          </p>
-        </div>
-        <div class="item item--rect--left">
-          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
-            <img src="./lacizeneora.jpg">
-          </a>
-          <p>
-            Zeneelmélet óra Lacival: 20000Ft/óra
-          </p>
-        </div>
-        <div class="item item--rect--right higher">
-          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
-            <img src="./allatkert.jpg">
-          </a>
-          <p>
-            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
-          </p>
-        </div>
-        <div class="item item--huge">
-          <a href="./ricsards.jpg" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
-            <img src="./ricsards.jpg">
-          </a>
-          <p>
-            The Ricsards magazin: 1000Ft
-          </p>
-        </div>
-        <div class="item item--large">
-          <a href="./dsotm.jpg" class="glightbox-demo" data-glightbox="title: Dark side of the moon CD - 4900Ft; description: A legendás Pink Floyd albumnál ez sokkal jobb! Vedd meg">
-            <img src="./dsotm.jpg">
-          </a>
-          <p>
-            Dark side of the moon CD: 4900Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalapolo.jpg" class="glightbox-demo" data-glightbox="title: Koalás póló - 6000Ft; description: Ez egy sima koalás póló, amit az aliexpressen megvettünk 1 euróért és nagy haszonnal eladjuk">
-            <img src="./koalapolo.jpg">
-          </a>
-          <p>
-            Koalás póló: 6000Ft
-          </p>
-        </div>
-        <div class="item item--large">
-          <a href="./kottafuzet.jpg" class="glightbox-demo" data-glightbox="title: Kottafüzet - 2000Ft; description: Ezt használjuk mi is koncertek alatt, mivel nem tudjuk kívülről a dalainkat">
-            <img src="./kottafuzet.jpg">
-          </a>
-          <p>
-            Kottafüzet: 2000Ft
-          </p>
-        </div>
-        <div class="item item--medium">
-          <a href="./koalabadge.jpg" class="glightbox-demo" data-glightbox="title: Koalás kitűző - 400Ft; description: Ez tök aranyos, nem?">
-            <img src="./koalabadge.jpg">
-          </a>
-          <p>
-            Koalás kitűző: 400Ft
-          </p>
-        </div>
-        <div class="item item--rect--left">
-          <a href="./lacizeneora.jpg" class="glightbox-demo" data-glightbox="title: Zeneelmélet óra Lacival - 20000Ft/óra; description: Ha nem tudod mi a különbség a dúr és moll között, akkor Laci az embered. Ő tudja. Persze nem ingyen.">
-            <img src="./lacizeneora.jpg">
-          </a>
-          <p>
-            Zeneelmélet óra Lacival: 20000Ft/óra
-          </p>
-        </div>
-        <div class="item item--rect--right higher">
-          <a href="./allatkert.jpg" class="glightbox-demo" data-glightbox="title: Közös állatkertlátogatás a Ricsárdgírrel - 666000Ft/nap; description: Itt a nagy lehetőség, hogy együtt etess rozmárt Andrissal vagy közösen utánozd a gazellák kecses mozgását Mártondanival">
-            <img src="./allatkert.jpg">
-          </a>
-          <p>
-            Közös állatkertlátogatás a Ricsárdgírrel: 666000Ft/nap
-          </p>
-        </div>
-        <div class="item item--huge">
-          <a href="./ricsards.jpg" class="glightbox-demo" data-glightbox="title: The Ricsards magazin - 1000Ft; description: Na ez mondjuk tök komoly, ilyet tényleg tudtok venni a koncerten. Tök fasza, mert jár hozzá CD is.">
-            <img src="./ricsards.jpg">
-          </a>
-          <p>
-            The Ricsards magazin: 1000Ft
+            Ricsárdgír - The Dark Side of The Moon (2016) - CD: 1400 Ft
           </p>
         </div>
       </div>
