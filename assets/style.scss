@@ -409,10 +409,16 @@ body {
 
       &.merch {
         width: 50%;
+        background-image: url("./morcs.jpg");
+
+        &:hover {
+          background-image: url("./morcs.gif");
+        }
       }
 
       &.personality {
-        width: 75%;
+        width: 50%;
+        background-image: url("./quiz.jpg");
 
         &:hover {
           background-image: url("./quiz.gif");

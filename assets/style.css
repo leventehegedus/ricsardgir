@@ -405,9 +405,14 @@ body {
   }
   .block-container .block.merch {
     width: 50%;
+    background-image: url("./morcs.jpg");
+  }
+  .block-container .block.merch:hover {
+    background-image: url("./morcs.gif");
   }
   .block-container .block.personality {
-    width: 75%;
+    width: 50%;
+    background-image: url("./quiz.jpg");
   }
   .block-container .block.personality:hover {
     background-image: url("./quiz.gif");
@@ -451,8 +456,8 @@ body {
   margin-top: 106px;
 }
 .block-container.k49 {
-  margin-top: 65px;
-  min-height: 470px;
+  margin-top: 80px;
+  min-height: calc(100vh - 65px);
 }
 .block-container.us {
   margin-top: 80px;
