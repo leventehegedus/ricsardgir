@@ -1,107 +1,323 @@
+<!DOCTYPE HTML>
 <html>
-
-<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ricsárdgír</title>
-  <link rel="apple-touch-icon" href="meta/logo.jpg">
-  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="description" content="Ricsárdgír honlapja">
   <meta name="HandheldFriendly" content="True">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta property="og:url" content="teszt.ricsardgir.com">
-  <meta property="og:title" content="Ricsárdgír">
-  <meta property="og:description" content="A Ricsárdgír zenekar honlapja">
-  <meta property="og:type" content="Ricsárdgír">
-  <meta property="og:description" content="A Ricsárdgír zenekar honlapja">
-  <meta property="og:site_name" content="Ricsárdgír">
-  <link rel="shortcut icon" href="./assets/fav.png">
-  <meta property="og:image" content="http://teszt.ricsardgir.com/2049/meta/logo.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="600">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ricsárdgír" />
-  <meta name="twitter:description" content="A Ricsárdgír honlapja" />
-  <meta name="twitter:url" content="http://teszt.ricsardgir.com/" />
-  <meta property="twitter:image" content="http://teszt.ricsardgir.com/2049/meta/logo.jpg">
-  <meta name="twitter:site" content="@Ricsardgír" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="./index.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta http-equiv="cache-control" content="max-age=0">
+  <link rel="shortcut icon" href="./fav.png" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('./countdowngifbg.gif');
+    background-size: cover;
+}
+div {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+position :relative;
+animation-timing-function: ease;
+webkit-animation-timing-function: ease;
+-webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+animation: mymove 4s infinite;
+text-transform: uppercase;
+font-family: Arial;
+font-size: 12px;
+max-width: 320px;
+padding: 30px;
+}
+div:nth-child(3n+1){
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+position :relative;
+animation-timing-function: ease;
+webkit-animation-timing-function: ease;
+-webkit-animation: mymove2 3s infinite; /* Safari 4.0 - 8.0 */
+animation: mymove2 3s infinite;
+text-transform: uppercase;
+font-family: Arial;
+font-size: 12px;
+max-width: 320px;
+padding: 30px;
+}
+div:nth-child(4n+3){
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+position :relative;
+animation-timing-function: ease;
+webkit-animation-timing-function: ease;
+-webkit-animation: mymove3 7s infinite; /* Safari 4.0 - 8.0 */
+animation: mymove3 7s infinite;
+text-transform: uppercase;
+font-family: Arial;
+font-size: 12px;
+max-width: 320px;
+padding: 30px;
+}
+
+div:nth-child(3n+2) {
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 40px;
+}
+div:nth-child(5n+2) {
+  font-size: 8px;
+  padding: 70px;
+  margin-top: 60px;
+}
+div:nth-child(7n+2) {
+  font-size: 26px;
+  padding: 40px;
+  margin-bottom: 31px;
+}
+div:nth-child(11n+2) {
+  font-size: 50px;
+  padding: 60px;
+  margin-right: 50px;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+0% {
+  transform: rotate(0deg);
+  color: white;
+  font-size: 12px;
+}
+50% {
+  transform: rotate(360deg);
+  color: yellow;
+}
+100% {
+  transform: rotate(0deg);
+  color: white;
+  font-size: 12px;
+}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {
+    transform: rotate(0deg);
+    color: white;
+  }
+  50% {
+    transform: rotate(360deg);
+    color: yellow;
+  }
+  100% {
+    transform: rotate(0deg);
+    color: white;
+  }
+  }
+}
+@-webkit-keyframes mymove2 {
+0% {
+  transform: rotate(23deg);
+  color: green;
+  font-size: 12px;
+}
+50% {
+  transform: rotate(1000deg);
+  color: pink;
+}
+100% {
+  transform: rotate(23deg);
+  color: green;
+  font-size: 12px;
+}
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+  0% {
+    transform: rotate(23deg);
+    color: green;
+  }
+  50% {
+    transform: rotate(1000deg);
+    color: pink;
+  }
+  100% {
+    transform: rotate(23deg);
+    color: green;
+  }
+  }
+}
+@-webkit-keyframes mymove3 {
+0% {
+  transform: rotate(230deg);
+  color: purple;
+  font-size: 12px;
+}
+50% {
+  transform: rotate(1000deg);
+  color: orange;
+}
+100% {
+  transform: rotate(230deg);
+  color: purple;
+  font-size: 12px;
+}
+}
+
+/* Standard syntax */
+@keyframes mymove3 {
+  0% {
+    transform: rotate(230deg);
+    color: purple;
+  }
+  50% {
+    transform: rotate(1000deg);
+    color: orange;
+  }
+  100% {
+    transform: rotate(230deg);
+    color: purple;
+  }
+  }
+}
+</style>
 </head>
-
 <body>
-  <div w3-include-html="topbar.html"></div>
-  <div w3-include-html="menu.html"></div>
-  <script>
-    w3.includeHTML();
-  </script>
-  <div class="block-container home">
-    <a href="/tinder" class="block tinder" onmouseenter="playAudio(audio4)" onmouseleave="pauseAudio(audio4)">
-      <span>Gírtinder</span>
-    </a>
-    <a href="/concerts" class="block concerts" onmouseenter="playAudio(audio6)" onmouseleave="pauseAudio(audio6)">
-      <span>Bulikrumpli</span>
-    </a>
-    <a href="/music" class="block music" onmouseenter="playAudio(audio1)" onmouseleave="pauseAudio(audio1)">
-      <span>Ricsaj</span>
-    </a>
-    <a href="/flappy" class="block flappy" onmouseenter="playAudio(audio5)" onmouseleave="pauseAudio(audio5)">
-      <span>Repülő koala</span>
-    </a>
-    <a href="/videos" class="block videos" onmouseenter="playAudio(audio2)" onmouseleave="pauseAudio(audio2)">
-      <span>Videók</span>
-    </a>
-    <a href="/merch" class="block merch" onmouseenter="playAudio(audio8)" onmouseleave="pauseAudio(audio8)">
-      <span>Mörcs</span>
-    </a>
-    <a href="/shit" class="block shit" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
-      <span>A ricsárdgír szar</span>
-    </a>
-    <a href="/2049" class="block bd2049" onmouseenter="playAudio(audio7)" onmouseleave="pauseAudio(audio7)">
-      <span>2049</span>
-    </a>
-    <a href="/koala" class="block koala" onmouseenter="playAudio(audio1)" onmouseleave="pauseAudio(audio1)">
-      <span>Koala</span>
-    </a>
-    <a href="/quiz" class="block personality" onmouseenter="playAudio(audio4)" onmouseleave="pauseAudio(audio4)">
-      <span>Ricsárd, kvíz, stb.</span>
-    </a>
-  </div>
-  <div class="footer_container" w3-include-html="footer.html"></div>
 
-  <audio id="audio1">
-    <source src="./assets/sound1.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio2">
-    <source src="./assets/sound2.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio3">
-    <source src="./assets/sound3.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio4">
-    <source src="./assets/sound4.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio5">
-    <source src="./assets/sound5.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio6">
-    <source src="./assets/sound6.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio7">
-    <source src="./assets/sound7.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio8">
-    <source src="./assets/sound8.mp3" type="audio/mpeg">
-  </audio>
-  <audio id="audio9">
-    <source src="./assets/sound9.mp3" type="audio/mpeg">
-  </audio>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <div id="demo4"></div>
+  <div id="demo5"></div>
+  <div id="demo6"></div>
+  <div id="demo7"></div>
+  <div id="demo8"></div>
+  <div id="demo9"></div>
+  <div id="demo10"></div>
+  <div id="demo11"></div>
+  <div id="demo12"></div>
+  <div id="demo13"></div>
+  <div id="demo14"></div>
+  <div id="demo15"></div>
+  <div id="demo16"></div>
+  <div id="demo17"></div>
+  <div id="demo18"></div>
+  <div id="demo19"></div>
+  <div id="demo20"></div>
+  <div id="demo21"></div>
+  <div id="demo22"></div>
+  <div id="demo23"></div>
+  <div id="demo24"></div>
+  <div id="demo25"></div>
+  <div id="demo26"></div>
+  <div id="demo27"></div>
+  <div id="demo28"></div>
+  <div id="demo29"></div>
+  <div id="demo30"></div>
+  <div id="demo31"></div>
+  <div id="demo32"></div>
+  <div id="demo33"></div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 4, 2019 12:34:56").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo1").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo2").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo3").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo4").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo5").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo6").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo7").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo8").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo9").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo10").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo11").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo12").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo13").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo14").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo15").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo16").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo17").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo18").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo19").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo20").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo21").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo22").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo23").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo24").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo25").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo26").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo27").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo28").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo29").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo30").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo31").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo32").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+  document.getElementById("demo33").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " másodperc ";
+
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo1").innerHTML = "BUUUUUURN";
+    document.getElementById("demo2").innerHTML = "BUUUUUURN";
+    document.getElementById("demo3").innerHTML = "BUUUUUURN";
+    document.getElementById("demo4").innerHTML = "BUUUUUURN";
+    document.getElementById("demo5").innerHTML = "BUUUUUURN";
+    document.getElementById("demo6").innerHTML = "BUUUUUURN";
+    document.getElementById("demo7").innerHTML = "BUUUUUURN";
+    document.getElementById("demo8").innerHTML = "BUUUUUURN";
+    document.getElementById("demo9").innerHTML = "BUUUUUURN";
+    document.getElementById("demo10").innerHTML = "BUUUUUURN";
+    document.getElementById("demo11").innerHTML = "BUUUUUURN";
+    document.getElementById("demo12").innerHTML = "BUUUUUURN";
+    document.getElementById("demo13").innerHTML = "BUUUUUURN";
+    document.getElementById("demo14").innerHTML = "BUUUUUURN";
+    document.getElementById("demo15").innerHTML = "BUUUUUURN";
+    document.getElementById("demo16").innerHTML = "BUUUUUURN";
+    document.getElementById("demo17").innerHTML = "BUUUUUURN";
+    document.getElementById("demo18").innerHTML = "BUUUUUURN";
+    document.getElementById("demo19").innerHTML = "BUUUUUURN";
+    document.getElementById("demo20").innerHTML = "BUUUUUURN";
+    document.getElementById("demo21").innerHTML = "BUUUUUURN";
+    document.getElementById("demo22").innerHTML = "BUUUUUURN";
+    document.getElementById("demo23").innerHTML = "BUUUUUURN";
+    document.getElementById("demo24").innerHTML = "BUUUUUURN";
+    document.getElementById("demo25").innerHTML = "BUUUUUURN";
+    document.getElementById("demo26").innerHTML = "BUUUUUURN";
+    document.getElementById("demo27").innerHTML = "BUUUUUURN";
+    document.getElementById("demo28").innerHTML = "BUUUUUURN";
+    document.getElementById("demo29").innerHTML = "BUUUUUURN";
+    document.getElementById("demo30").innerHTML = "BUUUUUURN";
+    document.getElementById("demo31").innerHTML = "BUUUUUURN";
+    document.getElementById("demo32").innerHTML = "BUUUUUURN";
+    document.getElementById("demo33").innerHTML = "BUUUUUURN";
+  }
+}, 1000);
+</script>
+
 </body>
-
 </html>
