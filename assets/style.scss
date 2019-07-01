@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 900;
-  top: 0px;
+  top: 0;
   @media (min-width: 768px) {
     height: 80px;
     line-height: 80px;
@@ -325,8 +325,9 @@ body {
     @media (min-width: 768px) {
       width: 25%;
       background-size: cover;
-      height: 200px;
+      height: 250px;
       background-position: top center;
+      color: transparent;
     }
 
     &:hover {
@@ -337,43 +338,20 @@ body {
       font-weight: 900;
       background-size: cover;
       background-position: top center;
+      color: transparent;
     }
     @media (min-width: 768px) {
-      &:nth-child(5n) {
+      &.tinder {
+        background-image: url("./tinder.jpg");
+        width: 100%;
+
         &:hover {
-          background-image: url("./gif3.gif");
+          background-image: url("./tinder.gif");
         }
-      }
-
-      &:nth-child(5n+1) {
-        width: 50%;
-      }
-
-      &:nth-child(5n+2) {
-        &:hover {
-          background-image: url("./gif3.gif");
-        }
-      }
-
-      &:nth-child(5n+3) {
-        &:hover {
-          background-image: url("./gif1.gif");
-        }
-      }
-
-      &:nth-child(5n+4) {
-        &:hover {
-          background-image: url("./gif2.gif");
-        }
-      }
-
-      &:hover {
-        color: rgba($rg-font-light, 0.5);
-        font-size: 16px;
-        background-image: url("./gif2.gif");
       }
 
       &.concerts {
+        width: 50%;
         background-image: url("./bulikrumpli.jpg");
 
         &:hover {
@@ -382,13 +360,49 @@ body {
       }
 
       &.shit {
+        background-image: url("./shit.jpg");
+        width: 50%;
+        background-position: bottom center;
+
         &:hover {
-          background-image: url("./gif7.gif");
+          background-image: url("./shit.gif");
+          background-position: bottom center;
+        }
+      }
+
+      &.music {
+        background-image: url("./ricsaj.jpg");
+        width: 50%;
+        background-position: bottom center;
+
+        &:hover {
+          background-image: url("./ricsaj.gif");
+          background-position: bottom center;
+        }
+      }
+
+      &.money {
+        background-image: url("./money.jpg");
+        width: 50%;
+        background-position: bottom center;
+
+        &:hover {
+          background-image: url("./money.gif");
+          background-position: bottom center;
+        }
+      }
+
+      &.koala {
+        background-image: url("./koala.jpg");
+        width: 50%;
+
+        &:hover {
+          background-image: url("./koala.gif");
         }
       }
 
       &.bd2049 {
-        width: 25%;
+        width: 50%;
         background-image: url("./2049.jpg");
 
         &:hover {
