@@ -347,6 +347,7 @@ body {
     height: 250px;
     background-position: top center;
     color: transparent;
+    border: 5px solid #000;
   }
 }
 .block-container .block:hover {
@@ -403,13 +404,13 @@ body {
   }
   .block-container .block.koala {
     background-image: url("./koala.jpg");
-    width: 50%;
+    width: 40%;
   }
   .block-container .block.koala:hover {
     background-image: url("./koala.gif");
   }
   .block-container .block.bd2049 {
-    width: 50%;
+    width: 60%;
     background-image: url("./2049.jpg");
   }
   .block-container .block.bd2049:hover {

@@ -328,6 +328,7 @@ body {
       height: 250px;
       background-position: top center;
       color: transparent;
+      border: 5px solid #000;
     }
 
     &:hover {
@@ -394,15 +395,17 @@ body {
 
       &.koala {
         background-image: url("./koala.jpg");
-        width: 50%;
+        width: 40%;
+        background-position: top right;
 
         &:hover {
           background-image: url("./koala.gif");
+          background-position: top right;
         }
       }
 
       &.bd2049 {
-        width: 50%;
+        width: 60%;
         background-image: url("./2049.jpg");
 
         &:hover {

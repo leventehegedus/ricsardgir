@@ -1,7 +1,8 @@
 function swipeleft(param){
   getDislikeSound(param);
   document.getElementsByClassName(param)[0].className = document.getElementsByClassName(param)[0].className + ' dislikedTinderCard';
-  if(param === 'andrisswipe'){
+  if(param === 'fruzsiswipe'){
+    // TODO: koalaur legyen majd
     setTimeout(function(){restartSwiping()},1666);
   }
 }
@@ -9,7 +10,8 @@ function swipeleft(param){
 function swiperight(param) {
   getLikeSound(param);
   document.getElementsByClassName(param)[0].className = document.getElementsByClassName(param)[0].className + ' likedTinderCard';
-  if(param === 'andrisswipe'){
+  if(param === 'fruzsiswipe'){
+    // TODO: koalaur legyen
     setTimeout(function(){restartSwiping()},1666);
   }
 }
