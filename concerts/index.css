@@ -239,6 +239,9 @@ h1.item {
 .item--megagiga {
   grid-row-end: span 8;
 }
+.item--megagigagiga {
+  grid-row-end: span 10;
+}
 @media screen and (min-width: 540px) {
   .item--full {
     grid-column: 1/-1;
