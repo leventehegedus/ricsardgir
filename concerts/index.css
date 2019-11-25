@@ -6,6 +6,7 @@ html {
   position: relative;
   width: 100%;
   font-size: 13px;
+  scroll-behavior: smooth;
 }
 @supports (display: grid) {
   body,
@@ -288,6 +289,9 @@ h1.item {
 }
 .item--rect--middle.higher {
   grid-row-end: span 5;
+}
+.item--rect--middle.highest {
+  grid-row-end: span 6;
 }
 .item--rect--right {
   grid-column: 3/5;

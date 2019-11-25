@@ -273,6 +273,12 @@ function screenClick()
 function playerJump()
 {
    velocity = jump;
+   if(document.getElementById('flyarea').style.filter && document.getElementById('flyarea').style.filter === 'invert(1)'){
+     document.getElementById('flyarea').style.filter = 'invert(0)';
+   } else {
+     document.getElementById('flyarea').style.filter = 'invert(1)';
+   }
+
 }
 
 function setBigScore(erase)

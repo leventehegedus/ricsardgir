@@ -20,25 +20,9 @@
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="../concerts/index.css">
   <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script>
-    $(document).ready(function() {
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                }).stop('true', 'true');
-            } // End if
-        });
-    });
-</script>
 </head>
 
 <body>

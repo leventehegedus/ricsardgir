@@ -1,0 +1,29 @@
+h1 {
+  margin: 1.5em 0;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+div {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.footer_container {
+  margin-bottom: 0;
+}
+
+.block-container {
+  padding: 10px;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff0700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

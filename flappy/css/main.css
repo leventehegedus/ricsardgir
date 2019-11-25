@@ -388,3 +388,8 @@ Screen - Game
    text-decoration: none;
    color: #fff;
 }
+
+.footer_container {
+  position: absolute;
+  bottom: 0;
+}

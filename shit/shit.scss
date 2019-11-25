@@ -1,5 +1,7 @@
 @import '../assets/colorpaletta';
-
+body, html {
+  scroll-behavior: smooth;
+}
 .block-container {
   section {
     padding-top: 76px;

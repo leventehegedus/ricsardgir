@@ -16,29 +16,12 @@
   <meta http-equiv="pragma" content="no-cache">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
   <link rel="shortcut icon" href="../assets/fav.png">
-  <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Slabo+13px&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="../concerts/index.css">
   <link rel="stylesheet" type="text/css" href="shit.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1666, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-</script>
 </head>
 
 <body>
@@ -48,7 +31,7 @@
     w3.includeHTML();
     window.onscroll = function() {scrollFunction()};
   </script>
-  <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
+  <a href="#interview"><img id="btnToTop" src="../assets/blinkybill.gif"/></a>
   <div class="block-container">
     <section class="section" id="interview">
       <h1><a href="#interview" class="active">Interjúk</a> <a href="#aboutus">Rólunk írták</a></h1>
@@ -129,6 +112,13 @@
       <h1><a href="#interview">Interjúk</a> <a href="#aboutus" class="active">Rólunk írták</a></h1>
       <div class="grid">
         <div class="item item--rect--middle higher">
+          <a class="content highlight" href="https://f21.hu/zene/szintislaci-a-budapest-teveben-ricsardgir-dalpremier/" target="_blank">
+            <img class="aritcle-bg" src="./szintislaci.png" />
+            “A BpTv aranykorát idéző klipben rajongók ezreinek vágya teljesült: gyakorlatilag instant sláger született a zenekar sztárbillentyűséről, Laciról.”
+          </a>
+          <p><a href="https://recorder.blog.hu/2015/09/13/18_klippremier_ricsardgir_palvinbarbi?layout=5" target="_blank">recorder.blog.hu</a></p>
+        </div>
+        <div class="item item--rect--middle highest">
           <a class="content highlight" href="https://recorder.blog.hu/2015/09/13/18_klippremier_ricsardgir_palvinbarbi?layout=5" target="_blank">
             <img class="aritcle-bg" src="./palvinklip.jpg" />
             “Aztán mint a Lost Highwayben, itt is történik valami, és egy másik kollégista fiú - aki a Dunában lakik és a Corvinusra jár -, szintén elindul keresni a szerelmet, csak ő meg is találja.”

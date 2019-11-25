@@ -37,6 +37,11 @@
         background-size: cover;
       }
 
+      &.balint {
+        background: url("./balint/profil/profil.jpg");
+        background-size: cover;
+      }
+
       &.boldi {
         background: url("./boldi/profil/profil.jpg");
         background-size: cover;
@@ -44,6 +49,10 @@
 
       &.david {
         background: url("./david/profil/profil.jpg");
+        background-size: cover;
+      }
+      &.dori {
+        background: url("./dori/profil/profil.jpg");
         background-size: cover;
       }
 
@@ -81,9 +90,18 @@
         background: url("./laci/profil/profil.jpg");
         background-size: cover;
       }
+      &.levi {
+        background: url("./levi/profil/profil.jpg");
+        background-size: cover;
+      }
 
       &.mate {
         background: url("./mate/profil/profil.jpg");
+        background-size: cover;
+      }
+
+      &.marci {
+        background: url("./marci/profil/profil.jpg");
         background-size: cover;
       }
 

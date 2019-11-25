@@ -21,13 +21,11 @@
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link href="../assets/dist/css/glightbox.css" rel="stylesheet">
   <script src="../assets/dist/js/glightbox.js"></script>
 </head>
-
 <body>
   <div w3-include-html="../topbar.html"></div>
   <div w3-include-html="../menu.html"></div>
@@ -35,22 +33,7 @@
     w3.includeHTML();
     window.onscroll = function() {scrollFunction()};
   </script>
-  <script>
-  $(document).ready(function(){
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 1666, function(){
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
+  <a href="#y19"><img id="btnToTop" src="../assets/blinkybill.gif"/></a>
   <div class="block-container concerts">
     <section class="section">
       <h1 class="item" id="y19">2019</h1>

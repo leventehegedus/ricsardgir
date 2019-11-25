@@ -11,9 +11,7 @@ function HTMLActuator() {
   this.score = 0;
 }
 
-var dogeSayings = ['pest', 'jó ez a pop', 'ördögnóra', 'palvinbarbi', 'natalie portman', 'nincsen sárkány', 'koala', 'zsösziplő', 'puna patron', 'kenó' ,'gary oldman',
-'harrison ford', 'santa claus', 'mártondani', 'pappéva', 'szintislaci', 'edina', 'tatooine planet', 'andris & flóra', 'bali', 'kád' ,'szörf',]
-
+var dogeSayings = ['Rise of Koala', 'SzintisLaci', 'Let\'s dance', 'My horse', 'Temetés', 'Szabad világ', 'Bulikrumpli', 'Gospel', 'Tipikus én', 'Na persze', 'Minden nyár', 'Smackleves', 'Azonistúl']
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;

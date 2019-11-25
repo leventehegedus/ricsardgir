@@ -19,25 +19,9 @@
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <link rel="stylesheet" type="text/css" href="videos.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="../index.js"></script>
   <script src="./index.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1666, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-</script>
 </head>
 
 <body onload="fetchBackground()">
@@ -47,10 +31,20 @@
     w3.includeHTML();
     window.onscroll = function() {scrollFunction()};
   </script>
-  <img onclick="topFunction()" id="btnToTop" src="../assets/blinkybill.gif"/>
+  <a href="#videoclip"><img id="btnToTop" src="../assets/blinkybill.gif"/></a>
   <div class="block-container videos">
     <section id="videoclip">
       <h1><a href="#videoclip" class="active">Videóklipek</a> <a href="#video">Videók</a></h1>
+      <div class="video-container">
+        <div class="youtube" data-embed="UAO7fMcECgw">
+          <div class="play-button" onclick="playVideo()"></div>
+        </div>
+        <div class="boring-details">
+          <div class="title">
+            <span class="boringDetails1">SzintisLaci - 2019</span>
+          </div>
+        </div>
+      </div>
       <div class="video-container">
         <div class="youtube" data-embed="IRA6XqVHefw">
           <div class="play-button" onclick="playVideo()"></div>

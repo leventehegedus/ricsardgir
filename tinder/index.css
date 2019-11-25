@@ -31,12 +31,20 @@
   background: url("./barbi/profil/profil.jpg");
   background-size: cover;
 }
+.tinder-container .tinder-card-container .tinder-image-container.balint {
+  background: url("./balint/profil/profil.jpg");
+  background-size: cover;
+}
 .tinder-container .tinder-card-container .tinder-image-container.boldi {
   background: url("./boldi/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.david {
   background: url("./david/profil/profil.jpg");
+  background-size: cover;
+}
+.tinder-container .tinder-card-container .tinder-image-container.dori {
+  background: url("./dori/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.edina {
@@ -67,8 +75,16 @@
   background: url("./laci/profil/profil.jpg");
   background-size: cover;
 }
+.tinder-container .tinder-card-container .tinder-image-container.levi {
+  background: url("./levi/profil/profil.jpg");
+  background-size: cover;
+}
 .tinder-container .tinder-card-container .tinder-image-container.mate {
   background: url("./mate/profil/profil.jpg");
+  background-size: cover;
+}
+.tinder-container .tinder-card-container .tinder-image-container.marci {
+  background: url("./marci/profil/profil.jpg");
   background-size: cover;
 }
 .tinder-container .tinder-card-container .tinder-image-container.martondani {
