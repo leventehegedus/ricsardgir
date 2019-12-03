@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -213,6 +212,7 @@ body {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
+  display: none;
 }
 .footer_container a {
   color: #fff;
@@ -365,6 +365,7 @@ body {
   .block-container .block.tinder {
     background-image: url("./tinder.jpg");
     width: 100%;
+    background-position: bottom center;
   }
   .block-container .block.tinder:hover {
     background-image: url("./tinder.gif");
@@ -487,7 +488,8 @@ body {
 }
 @media (min-width: 768px) {
   .block-container.k49 {
-    margin-top: 120px;
+    padding-top: 120px;
+    margin-top: 0;
   }
 }
 .block-container.us {

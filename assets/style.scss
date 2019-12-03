@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -200,6 +199,7 @@ body {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
+  display: none;
 
   a {
     color: #fff;
@@ -346,6 +346,7 @@ body {
       &.tinder {
         background-image: url("./tinder.jpg");
         width: 100%;
+        background-position: bottom center;
 
         &:hover {
           background-image: url("./tinder.gif");
@@ -474,7 +475,6 @@ body {
     width: 100%;
 
     #center {
-
       #cont {
         margin: 0;
         top: 0;
@@ -490,7 +490,7 @@ body {
 
   &.koala {
     margin-top: 106px;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       margin-top: 120px;
     }
   }
@@ -498,8 +498,9 @@ body {
   &.k49 {
     margin-top: 80px;
     min-height: calc(100vh - 65px);
-    @media (min-width: 768px){
-      margin-top: 120px;
+    @media (min-width: 768px) {
+      padding-top: 120px;
+      margin-top: 0;
     }
   }
 
@@ -509,7 +510,7 @@ body {
 
   &.quiz {
     margin-top: 80px;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       margin-top: 120px;
     }
   }

@@ -26,6 +26,7 @@ function restartSwiping(){
 }
 
 function getLikeSound(user){
+  console.log('like');
   if(user.indexOf('andris') > -1){
     let number = Math.floor(Math.random() * 2 + 1);
     let filename = 'andrislike' + number;
@@ -101,6 +102,7 @@ function getLikeSound(user){
 }
 
 function getDislikeSound(user){
+  console.log('dislike');
   if(user.indexOf('andris') > -1){
     let number = Math.floor(Math.random() * 2 + 1);
     let filename = 'andrisdislike' + number;
@@ -176,11 +178,12 @@ function getDislikeSound(user){
 }
 
 function getSuperLikeSound(user){
+  console.log('suppalike');
   if(user.indexOf('andris') > -1){
     let number = Math.floor(Math.random() * 2 + 1);
     let filename = 'andris' + number;
-    document.getElementById(filename).load();
-    document.getElementById(filename).play();
+    // document.getElementById(filename).load();
+    // document.getElementById(filename).play();
   }
   else if (user.indexOf('alma') > -1) {
     let number = Math.floor(Math.random() * 3 + 1);
@@ -227,14 +230,14 @@ function getSuperLikeSound(user){
   else if (user.indexOf('laci') > -1) {
     let number = Math.floor(Math.random() * 5 + 1);
     let filename = 'laci' + number;
-    document.getElementById(filename).load();
-    document.getElementById(filename).play();
+    // document.getElementById(filename).load();
+    // document.getElementById(filename).play();
   }
   else if (user.indexOf('martondani') > -1) {
     let number = Math.floor(Math.random() * 1 + 1);
     let filename = 'martondani' + number;
-    document.getElementById(filename).load();
-    document.getElementById(filename).play();
+    // document.getElementById(filename).load();
+    // document.getElementById(filename).play();
   }
   else if (user.indexOf('mate') > -1) {
     let number = Math.floor(Math.random() * 3 + 1);
