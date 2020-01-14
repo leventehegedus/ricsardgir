@@ -246,8 +246,12 @@ body {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    flex-wrap: wrap;
     @media (min-width: 768px) {
       font-size: 12px;
+    }
+    a {
+      width: 100%;
     }
   }
 

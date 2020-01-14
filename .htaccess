@@ -1,5 +1,29 @@
-ErrorDocument 404 http://ricsargir.com/404.html
-AuthType Basic
-AuthName "kerem a jelszot"
-AuthUserFile /httpd/html/ftplogin/data/.htpasswd
-Require valid-user
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.ricsardgir\.com$
+RewriteRule ^/?$ "https\:\/\/ricsardgir\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www.ricsardgir.com$ [NC]
+RewriteRule ^(.*)$ https://www.ricsardgir.com/$1 [L,R=301]

@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://www.teszt.ricsardgir.com/sitemap.xml
+Sitemap: https://ricsardgir.com/sitemap.xml
