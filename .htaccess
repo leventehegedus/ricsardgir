@@ -20,10 +20,3 @@ AddOutputFilterByType DEFLATE application/x-javascript
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType text/css "access plus 1 month"
 </IfModule>
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.ricsardgir\.com$
-RewriteRule ^/?$ "https\:\/\/ricsardgir\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} !^www.ricsardgir.com$ [NC]
-RewriteRule ^(.*)$ https://www.ricsardgir.com/$1 [L,R=301]
