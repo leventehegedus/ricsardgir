@@ -26,5 +26,13 @@
   border: 1px solid #000;
   box-sizing: border-box;
 }
+.video-container h1 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.video-container a {
+  color: #000;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=merch.css.map */
