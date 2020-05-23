@@ -11,6 +11,12 @@
 }
 @media (min-width: 768px) {
   .block-container {
+    .item {
+      justify-content: flex-start;
+    }
+    .item--megagiga {
+      grid-row-end: span 7;
+    }
     &.videos {
       display: none;
     }

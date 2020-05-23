@@ -7,6 +7,12 @@
   }
 }
 @media (min-width: 768px) {
+  .block-container .item {
+    justify-content: flex-start;
+  }
+  .block-container .item--megagiga {
+    grid-row-end: span 7;
+  }
   .block-container.videos {
     display: none;
   }
